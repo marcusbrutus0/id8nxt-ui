@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_featured_works",
+  "info": {
+    "displayName": "Featured Work"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "WorkItem": {
+      "type": "component",
+      "component": "shared.feat-work-item",
+      "repeatable": true
+    },
+    "ServicesLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

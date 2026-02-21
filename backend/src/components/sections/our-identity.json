@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_our_identities",
+  "info": {
+    "displayName": "Our Identity"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "AboutUsLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

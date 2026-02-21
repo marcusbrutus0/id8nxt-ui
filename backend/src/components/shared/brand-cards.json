@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_brand_cards",
+  "info": {
+    "displayName": "BrandCards"
+  },
+  "options": {},
+  "attributes": {
+    "CardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "CardDescription": {
+      "type": "string",
+      "required": true
+    },
+    "BrandSolutionsLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

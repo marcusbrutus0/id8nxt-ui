@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_layout_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "Headline": {
+      "type": "text",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "CtaLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false,
+      "required": true
+    },
+    "Menu": {
+      "type": "component",
+      "component": "shared.footer-menu",
+      "repeatable": true,
+      "required": true
+    },
+    "AddressTitle": {
+      "type": "string"
+    },
+    "AddressDescription": {
+      "type": "text"
+    },
+    "WriteToUsTitle": {
+      "type": "string"
+    },
+    "WriteToUsEmail": {
+      "type": "email",
+      "required": false
+    },
+    "ContactInfo": {
+      "type": "string"
+    },
+    "PhoneNo": {
+      "type": "component",
+      "component": "shared.phone-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

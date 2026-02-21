@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_our_resources",
+  "info": {
+    "displayName": "Our Resource"
+  },
+  "options": {},
+  "attributes": {
+    "ResourceImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "text",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": false
+    },
+    "MetaData": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

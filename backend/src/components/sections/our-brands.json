@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_our_brands",
+  "info": {
+    "displayName": "Our Brands"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "BrandCards": {
+      "type": "component",
+      "component": "shared.brand-cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

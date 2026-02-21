@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_sections_our_services",
+  "info": {
+    "displayName": "Our Services"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Services": {
+      "type": "component",
+      "component": "shared.our-services",
+      "repeatable": true,
+      "required": true
+    },
+    "FeatImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ServicesLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

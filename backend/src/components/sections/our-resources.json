@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_our_resources",
+  "info": {
+    "displayName": "Our Resources"
+  },
+  "options": {},
+  "attributes": {
+    "Resource": {
+      "type": "component",
+      "component": "shared.our-resource",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

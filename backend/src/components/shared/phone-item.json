@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_phone_items",
+  "info": {
+    "displayName": "Phone Item"
+  },
+  "options": {},
+  "attributes": {
+    "PhoneNo": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

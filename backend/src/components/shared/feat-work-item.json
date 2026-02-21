@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_feat_work_items",
+  "info": {
+    "displayName": "FeatWorkItem"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Caption": {
+      "type": "text"
+    },
+    "Size": {
+      "type": "enumeration",
+      "enum": [
+        "Small ",
+        "Medium"
+      ]
+    }
+  },
+  "config": {}
+}
