@@ -1,0 +1,837 @@
+/* ============================================================
+   ABOUT US & TEAM PAGE
+   ============================================================ */
+
+.about-us-and-team {
+	container: about-us-and-team / inline-size;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Zalando Sans';
+	line-height: normal;
+	letter-spacing: 0px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.sub-text2 {
+	color: #dc1f3e;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+/* section override (global base has center/24px; this page uses flex-start/100px) */
+
+.about-us-and-team .section {
+	align-items: flex-start;
+	padding: 0 100px;
+}
+
+
+
+.text {
+	text-transform: uppercase;
+	text-align: left;
+}
+
+
+
+/* row-b */
+
+.row-b {
+	display: flex;
+	align-items: center;
+	gap: 100px;
+	font-size: 40px;
+}
+
+.row-btn-styles {
+	display: flex;
+	color: #000;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-align: left;
+	background-color: #cadb36;
+	padding: 15px 42px 15px 43px;
+	border-radius: 3px;
+}
+/* end row-b */
+
+
+.subtitle-button-styles {
+	color: #fff;
+	font-weight: 400;
+	text-align: left;
+	padding: 10px 12px 7px 12px;
+	border-bottom: 3px solid #fff;
+}
+
+.img {
+	flex-shrink: 0;
+}
+
+
+
+/* title */
+
+.title {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	font-weight: 400;
+}
+
+.title-subtitle {
+	font-size: 48px;
+}
+
+.title-text {
+	font-size: 20px;
+}
+/* end title */
+
+
+
+/* header (overrides base.css .header which is used by other pages) */
+
+.about-us-and-team .header {
+	margin: 0;
+	display: block;
+	flex-direction: initial;
+	align-items: initial;
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	container: header / inline-size;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.header-content {
+	container: header-content / inline-size;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-left-links {
+	display: flex;
+	align-items: flex-start;
+	gap: 37px;
+}
+
+.header-text-right {
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: left;
+}
+/* end header */
+
+
+.header1 .header-logo {
+	width: 133px; height: 64px;
+}
+
+.header1 .solutions {
+	gap: 11px;
+}
+
+.header1 .about {
+	gap: 8px;
+}
+
+.about-us-and-team-hero-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	padding-left: 1px;
+	padding-right: 2px;
+}
+
+.about-us-and-team-col {
+	width: 100%;
+	max-width: 1917px;
+	display: flex;
+	flex-direction: column;
+	gap: 286px;
+	background: url(../assets/about-us-and-team-col.png) center / cover no-repeat;
+	padding: 32px 53px 357px 55px;
+	border-radius: 3px;
+}
+
+.about-us-and-team-col-bottom {
+	container: about-us-and-team-col-bottom / inline-size;
+	margin-left: 415px; margin-right: 416px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 100px;
+}
+
+.about-us-and-team-col-top {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-self: stretch;
+	color: #fff;
+	font-weight: 400;
+}
+
+.about-us-and-team-subtitle-id8nxt {
+	font-size: 64px;
+}
+
+.about-us-and-team-subtitle-built-for-brands {
+	font-size: 40px;
+}
+
+.about-us-and-team-row {
+	margin-top: 100px;
+	display: flex;
+	align-items: flex-start;
+	gap: 150px;
+	font-weight: 400;
+	padding: 0 100px;
+}
+
+.about-us-and-team-subtitle-we-don-t-do {
+	width: 73%;
+	flex-grow: 1;
+	color: #dc1f3e;
+	font-size: 48px;
+	text-align: left;
+}
+
+.about-us-and-team-text {
+	width: 127%;
+	flex-grow: 1;
+	color: #000;
+	font-size: 20px;
+	text-align: left;
+}
+
+.about-us-and-team-solutions {
+	container: about-us-and-team-solutions / inline-size;
+	margin-top: 200px;
+	align-items: center;
+	gap: 100px;
+	color: #000;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+
+
+/* enterprise-animation */
+
+.enterprise-animation {
+	position: relative;
+	width: 100%;
+	max-width: 1720px;
+	padding-left: 77px;
+	padding-right: 1014px;
+}
+
+.enterprise-animation-img {
+	position: absolute; top: 0; left: 0;
+	width: 50px;
+}
+
+.enterprise-animation-subtitle {
+	width: 629px;
+}
+/* end enterprise-animation */
+
+
+
+/* gen-ai-animation */
+
+.gen-ai-animation {
+	margin-left: -600px; margin-top: 357px;
+	width: calc(100% - 600px);
+	max-width: 1280px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	gap: 40px;
+}
+
+.gen-ai-animation-subtitle {
+	width: 629px;
+	flex-shrink: 0;
+	text-align: left;
+}
+/* end gen-ai-animation */
+
+
+
+/* brand-solution-animation */
+
+.brand-solution-animation {
+	margin-top: 401px;
+	width: 100%;
+	max-width: 1720px;
+	display: flex;
+	align-items: flex-start;
+	gap: 27px;
+}
+
+.brand-solution-animation-subtitle {
+	width: 629px;
+	flex-shrink: 0;
+	text-align: left;
+}
+/* end brand-solution-animation */
+
+
+.about-us-and-team-subtitle-what-we-re-known {
+	align-self: stretch;
+	font-weight: 400;
+}
+
+.gen-ai .gen-ai-animation-namo2562 {
+	width: 64px;
+}
+
+.brand-solutions .brand-solution-animation-sca {
+	width: 50px;
+}
+
+.about-us-and-team-our-approach {
+	container: about-us-and-team-our-approach / inline-size;
+	margin-top: 557px;
+	gap: 100px;
+	color: #000;
+}
+
+.title1 {
+	width: 100%;
+	max-width: 570px;
+}
+
+.about-us-and-team-approach {
+	width: 100%;
+	max-width: 1720px;
+	display: flex;
+	align-items: flex-start;
+	gap: 35px;
+	align-self: center;
+	padding-right: 5px;
+}
+
+
+
+/* display-cards */
+
+.display-cards {
+	box-shadow: 4px 4px 24.8px 0px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	flex-grow: 1;
+	text-align: left;
+	background-color: #fff;
+	padding-left: 47px;
+	padding-right: 50px;
+	border-left: 3px solid #dc1f3e;
+	border-radius: 3px;
+}
+
+.display-cards-text1 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.display-cards-text2 {
+	font-size: 20px;
+	font-weight: 400;
+}
+/* end display-cards */
+
+
+.display-cards1 .display-cards-text1 {
+	margin-top: -2px;
+}
+
+.display-cards5 .display-cards-text1 {
+	margin-top: -2px;
+}
+
+.about-us-and-team-id8nxt {
+	container: about-us-and-team-id8nxt / inline-size;
+	margin-top: 200px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 270px;
+	color: #fff;
+	background-color: #dc1f3e;
+	padding: 100px 24px 730px 24px;
+}
+
+.title2 {
+	margin-left: -39px;
+	width: 570px;
+	flex-shrink: 0;
+	text-align: left;
+}
+
+.about-us-and-team-principles {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.about-us-and-team-subtitle {
+	font-size: 48px;
+	font-weight: 600;
+	text-align: left;
+}
+
+.about-us-and-team-subtitle-client-wins {
+	font-size: 64px;
+	font-weight: 300;
+	text-align: left;
+}
+
+.about-us-and-team-our-section {
+	margin-top: 200px;
+	gap: 100px;
+	font-weight: 400;
+}
+
+.about-us-and-team-subtitle-meet-the {
+	align-self: stretch;
+	color: #000;
+	font-size: 36px;
+}
+
+.about-us-and-team-members {
+	width: 100%;
+	max-width: 1720px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-self: center;
+	color: #fff;
+}
+
+
+
+/* team-card */
+
+.team-card {
+	position: relative;
+	margin-top: -396px;
+	width: 100%;
+	max-width: 327px;
+	padding-top: 249px;
+}
+
+.team-card-img-group {
+	position: absolute; top: 0; left: 0; right: 0;
+	height: 304px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.team-card-pratik {
+	position: absolute; top: 0; left: -1px; right: 0;
+	width: calc(100% - -1px - 0px);
+	max-width: none;
+}
+
+.team-card-team-card {
+	position: relative; z-index: 4;
+	display: flex;
+	flex-direction: column;
+	padding: 14px 18px 36px 17px;
+}
+
+.team-card-graphic {
+	position: absolute; top: 0; left: 0; right: 0;
+	height: 147px;
+}
+
+.team-card-text-top {
+	position: relative; z-index: 2;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.36;
+}
+
+.team-card-text-director {
+	position: relative; z-index: 1;
+	width: 238px;
+	align-self: start;
+	font-size: 14px;
+	line-height: 1.39;
+}
+
+.team-card-text-bottom {
+	position: relative; z-index: 3;
+	margin-right: 14px; margin-top: 15px;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 12px;
+	line-height: 1.49;
+}
+/* end team-card */
+
+
+.team-card1 {
+	margin-left: 1388px; margin-top: 0;
+}
+
+.team-card2 {
+	margin-left: 347px;
+}
+
+.team-card3 {
+	margin-left: 694px;
+}
+
+.team-card4 {
+	margin-left: 1041px;
+}
+
+.team-card6 {
+	margin-top: 20px;
+}
+
+.team-card7 {
+	margin-left: 347px;
+}
+
+.team-card8 {
+	margin-left: 694px;
+}
+
+.team-card9 {
+	margin-left: 1041px;
+}
+
+.team-card10 {
+	margin-left: 1388px;
+}
+
+.team-card11 {
+	margin-top: 20px;
+}
+
+.team-card12 {
+	margin-left: 347px;
+}
+
+.team-card13 {
+	margin-left: 694px;
+}
+
+.team-card14 {
+	margin-left: 1041px;
+}
+
+.team-card15 {
+	margin-left: 1388px;
+}
+
+.team-card16 {
+	margin-left: 694px; margin-top: 20px;
+}
+
+.team-card17 {
+	margin-left: 1041px;
+}
+
+.team-card19 {
+	margin-left: 347px;
+}
+
+.team-card20 {
+	margin-left: 1388px;
+}
+
+.team-card21 {
+	margin-top: 20px;
+}
+
+.team-card22 {
+	margin-left: 347px;
+}
+
+.team-card23 {
+	margin-left: 694px;
+}
+
+.about-us-and-team-contact-cta {
+	container: about-us-and-team-col-bottom / inline-size;
+	margin-top: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+	text-align: center;
+	background-color: #dc1f3e;
+	padding: 400px 24px;
+}
+
+.about-us-and-team-subtitle-want-an-agency {
+	width: 100%;
+	max-width: 1120px;
+	color: #fff;
+	font-size: 70px;
+	font-weight: 300;
+}
+
+.footer-animation1 .footer-animation-subtitle {
+	position: absolute; z-index: 1; top: 295px; left: 278px;
+	color: unset;
+	font-size: 40px;
+	text-align: unset;
+}
+
+
+
+/* ============================================================
+   BREAKPOINTS
+   ============================================================ */
+
+@media screen and (max-width: 1280px) {
+	.about-us-and-team-col {
+		padding-inline: var(--margin-md);
+	}
+	.about-us-and-team-col-bottom {
+		margin-inline: 0;
+	}
+	.about-us-and-team-row {
+		padding-inline: var(--margin-md);
+	}
+	.enterprise-animation {
+		padding-inline: 0;
+	}
+	.about-us-and-team-approach {
+		padding-inline: 0;
+	}
+	.about-us-and-team-id8nxt {
+		padding-inline: var(--margin-sm);
+	}
+	.title2 {
+		margin-inline: 0;
+	}
+	.team-card-team-card {
+		padding-inline: 0;
+	}
+	.team-card-text-bottom {
+		margin-inline: 0;
+	}
+	.team-card1 {
+		margin-inline: 0;
+	}
+	.team-card2 {
+		margin-inline: 0;
+	}
+	.team-card3 {
+		margin-inline: 0;
+	}
+	.team-card4 {
+		margin-inline: 0;
+	}
+	.team-card7 {
+		margin-inline: 0;
+	}
+	.team-card8 {
+		margin-inline: 0;
+	}
+	.team-card9 {
+		margin-inline: 0;
+	}
+	.team-card10 {
+		margin-inline: 0;
+	}
+	.team-card12 {
+		margin-inline: 0;
+	}
+	.team-card13 {
+		margin-inline: 0;
+	}
+	.team-card14 {
+		margin-inline: 0;
+	}
+	.team-card15 {
+		margin-inline: 0;
+	}
+	.team-card16 {
+		margin-inline: 0;
+	}
+	.team-card17 {
+		margin-inline: 0;
+	}
+	.team-card19 {
+		margin-inline: 0;
+	}
+	.team-card20 {
+		margin-inline: 0;
+	}
+	.team-card22 {
+		margin-inline: 0;
+	}
+	.team-card23 {
+		margin-inline: 0;
+	}
+	.about-us-and-team-contact-cta {
+		padding-inline: var(--margin-sm);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.about-us-and-team-col {
+		padding-inline: var(--margin-sm);
+	}
+	.about-us-and-team-row {
+		padding-inline: var(--margin-sm);
+	}
+}
+
+
+
+/* ============================================================
+   CONTAINER QUERIES
+   ============================================================ */
+
+@container about-us-and-team-col-bottom (width < 720px) {
+	.row-b {
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+	.row-b > * {
+		text-align: center;
+	}
+}
+
+@container header (width < 795px) {
+	.header-content {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.header-content > * {
+		text-align: center;
+	}
+}
+
+@container header-content (width < 663px) {
+	.header-left-links {
+		flex-direction: column;
+		align-items: center;
+		gap: 13px;
+	}
+	.header-left-links > * {
+		margin-left: unset !important;
+		text-align: center;
+	}
+}
+
+@container about-us-and-team (width < 1909px) {
+	.about-us-and-team-row {
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+	.about-us-and-team-row > * {
+		text-align: center;
+	}
+	.about-us-and-team-row > .about-us-and-team-subtitle-we-don-t-do {
+		width: 100%;
+	}
+	.about-us-and-team-row > .about-us-and-team-text {
+		width: 100%;
+	}
+}
+
+@container about-us-and-team-solutions (width < 1909px) {
+	.gen-ai-animation {
+		margin-left: 0;
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.gen-ai-animation > * {
+		text-align: center;
+	}
+}
+
+@container about-us-and-team-solutions (width < 705px) {
+	.brand-solution-animation {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+	.brand-solution-animation > * {
+		text-align: center;
+	}
+	.brand-solution-animation > .brand-solution-animation-subtitle {
+		width: 100%;
+		max-width: 629px;
+	}
+}
+
+@container about-us-and-team-our-approach (width < 1719px) {
+	.about-us-and-team-approach {
+		flex-direction: column;
+		align-items: center;
+		gap: 25px;
+	}
+	.about-us-and-team-approach > * {
+		text-align: center;
+	}
+	.about-us-and-team-approach > .display-cards1 {
+		width: 100%;
+	}
+	.about-us-and-team-approach > .display-cards2 {
+		width: 100%;
+	}
+	.about-us-and-team-approach > .display-cards3 {
+		width: 100%;
+	}
+	.about-us-and-team-approach > .display-cards4 {
+		width: 100%;
+	}
+	.about-us-and-team-approach > .display-cards5 {
+		width: 100%;
+	}
+}
+
+@container about-us-and-team (width < 1727px) {
+	.about-us-and-team-id8nxt {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 17px;
+	}
+	.about-us-and-team-id8nxt > * {
+		margin-left: unset !important;
+	}
+	.about-us-and-team-id8nxt > .title2 {
+		width: 100%;
+		max-width: 570px;
+	}
+}
+
+@container about-us-and-team-id8nxt (width < 800px) {
+	.about-us-and-team-principles {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+	.about-us-and-team-principles > * {
+		text-align: center;
+	}
+}

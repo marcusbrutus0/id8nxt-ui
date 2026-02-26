@@ -1,0 +1,753 @@
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+::before,
+::after {
+  --tw-content: "";
+}
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+* {
+  box-sizing: border-box;
+  text-underline-offset: 0.134em;
+}
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-size: 1em; /* 4 */
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+  border: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+:-moz-focusring {
+  outline: auto;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+summary {
+  display: list-item;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+dialog {
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+:disabled {
+  cursor: default;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+img,
+video {
+  /* disable max-width solves bug img-export/propagation > nested-img-bigger */
+  max-width: 100%;
+  height: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+:root {
+  /* color variables */
+  --black: #000;
+  /* responsive margins / paddings */
+  --margin-sm: 16px;
+  --margin-md: 32px;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+/*  utility classes */
+
+.text2 {
+  color: #dc1f3e;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.text-gray {
+  color: #858585;
+  font-size: 16px;
+  font-family: "Zalando Sans";
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.text1 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.sub-text {
+  color: #dc1f3e;
+}
+
+
+.subtitle {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.sub-text-gray {
+  color: #818181;
+  font-size: 20px;
+}
+
+/* section utility classes */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+/* ui objects utility classes */
+
+.input {
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* button hover utility classes */
+
+.hover-bright:hover {
+  filter: brightness(1.2);
+}
+
+.hover-dark:hover {
+  filter: brightness(0.85);
+}
+
+.text-a {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.text-b {
+  color: rgba(60, 60, 60, 0.8);
+  font-size: 20px;
+}
+
+.subtitle-button-css {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 10px 11px 7px 10px;
+  border-bottom: 3px solid #fff;
+}
+
+/* ============================================================
+   HEADER (shared across all pages)
+   ============================================================ */
+
+.dropdown {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.header {
+  container: header / inline-size;
+  margin: -1px -2px 0 -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 32px 103px 32px 56px;
+  border-radius: 3px;
+}
+
+.header-row {
+  container: header-row / inline-size;
+  width: 100%;
+  max-width: 1762px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 133px;
+  height: 64px;
+}
+
+.header-row-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 37px;
+}
+
+/* row-a / row */
+
+.row-a,
+.row {
+  display: flex;
+  align-items: center;
+}
+/* end row-a / row */
+
+.solutions {
+  gap: 11px;
+}
+
+.about {
+  gap: 8px;
+}
+
+.header-text-right {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* ============================================================
+   FOOTER ANIMATION (shared across all pages)
+   ============================================================ */
+
+.footer-animation {
+  container: footer-animation / inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+  background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 31px;
+  overflow: hidden;
+}
+
+/* _1st-state */
+
+._1st-state {
+  position: relative;
+  min-height: 380px;
+  flex-shrink: 0;
+  font-size: 540px;
+  font-weight: 500;
+  line-height: 1.048;
+  background-color: #000;
+}
+
+.footer {
+  position: absolute;
+  top: -72px;
+  left: -36px;
+  right: -36px;
+  min-height: 566px;
+}
+
+.footer-id8nxt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #030000 27%, rgba(136, 136, 136, 0) 77%)
+    top left / auto auto no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-blur {
+  position: absolute;
+  top: 241px;
+  left: 23px;
+  filter: blur(2px);
+  backdrop-filter: blur(11.95px);
+  width: calc(100% - 23px);
+  height: 311px;
+  max-width: 1920px;
+  background-color: rgba(255, 73, 73, 0.03);
+}
+
+._1st-state-graphic {
+  position: absolute;
+  top: -559px;
+  left: 0;
+  right: 0;
+  filter: blur(139.6px);
+  mix-blend-mode: linear-dodge;
+  height: 970px;
+}
+/* end _1st-state */
+
+.footer-animation-content1 {
+  container: footer-animation-content1 / inline-size;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+
+.footer-animation-left-hook {
+  width: 686px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 12px;
+}
+
+.footer-animation-col {
+  position: relative;
+  margin-left: 1px;
+  width: 100%;
+  max-width: 527px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.footer-animation-subtitle1,
+.footer-animation-title {
+  margin: -12px -58px 0 -1px;
+  font-size: 90px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.048;
+}
+
+.footer-animation-text-go-to-market {
+  align-self: stretch;
+  color: #bcbcbc;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer-animation-agency-links {
+  display: flex;
+  align-items: flex-end;
+  gap: 68px;
+  font-size: 20px;
+}
+
+.footer-animation-menu {
+  width: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.footer-animation-menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  color: #858585;
+  font-weight: 400;
+}
+
+.footer-animation-agency-info {
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.footer-animation-content2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.footer-animation-address {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.footer-animation-text-office-address {
+  color: #dadada;
+  font-weight: 600;
+}
+
+.footer-animation-email {
+  width: 159px;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.footer-animation-text-humans-id8nxt-com {
+  color: #cadb36;
+  text-transform: lowercase;
+}
+
+.footer-animation-contact-number {
+  width: 159px;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.footer-animation-subscribe {
+  width: 100%;
+  max-width: 651px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  align-self: start;
+}
+
+.input-group-email {
+  display: flex;
+  align-items: flex-start;
+}
+
+.input-group-email-text {
+  width: 475px;
+  min-height: 54px;
+  flex-shrink: 0;
+  color: #858585;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-align: left;
+  background-color: unset;
+  padding: 14px 17px;
+  border: 1px solid #585858;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.input-group-email-btn-small,
+.input-group-email-btn-css,
+.input-group-email-btn-styles {
+  min-height: 54px;
+  display: flex;
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  background-color: #cadb36;
+  padding: 15px 41px 15px 40px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.footer-animation-social-links1 {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  color: #dadada;
+  font-weight: 600;
+  padding-right: 7px;
+}
+
+.footer-animation-text-social-links {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.footer-animation-social-links2 {
+  width: 197px;
+  height: 38px;
+  flex-shrink: 0;
+}
+/* end footer-animation */
+
+.footer-animation-text-a {
+  color: #dadada;
+  font-weight: 600;
+}
+
+.footer-animation-text-b,
+.footer-animation-text-c {
+  color: #dadada;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-animation1 .footer-animation-subtitle {
+  position: absolute;
+  z-index: 1;
+  top: 295px;
+  left: 278px;
+}
+
+/* ============================================================
+   BREAKPOINTS (shared elements)
+   ============================================================ */
+
+@media screen and (max-width: 1280px) {
+  .footer-animation-left-hook {
+    padding-inline: 0;
+  }
+  .footer-animation-col {
+    margin-inline: 0;
+  }
+  .footer-animation-subtitle1,
+  .footer-animation-title {
+    margin-inline: 0;
+  }
+  .footer-animation-social-links1 {
+    padding-inline: 0;
+  }
+  .header {
+    padding-inline: var(--margin-md);
+    margin-inline: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding-inline: var(--margin-sm);
+  }
+}
+
+/* container queries (shared elements) */
+
+@container footer-animation (width < 1641px) {
+  .footer-animation-content1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+  }
+  .footer-animation-content1 > * {
+    text-align: center;
+  }
+  .footer-animation-content1 > .footer-animation-left-hook {
+    width: 100%;
+    max-width: 686px;
+    align-items: center;
+  }
+}
+
+@container footer-animation-content1 (width < 855px) {
+  .footer-animation-agency-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 58px;
+  }
+  .footer-animation-agency-links > .footer-animation-agency-info {
+    width: 100%;
+    max-width: 660px;
+  }
+}
+
+@container header (width < 795px) {
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .header-row > * {
+    text-align: center;
+  }
+}
+
+@container header-row (width < 663px) {
+  .header-row-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+  }
+  .header-row-right > * {
+    margin-left: unset !important;
+    text-align: center;
+  }
+}
