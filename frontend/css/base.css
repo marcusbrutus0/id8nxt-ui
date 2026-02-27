@@ -134,6 +134,11 @@ html {
   flex-shrink: 0;
 }
 
+.row-visibility {
+  width: 24px;
+  flex-shrink: 0;
+}
+
 .header {
   container: header / inline-size;
   margin: -1px -2px 0 -1px;
@@ -153,6 +158,29 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* header-content / header-left-links (used by pages with hero header variant) */
+
+.header-content {
+  container: header-content / inline-size;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 37px;
+}
+
+.header-content2 {
+  width: 100%;
+  max-width: 978px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 
 .header-logo {
@@ -527,12 +555,14 @@ html {
 }
 
 @container header (width < 795px) {
-  .header-row {
+  .header-row,
+  .header-content {
     flex-direction: column;
     align-items: center;
     gap: 14px;
   }
-  .header-row > * {
+  .header-row > *,
+  .header-content > * {
     text-align: center;
   }
 }
@@ -544,6 +574,18 @@ html {
     gap: 13px;
   }
   .header-row-right > * {
+    margin-left: unset !important;
+    text-align: center;
+  }
+}
+
+@container header-content (width < 663px) {
+  .header-left-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+  }
+  .header-left-links > * {
     margin-left: unset !important;
     text-align: center;
   }
