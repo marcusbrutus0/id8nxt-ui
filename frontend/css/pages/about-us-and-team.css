@@ -6,9 +6,6 @@
 	container: about-us-and-team / inline-size;
 	display: flex;
 	flex-direction: column;
-	font-family: 'Zalando Sans';
-	line-height: normal;
-	letter-spacing: 0px;
 	background-color: #fff;
 	overflow: hidden;
 }
@@ -26,13 +23,6 @@
 .about-us-and-team .section {
 	align-items: flex-start;
 	padding: 0 100px;
-}
-
-
-
-.text {
-	text-transform: uppercase;
-	text-align: left;
 }
 
 
@@ -94,54 +84,15 @@
 
 
 
-/* header (overrides base.css .header which is used by other pages) */
+/* header override — resets base.css padding/margin/bg since this header sits inside a bg-image column */
 
 .about-us-and-team .header {
 	margin: 0;
-	display: block;
-	flex-direction: initial;
-	align-items: initial;
 	background-color: transparent;
 	padding: 0;
 	border-radius: 0;
-	container: header / inline-size;
 	color: #fff;
-	font-size: 18px;
 	font-weight: 400;
-}
-
-.header-content {
-	container: header-content / inline-size;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.header-left-links {
-	display: flex;
-	align-items: flex-start;
-	gap: 37px;
-}
-
-.header-text-right {
-	font-size: 20px;
-	font-weight: 300;
-	text-transform: uppercase;
-	text-align: left;
-}
-/* end header */
-
-
-.header1 .header-logo {
-	width: 133px; height: 64px;
-}
-
-.header1 .solutions {
-	gap: 11px;
-}
-
-.header1 .about {
-	gap: 8px;
 }
 
 .about-us-and-team-hero-section {
@@ -717,28 +668,6 @@
 	}
 }
 
-@container header (width < 795px) {
-	.header-content {
-		flex-direction: column;
-		align-items: center;
-		gap: 14px;
-	}
-	.header-content > * {
-		text-align: center;
-	}
-}
-
-@container header-content (width < 663px) {
-	.header-left-links {
-		flex-direction: column;
-		align-items: center;
-		gap: 13px;
-	}
-	.header-left-links > * {
-		margin-left: unset !important;
-		text-align: center;
-	}
-}
 
 @container about-us-and-team (width < 1909px) {
 	.about-us-and-team-row {

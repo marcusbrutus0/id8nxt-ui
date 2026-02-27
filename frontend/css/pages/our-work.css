@@ -5,9 +5,6 @@
 .our-work {
   display: flex;
   flex-direction: column;
-  font-family: "Zalando Sans";
-  line-height: normal;
-  letter-spacing: 0px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -78,7 +75,6 @@
 .industries-text {
   color: var(--black);
   font-size: 16px;
-  font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
   line-height: 1.49;

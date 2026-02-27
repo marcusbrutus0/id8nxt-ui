@@ -1,0 +1,588 @@
+/* ============================================================
+   OUR CLIENTS PAGE
+   ============================================================ */
+
+.our-clients {
+	container: our-clients / inline-size;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.text {
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.subtitle-button-styles {
+	font-size: 40px;
+	padding: 10px 11px 7px 13px;
+	border-bottom: 3px solid #000;
+}
+
+
+
+/* header */
+
+.header1 {
+	gap: 200px;
+	color: #000;
+	font-weight: 400;
+	text-align: center;
+	background-color: #fff;
+	padding-top: 32px;
+	padding-bottom: 297px;
+}
+
+.header {
+	container: header / inline-size;
+	margin-left: 1px;
+	width: 100%;
+	max-width: 1809px;
+	font-size: 18px;
+}
+
+.header-content {
+	container: header-content / inline-size;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-left-links {
+	display: flex;
+	align-items: flex-start;
+	gap: 37px;
+}
+
+.header2 .header-logo {
+	width: 133px; height: 64px;
+}
+
+.header2 .solutions {
+	gap: 11px;
+}
+
+.header2 .about {
+	gap: 8px;
+}
+
+.header-content2 {
+	width: 100%;
+	max-width: 978px;
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+}
+
+.header-subtitle-clients-we-ve {
+	font-size: 64px;
+}
+
+.header-subtitle-lorem-ipsum {
+	font-size: 40px;
+}
+/* end header */
+
+
+
+.our-clients-work-section {
+	margin-top: 100px;
+	gap: 99px;
+	color: #000;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.our-clients-works {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 50px;
+}
+
+
+
+/* industries */
+
+.industries {
+	width: 254px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 9px 19px;
+	border: 1px solid var(--black);
+	border-radius: 5px;
+}
+
+.industries-text {
+	text-align: left;
+}
+
+.industries-keyboard {
+	width: 24px;
+	flex-shrink: 0;
+}
+/* end industries */
+
+
+
+.our-clients-logos {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.our-clients-client-logosartboard {
+	width: 100%;
+	flex-shrink: 0;
+}
+
+.our-clients-logosartboard1 {
+	max-width: 331px;
+}
+
+.our-clients-logosartboard2 {
+	margin-left: 363px; margin-top: -171px;
+	max-width: 332px;
+}
+
+.our-clients-logosartboard3 {
+	margin-left: 726px; margin-top: -171px;
+	max-width: 333px;
+}
+
+.our-clients-logosartboard4 {
+	margin-left: 1089px; margin-top: -172px;
+	max-width: 333px;
+}
+
+.our-clients-logosartboard5 {
+	margin-left: 1452px; margin-top: -172px;
+	max-width: 332px;
+}
+
+.our-clients-logosartboard6 {
+	margin-left: 363px; margin-top: 37px;
+	max-width: 332px;
+}
+
+.our-clients-logosartboard7 {
+	margin-top: -171px;
+	max-width: 332px;
+}
+
+.our-clients-logosartboard8 {
+	margin-left: 726px; margin-top: -171px;
+	max-width: 332px;
+}
+
+.our-clients-logosartboard9 {
+	margin-left: 1089px; margin-top: -171px;
+	max-width: 333px;
+}
+
+.our-clients-logosartboard10 {
+	margin-left: 1452px; margin-top: -172px;
+	max-width: 332px;
+}
+
+.our-clients-logosartboard11 {
+	margin-top: 38px;
+	max-width: 333px;
+}
+
+.our-clients-logosartboard12 {
+	margin-left: 363px; margin-top: -173px;
+	max-width: 333px;
+}
+
+.our-clients-logosartboard13 {
+	margin-left: 726px; margin-top: -173px;
+	max-width: 333px;
+}
+
+.our-clients-logosartboard14 {
+	margin-left: 1089px; margin-top: -172px;
+	max-width: 332px;
+}
+
+.our-clients-logosartboard15 {
+	margin-left: 1452px; margin-top: -172px;
+	max-width: 331px;
+}
+
+.our-clients-subtitle1 {
+	font-size: unset;
+}
+
+.our-clients-problem {
+	container: our-clients-problem / inline-size;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 87px;
+	color: #000;
+	font-weight: 400;
+	padding: 100px 100px 100px 72px;
+}
+
+.our-clients-title {
+	width: 100%;
+	max-width: 1748px;
+	display: flex;
+	align-items: center;
+	gap: 1010px;
+	font-size: 36px;
+}
+
+.our-clients-scroll-indicator-a {
+	width: 214px; height: 17px;
+	flex-shrink: 0;
+}
+
+.our-clients-subtitle-how-we-have {
+	flex-grow: 1;
+	text-align: left;
+}
+
+.our-clients-problem-scroll {
+	width: 100%;
+	max-width: 1720px;
+	display: flex;
+	align-items: center;
+	gap: 56px;
+	color: #fff;
+	background: linear-gradient(180deg, #424242 0%, #111 100%) top left / auto auto no-repeat;
+	padding: 76px 67px 76px 58px;
+	border-radius: 5px;
+}
+
+.our-clients-overview {
+	display: flex;
+	flex-direction: column;
+	gap: 142px;
+	flex-grow: 1;
+	text-align: left;
+}
+
+.our-clients-subtitle-company-name {
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.our-clients-col {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	font-size: 20px;
+}
+
+.our-clients-roman-ultra {
+	min-width: 0;
+	flex-grow: 1;
+	border-radius: 3px;
+}
+
+.our-clients-info-content {
+	width: 247px;
+	display: flex;
+	flex-direction: column;
+	gap: 92px;
+	flex-shrink: 0;
+	font-size: 20px;
+	text-align: left;
+}
+
+.our-clients-text-top {
+	color: #9a9a9a;
+}
+
+.our-clients-text2 {
+	line-height: 1.6;
+}
+
+.our-clients-text-bottom {
+	margin-top: 6px;
+	align-self: start;
+	font-size: 24px;
+	text-align: center;
+	padding: 0 2px 7px 2px;
+	border-bottom: 3px solid #fff;
+}
+
+.our-clients-testimonials1 {
+	container: our-clients-testimonials1 / inline-size;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 236px 0 236px 100px;
+	overflow: hidden;
+}
+
+.our-clients-section-title {
+	width: 389px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 40px;
+	flex-shrink: 0;
+	color: #000;
+	font-size: 64px;
+	font-weight: 300;
+	line-height: 0.877;
+	text-align: left;
+}
+
+.our-clients-scroll-indicator-b {
+	width: 214px; height: 17px;
+	flex-shrink: 0;
+}
+
+.our-clients-subtitle-what {
+	align-self: stretch;
+}
+
+.our-clients-testimonials2 {
+	margin-right: -136px;
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	font-weight: 400;
+}
+
+
+
+/* testimonial-card */
+
+.testimonial-card {
+	width: 409px;
+	min-height: 365px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 100px;
+	flex-shrink: 0;
+	text-align: left;
+	background-color: #000;
+	padding: 0 30px;
+	border-radius: 3px;
+}
+
+.testimonial-card-text-lorem-ipsum1 {
+	align-self: stretch;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.16;
+}
+
+.testimonial-card-client {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.testimonial-card-img {
+	width: 68px;
+	flex-shrink: 0;
+}
+
+.testimonial-card-client-info {
+	width: 208px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	flex-shrink: 0;
+	text-align: left;
+}
+
+.testimonial-card-text-lorem-ipsum2 {
+	color: #fff;
+	font-size: 18px;
+}
+
+.testimonial-card-text-sed-ut {
+	color: #acacac;
+	font-size: 14px;
+}
+/* end testimonial-card */
+
+
+.footer-animation1 .footer-animation-subtitle {
+	font-weight: 400;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-bottom: 3px solid #fff;
+}
+
+
+
+/* breakpoints */
+
+@media screen and (max-width: 1280px) {
+	.our-clients-logosartboard2 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard3 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard4 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard5 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard6 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard8 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard9 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard10 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard12 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard13 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard14 {
+		margin-inline: 0;
+	}
+	.our-clients-logosartboard15 {
+		margin-inline: 0;
+	}
+	.our-clients-problem {
+		padding-inline: var(--margin-md);
+	}
+	.our-clients-problem-scroll {
+		padding-inline: var(--margin-md);
+	}
+	.testimonial-card {
+		padding-inline: var(--margin-sm);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.our-clients-problem {
+		padding-inline: var(--margin-sm);
+	}
+	.our-clients-problem-scroll {
+		padding-inline: var(--margin-sm);
+	}
+}
+
+
+
+/* container queries */
+
+@container header (width < 795px) {
+	.header-content {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.header-content > * {
+		text-align: center;
+	}
+}
+
+@container header-content (width < 663px) {
+	.header-left-links {
+		flex-direction: column;
+		align-items: center;
+		gap: 13px;
+	}
+	.header-left-links > * {
+		margin-left: unset !important;
+		text-align: center;
+	}
+}
+
+@container our-clients-problem (width < 1747px) {
+	.our-clients-title {
+		flex-direction: column;
+		align-items: center;
+		gap: 13px;
+	}
+	.our-clients-title > * {
+		text-align: center;
+	}
+	.our-clients-title > .our-clients-subtitle-how-we-have {
+		width: 100%;
+	}
+}
+
+@container our-clients-problem (width < 1452px) {
+	.our-clients-problem-scroll {
+		flex-direction: column;
+		align-items: center;
+		gap: 63px;
+	}
+	.our-clients-problem-scroll > * {
+		text-align: center;
+	}
+	.our-clients-problem-scroll > .our-clients-overview {
+		width: 100%;
+	}
+	.our-clients-problem-scroll > .our-clients-roman-ultra {
+		width: 100%;
+	}
+	.our-clients-problem-scroll .our-clients-text-bottom {
+		align-self: center;
+	}
+	.our-clients-problem-scroll > .our-clients-info-content > * {
+		text-align: unset;
+	}
+}
+
+@container our-clients (width < 1891px) {
+	.our-clients-testimonials1 {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 35px;
+		padding: 15px 24px;
+	}
+	.our-clients-testimonials1 > * {
+		margin-right: unset !important;
+	}
+	.our-clients-testimonials1 > .our-clients-section-title {
+		width: 100%;
+		max-width: 389px;
+	}
+}
+
+@container our-clients-testimonials1 (width < 1402px) {
+	.our-clients-testimonials2 {
+		margin-right: 0;
+		flex-direction: column;
+		align-items: center;
+		gap: 48px;
+	}
+	.our-clients-testimonials2 > * {
+		text-align: center;
+	}
+	.our-clients-testimonials2 > .testimonial-card1 {
+		width: 100%;
+		max-width: 409px;
+		align-items: center;
+	}
+	.our-clients-testimonials2 > .testimonial-card2 {
+		width: 100%;
+		max-width: 409px;
+		align-items: center;
+	}
+	.our-clients-testimonials2 > .testimonial-card3 {
+		width: 100%;
+		max-width: 409px;
+		align-items: center;
+	}
+}

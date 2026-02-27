@@ -330,9 +330,6 @@
   container: home / inline-size;
   display: flex;
   flex-direction: column;
-  font-family: "Zalando Sans";
-  line-height: normal;
-  letter-spacing: 0px;
   background-color: #fff;
   overflow: hidden;
 }
