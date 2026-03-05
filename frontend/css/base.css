@@ -1,0 +1,287 @@
+:root {
+  --primary-red: #dc1f3e;
+  --bg-light: #f2f4f6;
+  --text-dark: #000000;
+  --text-white: #ffffff;
+  --text-gray: #858585;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.section-padding {
+  padding: 100px;
+}
+
+@media (max-width: 1024px) {
+  .section-padding {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 40px 20px;
+  }
+}
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid currentColor;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* ─── Header ─────────────────────────────────────── */
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1920px;
+  z-index: 10;
+}
+
+.site-header {
+  padding: 32px 56px;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  width: 17px;
+  height: 17px;
+}
+
+@media (max-width: 1024px) {
+  .site-header {
+    padding: 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+
+/* ─── Footer ─────────────────────────────────────── */
+.site-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 0 0 0;
+  overflow: hidden;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  gap: 50px;
+}
+
+.footer-cta {
+  max-width: 686px;
+}
+
+.footer-cta h2 {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+.footer-cta p {
+  color: #bcbcbc;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.footer-btn {
+  border: 1px solid #ffffff;
+  padding: 15px 40px;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  gap: 68px;
+}
+
+.footer-column h4,
+.info-group h4,
+.subscribe-group h4,
+.social-group h4,
+.email-block h4,
+.phone-block h4 {
+  color: #dadada;
+  font-size: 14px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.footer-column a {
+  display: block;
+  color: #858585;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 400px;
+}
+
+.info-group p {
+  color: #858585;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form input {
+  background: transparent;
+  border: 1px solid #585858;
+  padding: 15px;
+  color: #fff;
+  flex: 1;
+}
+
+.subscribe-form button {
+  background-color: #cadb36;
+  color: #000;
+  padding: 15px 30px;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.email-block a {
+  color: #cadb36;
+}
+
+.phone-block p {
+  color: #858585;
+}
+
+.footer-bottom {
+  position: relative;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.footer-logo-large {
+  font-size: 300px;
+  font-weight: 700;
+  opacity: 0.1;
+  background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(4px);
+}
+
+@media (max-width: 1280px) {
+  .footer-top {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}
