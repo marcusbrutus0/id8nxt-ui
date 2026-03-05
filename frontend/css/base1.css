@@ -1,0 +1,74 @@
+:root {
+  --primary-red: #dc1f3e;
+  --bg-light: #f2f4f6;
+  --text-dark: #000000;
+  --text-white: #ffffff;
+  --text-gray: #858585;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.section-padding {
+  padding: 100px;
+}
+
+@media (max-width: 1024px) {
+  .section-padding {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 40px 20px;
+  }
+}
+
+/* Utility for horizontal scroll sections */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+.horizontal-scroll::-webkit-scrollbar { 
+  display: none;  /* Chrome/Safari/Webkit */
+}
