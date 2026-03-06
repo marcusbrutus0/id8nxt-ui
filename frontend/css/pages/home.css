@@ -58,7 +58,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 150px 100px 50px;
+	padding: 150px 100px 0;
 }
 
 .brands-title-group h2 {
@@ -112,8 +112,8 @@
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
-	align-items: center;
-	padding: 0 100px;
+	align-items: flex-start;
+	padding: 30px 100px 0;
 }
 
 /* ── Scroll track: flex row that slides horizontally on vertical scroll */

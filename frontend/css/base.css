@@ -174,7 +174,7 @@ button {
 }
 
 .footer-cta h2 {
-	font-size: 80px;
+	font-size: 90px;
 	display: inline;
 }
 
@@ -209,6 +209,7 @@ button {
 .footer-links {
 	display: flex;
 	gap: 68px;
+	margin-top: 40px;
 }
 
 .footer-column {
@@ -319,7 +320,6 @@ button {
 	align-items: center;
 	overflow: hidden;
 }
-
 .footer-logo-large {
 	font-size: 520px;
 	font-weight: 600;
