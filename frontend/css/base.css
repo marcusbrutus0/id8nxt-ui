@@ -55,10 +55,6 @@ button {
 	position: relative;
 }
 
-.section-padding {
-	padding: 100px;
-}
-
 @media (max-width: 1024px) {
 	.section-padding {
 		padding: 60px 40px;
