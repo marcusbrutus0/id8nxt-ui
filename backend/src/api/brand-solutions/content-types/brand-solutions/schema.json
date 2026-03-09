@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "brands",
+  "info": {
+    "singularName": "brand-solutions",
+    "pluralName": "brands",
+    "displayName": "BrandSolutionsPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header": {
+      "type": "component",
+      "component": "layout.header",
+      "repeatable": false
+    }
+  }
+}

@@ -25,26 +25,25 @@
       "repeatable": true,
       "required": true
     },
-    "AddressTitle": {
-      "type": "string"
+    "OfficeAddress": {
+      "type": "component",
+      "component": "shared.office-address",
+      "repeatable": false
     },
-    "AddressDescription": {
-      "type": "text"
-    },
-    "WriteToUsTitle": {
-      "type": "string"
-    },
-    "WriteToUsEmail": {
-      "type": "email",
-      "required": false
+    "WriteToUs": {
+      "type": "component",
+      "component": "shared.write-to-us",
+      "repeatable": false
     },
     "ContactInfo": {
-      "type": "string"
-    },
-    "PhoneNo": {
       "type": "component",
-      "component": "shared.phone-item",
+      "component": "shared.contact-info",
       "repeatable": true
+    },
+    "Socials": {
+      "type": "component",
+      "component": "shared.socials",
+      "repeatable": false
     }
   },
   "config": {}

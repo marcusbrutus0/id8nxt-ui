@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "ResourceImage": {
+    "resource_image": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -16,15 +16,15 @@
         "audios"
       ]
     },
-    "Title": {
+    "title": {
       "type": "text",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": false
     },
-    "MetaData": {
+    "meta_data": {
       "type": "text"
     }
   },

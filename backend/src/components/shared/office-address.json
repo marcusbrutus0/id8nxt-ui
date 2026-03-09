@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_office_addresses",
+  "info": {
+    "displayName": "OfficeAddress"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

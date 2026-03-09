@@ -6,16 +6,14 @@ export interface LayoutFooter extends Struct.ComponentSchema {
 		displayName: "Footer";
 	};
 	attributes: {
-		AddressDescription: Schema.Attribute.Text;
-		AddressTitle: Schema.Attribute.String;
-		ContactInfo: Schema.Attribute.String;
+		ContactInfo: Schema.Attribute.Component<"shared.contact-info", true>;
 		CtaLink: Schema.Attribute.Component<"shared.link", false> & Schema.Attribute.Required;
 		Description: Schema.Attribute.Text & Schema.Attribute.Required;
 		Headline: Schema.Attribute.Text & Schema.Attribute.Required;
 		Menu: Schema.Attribute.Component<"shared.footer-menu", true> & Schema.Attribute.Required;
-		PhoneNo: Schema.Attribute.Component<"shared.phone-item", true>;
-		WriteToUsEmail: Schema.Attribute.Email;
-		WriteToUsTitle: Schema.Attribute.String;
+		OfficeAddress: Schema.Attribute.Component<"shared.office-address", false>;
+		Socials: Schema.Attribute.Component<"shared.socials", false>;
+		WriteToUs: Schema.Attribute.Component<"shared.write-to-us", false>;
 	};
 }
 
@@ -25,7 +23,7 @@ export interface LayoutHeader extends Struct.ComponentSchema {
 		displayName: "Header";
 	};
 	attributes: {
-		HeaderLogo: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
+		headerLogo: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
 		NavLinks: Schema.Attribute.Component<"shared.link", true>;
 	};
@@ -38,7 +36,7 @@ export interface SectionsClientTrust extends Struct.ComponentSchema {
 	};
 	attributes: {
 		Button: Schema.Attribute.Component<"shared.link", false>;
-		Logos: Schema.Attribute.Media<"images" | "files" | "videos" | "audios", true>;
+		CompanyLogo: Schema.Attribute.Component<"shared.company-logo", true>;
 		Title: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
 }
@@ -62,7 +60,6 @@ export interface SectionsHero extends Struct.ComponentSchema {
 	};
 	attributes: {
 		CompanyName: Schema.Attribute.String;
-		Header: Schema.Attribute.Component<"layout.header", true> & Schema.Attribute.Required;
 		HeroImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
 	};
@@ -97,7 +94,9 @@ export interface SectionsOurResources extends Struct.ComponentSchema {
 		displayName: "Our Resources";
 	};
 	attributes: {
-		Resource: Schema.Attribute.Component<"shared.our-resource", true> & Schema.Attribute.Required;
+		Resource: Schema.Attribute.Component<"shared.our-resource", true>;
+		ResourceCtaBtn: Schema.Attribute.Component<"shared.link", false>;
+		title: Schema.Attribute.Text;
 	};
 }
 
@@ -141,6 +140,26 @@ export interface SharedBrandCards extends Struct.ComponentSchema {
 	};
 }
 
+export interface SharedCompanyLogo extends Struct.ComponentSchema {
+	collectionName: "components_shared_company_logos";
+	info: {
+		displayName: "CompanyLogo";
+	};
+	attributes: {
+		logo: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
+	};
+}
+
+export interface SharedContactInfo extends Struct.ComponentSchema {
+	collectionName: "components_shared_contact_infos";
+	info: {
+		displayName: "ContactInfo";
+	};
+	attributes: {
+		phone_no: Schema.Attribute.Integer;
+	};
+}
+
 export interface SharedFeatWorkItem extends Struct.ComponentSchema {
 	collectionName: "components_shared_feat_work_items";
 	info: {
@@ -160,7 +179,7 @@ export interface SharedFooterMenu extends Struct.ComponentSchema {
 	};
 	attributes: {
 		MenuLink: Schema.Attribute.Component<"shared.link", true>;
-		Title: Schema.Attribute.String & Schema.Attribute.Required;
+		title: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
 }
 
@@ -170,7 +189,7 @@ export interface SharedLink extends Struct.ComponentSchema {
 		displayName: "Link";
 	};
 	attributes: {
-		Label: Schema.Attribute.String;
+		label: Schema.Attribute.String;
 		URL: Schema.Attribute.Text;
 	};
 }
@@ -186,17 +205,27 @@ export interface SharedMedia extends Struct.ComponentSchema {
 	};
 }
 
+export interface SharedOfficeAddress extends Struct.ComponentSchema {
+	collectionName: "components_shared_office_addresses";
+	info: {
+		displayName: "OfficeAddress";
+	};
+	attributes: {
+		address: Schema.Attribute.Text;
+	};
+}
+
 export interface SharedOurResource extends Struct.ComponentSchema {
 	collectionName: "components_shared_our_resources";
 	info: {
 		displayName: "Our Resource";
 	};
 	attributes: {
-		Description: Schema.Attribute.Text;
-		MetaData: Schema.Attribute.Text;
-		ResourceImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
+		description: Schema.Attribute.Text;
+		meta_data: Schema.Attribute.Text;
+		resource_image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
-		Title: Schema.Attribute.Text & Schema.Attribute.Required;
+		title: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
 }
 
@@ -217,9 +246,7 @@ export interface SharedPhoneItem extends Struct.ComponentSchema {
 	info: {
 		displayName: "Phone Item";
 	};
-	attributes: {
-		PhoneNo: Schema.Attribute.Integer;
-	};
+	attributes: {};
 }
 
 export interface SharedQuote extends Struct.ComponentSchema {
@@ -273,14 +300,26 @@ export interface SharedSlider extends Struct.ComponentSchema {
 	};
 }
 
-export interface SharedSocialLink extends Struct.ComponentSchema {
+export interface SharedSocialLinks extends Struct.ComponentSchema {
 	collectionName: "components_shared_social_links";
 	info: {
-		displayName: "SocialLink";
+		displayName: "SocialLinks";
 	};
 	attributes: {
-		Platform: Schema.Attribute.Enumeration<["linkedIn", "X", "instagram", "facebook"]>;
-		URL: Schema.Attribute.Text;
+		icon: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
+		platform: Schema.Attribute.Enumeration<["LinkedIn", "Twitter", "Instagram", "Facebook"]>;
+		url: Schema.Attribute.Component<"shared.link", false>;
+	};
+}
+
+export interface SharedSocials extends Struct.ComponentSchema {
+	collectionName: "components_shared_socials";
+	info: {
+		displayName: "Socials";
+	};
+	attributes: {
+		SocialLinks: Schema.Attribute.Component<"shared.social-links", true>;
+		title: Schema.Attribute.Text;
 	};
 }
 
@@ -290,11 +329,21 @@ export interface SharedTestimonialCard extends Struct.ComponentSchema {
 		displayName: "TestimonialCard";
 	};
 	attributes: {
-		Designation: Schema.Attribute.Text;
-		Image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
+		designation: Schema.Attribute.Text;
+		image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
-		Name: Schema.Attribute.String & Schema.Attribute.Required;
-		Testimonial: Schema.Attribute.Text & Schema.Attribute.Required;
+		name: Schema.Attribute.String & Schema.Attribute.Required;
+		testimonial: Schema.Attribute.Text & Schema.Attribute.Required;
+	};
+}
+
+export interface SharedWriteToUs extends Struct.ComponentSchema {
+	collectionName: "components_shared_write_to_us";
+	info: {
+		displayName: "WriteToUs";
+	};
+	attributes: {
+		email: Schema.Attribute.Email;
 	};
 }
 
@@ -312,10 +361,13 @@ declare module "@strapi/strapi" {
 			"sections.our-services": SectionsOurServices;
 			"sections.testimonials": SectionsTestimonials;
 			"shared.brand-cards": SharedBrandCards;
+			"shared.company-logo": SharedCompanyLogo;
+			"shared.contact-info": SharedContactInfo;
 			"shared.feat-work-item": SharedFeatWorkItem;
 			"shared.footer-menu": SharedFooterMenu;
 			"shared.link": SharedLink;
 			"shared.media": SharedMedia;
+			"shared.office-address": SharedOfficeAddress;
 			"shared.our-resource": SharedOurResource;
 			"shared.our-services": SharedOurServices;
 			"shared.phone-item": SharedPhoneItem;
@@ -323,8 +375,10 @@ declare module "@strapi/strapi" {
 			"shared.rich-text": SharedRichText;
 			"shared.seo": SharedSeo;
 			"shared.slider": SharedSlider;
-			"shared.social-link": SharedSocialLink;
+			"shared.social-links": SharedSocialLinks;
+			"shared.socials": SharedSocials;
 			"shared.testimonial-card": SharedTestimonialCard;
+			"shared.write-to-us": SharedWriteToUs;
 		}
 	}
 }

@@ -511,6 +511,29 @@ export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
 	};
 }
 
+export interface ApiBrandSolutionsBrandSolutions extends Struct.SingleTypeSchema {
+	collectionName: "brands";
+	info: {
+		displayName: "BrandSolutionsPage";
+		pluralName: "brands";
+		singularName: "brand-solutions";
+	};
+	options: {
+		draftAndPublish: true;
+	};
+	attributes: {
+		createdAt: Schema.Attribute.DateTime;
+		createdBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
+		Header: Schema.Attribute.Component<"layout.header", false>;
+		locale: Schema.Attribute.String & Schema.Attribute.Private;
+		localizations: Schema.Attribute.Relation<"oneToMany", "api::brand-solutions.brand-solutions"> &
+			Schema.Attribute.Private;
+		publishedAt: Schema.Attribute.DateTime;
+		updatedAt: Schema.Attribute.DateTime;
+		updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
+	};
+}
+
 export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
 	collectionName: "categories";
 	info: {
@@ -576,8 +599,12 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
 		draftAndPublish: true;
 	};
 	attributes: {
+		ClientTrust: Schema.Attribute.Component<"sections.client-trust", true>;
 		createdAt: Schema.Attribute.DateTime;
 		createdBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
+		FeaturedWork: Schema.Attribute.Component<"sections.featured-work", false>;
+		Footer: Schema.Attribute.Component<"layout.footer", false>;
+		Header: Schema.Attribute.Component<"layout.header", false>;
 		HeroSection: Schema.Attribute.Component<"sections.hero", true> & Schema.Attribute.Required;
 		IdentitySection: Schema.Attribute.Component<"sections.our-identity", false>;
 		locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -586,6 +613,8 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
 		OurBrandsSection: Schema.Attribute.Component<"sections.our-brands", false>;
 		OurServicesSection: Schema.Attribute.Component<"sections.our-services", false>;
 		publishedAt: Schema.Attribute.DateTime;
+		Resources: Schema.Attribute.Component<"sections.our-resources", true>;
+		Testiomonials: Schema.Attribute.Component<"sections.testimonials", false>;
 		updatedAt: Schema.Attribute.DateTime;
 		updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
 	};
@@ -1048,6 +1077,7 @@ declare module "@strapi/strapi" {
 			"api::about.about": ApiAboutAbout;
 			"api::article.article": ApiArticleArticle;
 			"api::author.author": ApiAuthorAuthor;
+			"api::brand-solutions.brand-solutions": ApiBrandSolutionsBrandSolutions;
 			"api::category.category": ApiCategoryCategory;
 			"api::global.global": ApiGlobalGlobal;
 			"api::home-page.home-page": ApiHomePageHomePage;

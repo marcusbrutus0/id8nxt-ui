@@ -5,11 +5,11 @@
   },
   "options": {},
   "attributes": {
-    "Testimonial": {
+    "testimonial": {
       "type": "text",
       "required": true
     },
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -20,11 +20,11 @@
         "audios"
       ]
     },
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Designation": {
+    "designation": {
       "type": "text"
     }
   },

@@ -1,25 +1,19 @@
 {
-  "collectionName": "components_layout_headers",
+  "collectionName": "components_shared_company_logos",
   "info": {
-    "displayName": "Header"
+    "displayName": "CompanyLogo"
   },
   "options": {},
   "attributes": {
-    "headerLogo": {
+    "logo": {
       "type": "media",
       "multiple": false,
-      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ]
-    },
-    "NavLinks": {
-      "type": "component",
-      "component": "shared.link",
-      "repeatable": true
     }
   },
   "config": {}

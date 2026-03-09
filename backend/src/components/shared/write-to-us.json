@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_write_to_us",
+  "info": {
+    "displayName": "WriteToUs"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    }
+  },
+  "config": {}
+}

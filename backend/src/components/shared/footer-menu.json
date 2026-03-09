@@ -5,8 +5,8 @@
   },
   "options": {},
   "attributes": {
-    "Title": {
-      "type": "string",
+    "title": {
+      "type": "text",
       "required": true
     },
     "MenuLink": {

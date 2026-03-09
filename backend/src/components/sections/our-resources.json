@@ -5,11 +5,18 @@
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "text"
+    },
     "Resource": {
       "type": "component",
       "component": "shared.our-resource",
-      "repeatable": true,
-      "required": true
+      "repeatable": true
+    },
+    "ResourceCtaBtn": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
     }
   },
   "config": {}

@@ -4,10 +4,6 @@
     "displayName": "Phone Item"
   },
   "options": {},
-  "attributes": {
-    "PhoneNo": {
-      "type": "integer"
-    }
-  },
+  "attributes": {},
   "config": {}
 }

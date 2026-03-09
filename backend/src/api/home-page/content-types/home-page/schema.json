@@ -11,6 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "Header": {
+      "type": "component",
+      "component": "layout.header",
+      "repeatable": false
+    },
     "HeroSection": {
       "type": "component",
       "component": "sections.hero",
@@ -30,6 +35,31 @@
     "IdentitySection": {
       "type": "component",
       "component": "sections.our-identity",
+      "repeatable": false
+    },
+    "FeaturedWork": {
+      "type": "component",
+      "component": "sections.featured-work",
+      "repeatable": false
+    },
+    "ClientTrust": {
+      "type": "component",
+      "component": "sections.client-trust",
+      "repeatable": true
+    },
+    "Testiomonials": {
+      "type": "component",
+      "component": "sections.testimonials",
+      "repeatable": false
+    },
+    "Resources": {
+      "type": "component",
+      "component": "sections.our-resources",
+      "repeatable": true
+    },
+    "Footer": {
+      "type": "component",
+      "component": "layout.footer",
       "repeatable": false
     }
   }

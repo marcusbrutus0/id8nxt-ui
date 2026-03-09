@@ -9,16 +9,10 @@
       "type": "text",
       "required": true
     },
-    "Logos": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "CompanyLogo": {
+      "type": "component",
+      "component": "shared.company-logo",
+      "repeatable": true
     },
     "Button": {
       "type": "component",
