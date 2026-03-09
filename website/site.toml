@@ -1,0 +1,8 @@
+[site]
+name = "ID8NXT"
+base_url = "http://localhost:3000"
+
+[build]
+fragments = true
+fragment_dir = "_fragments"
+content_block = "content"

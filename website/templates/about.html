@@ -1,0 +1,13 @@
+---
+data:
+  nav:
+    file: "nav.yaml"
+---
+{% extends "_base.html" %}
+
+{% block title %}About — {{ site.name }}{% endblock %}
+
+{% block content %}
+<h1>About</h1>
+<p>This is a site built with <strong>Forge</strong>, a static site generator with HTMX support.</p>
+{% endblock %}
