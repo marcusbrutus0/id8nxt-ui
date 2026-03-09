@@ -6,3 +6,11 @@ base_url = "http://localhost:3000"
 fragments = true
 fragment_dir = "_fragments"
 content_block = "content"
+
+[sources.strapi]
+url = "http://localhost:1337/"
+headers = { Authorization = "Bearer 6d64ffac74426686171e172eb22fb17425277d2f42afee93c2fb247724d5e8235d3f6045efb9eb35bfc6271ac23381fda5f9853c4a41e3bdcaac2041a9c4959bd67db0d4e15fd20beb7c92bb38b7c19431619e8c09b9c8694f729a26fcd6ce53fb60b552c3316f4de86f43d367f1454c153bad124cfa7039c49fc514970fdf98" }
+
+[plugins.strapi]
+sources = ["strapi"]
+media_base_url = "http://localhost:1337"

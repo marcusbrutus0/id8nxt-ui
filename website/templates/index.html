@@ -1,4 +1,9 @@
 ---
+data:
+  homepage:
+    source: strapi
+    path: /api/home-page?pLevel=5
+    root: data
 ---
 {% extends "_base.html" %}
 
@@ -11,16 +16,16 @@
 {% block content %}
   <section id="hero" class="hero-section ">
     <div class="hero-background">
-      <img src="{{ asset('assets/2035189f3d1bf933740b4ef62a1f4af082d07f44.png') }}" alt="Hero Background">
+      <img src="{{ homepage.Hero.HeroImage.url }}" alt="Hero Background">
     </div>
     <div class="hero-content">
-      <h1 class="hero-title">{{ site.name }}</h1>
+      <h1 class="hero-title">{{ homepage.Hero.CompanyName }}</h1>
     </div>
   </section>
   <section id="brands" class="brands-section ">
     <div class="brands-header">
       <div class="brands-title-group">
-        <h2>Our Brands</h2>
+        <h2>{{ homepage.OurBrandsSection.Heading }}</h2>
       </div>
       <div class="scroll-indicator">
         <img src="{{ asset('assets/I1045_4550_1038_5102.svg' )}}" alt="Left">
@@ -35,20 +40,22 @@
       <div class="brands-sticky-inner">
         <div class="brands-scroll-track">
           <!-- Brand 1: ID8NXT -->
-          <div class="brand-card">
-            <div class="brand-image-wrapper">
-              <div class="brand-image" style="background-image: url('{{ asset('assets/6abb1132749bf7299bd5f3b152d4b3d2e84511b1.png') }}')">
-                <div class="brand-overlay"></div>
-                <img src="{{ asset('assets/1045_4554.svg' )}}" alt="ID8NXT Logo" class="brand-logo">
+          {% for brand in homepage.OurBrandsSection.BrandCards %}
+            <div class="brand-card">
+              <div class="brand-image-wrapper">
+                <div class="brand-image" style="background-image: url('{{ asset('assets/6abb1132749bf7299bd5f3b152d4b3d2e84511b1.png') }}')">
+                  <div class="brand-overlay"></div>
+                  <img src="{{ asset('assets/1045_4554.svg' )}}" alt="ID8NXT Logo" class="brand-logo">
+                </div>
+              </div>
+              <div class="brand-content">
+                <p class="brand-description">{{ brand.CardDescription }}</p>
+                <div class="brand-button">
+                  <span>Explore Brand Solutions & Enterprise</span>
+                </div>
               </div>
             </div>
-            <div class="brand-content">
-              <p class="brand-description">From Go-To-Market Strategy to always-on demand generation and lead generation, we build brand systems that perform.</p>
-              <div class="brand-button">
-                <span>Explore Brand Solutions & Enterprise</span>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
 
           <!-- Brand 2: ID8Films -->
           <div class="brand-card">

@@ -10,7 +10,7 @@ const config: Core.Config.Middlewares = [
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
-  'strapi::public',
+  'strapi::public'
 ];
 
 export default config;

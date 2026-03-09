@@ -16,11 +16,10 @@
       "component": "layout.header",
       "repeatable": false
     },
-    "HeroSection": {
+    "Hero": {
       "type": "component",
       "component": "sections.hero",
-      "repeatable": true,
-      "required": true
+      "repeatable": false
     },
     "OurBrandsSection": {
       "type": "component",

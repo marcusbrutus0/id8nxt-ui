@@ -19,13 +19,17 @@
     "@strapi/plugin-cloud": "5.36.0",
     "@strapi/plugin-users-permissions": "5.36.0",
     "@strapi/strapi": "5.36.0",
+    "ansi-styles": "^6.2.3",
     "better-sqlite3": "12.4.1",
+    "chalk": "^5.6.2",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
+    "strapi-v5-plugin-populate-deep": "^4.0.6",
+    "styled-components": "^6.0.0",
+    "wrap-ansi": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
