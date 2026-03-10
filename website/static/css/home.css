@@ -47,6 +47,12 @@
 
 /* ─── Brands ─────────────────────────────────────── */
 
+/* timeline-scope lets .scroll-progress (inside .brands-header) consume
+   the view-timeline defined on .brands-sticky-outer (a sibling) */
+.brands-section {
+	timeline-scope: --brands-scroll;
+}
+
 
 .brands-header {
 	display: flex;
@@ -81,12 +87,23 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	transition: width 0.1s linear;
+	animation: brands-progress linear both;
+	animation-timeline: --brands-scroll;
+	animation-range: cover 22.2% cover 77.8%;
 }
 
-/* ── Sticky track outer: height controls how much vertical scroll is consumed */
+@keyframes brands-progress {
+	to { width: 178px; }
+}
+
+/* ── Sticky track outer: defines the view-timeline for the horizontal pan.
+   cover 22.2% = top of element at top of viewport (sticky starts)
+   cover 77.8% = bottom of element at bottom of viewport (sticky ends)
+   Derived from: height(350vh) / (height + 1vh) → keep in sync with height below */
 .brands-sticky-outer {
 	height: 350vh;
+	view-timeline-name: --brands-scroll;
+	view-timeline-axis: block;
 }
 
 /* ── Sticky inner: locks to viewport and clips the overflowing track */
@@ -106,6 +123,14 @@
 	gap: 80px;
 	width: max-content;
 	will-change: transform;
+	animation: brands-slide linear both;
+	animation-timeline: --brands-scroll;
+	animation-range: cover 22.2% cover 77.8%;
+}
+
+@keyframes brands-slide {
+	from { transform: translateX(0); }
+	to   { transform: translateX(calc(-100% + 100vw - 200px)); }
 }
 
 .brand-card {

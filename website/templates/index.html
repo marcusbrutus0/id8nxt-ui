@@ -115,44 +115,44 @@ data:
       <!-- Row 1 -->
       <div class="work-row row-middle">
         <div class="work-card large-card">
-          <img src="{{ asset('assets/ad70e864fcdf94e2db88c7bebebb2b4354c16651.png')}}" alt="Flipkart">
-          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
+          <img src="{{ homepage.FeaturedWork.WorkItem[0].image }}" alt="Flipkart">
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem[0].caption }}</p>
         </div>
       </div>
 
       <!-- Row 2 -->
       <div class="work-row row-split">
         <div class="work-card medium-card">
-          <img src="{{ asset('assets/c31235709d08fa72d1d6275b61bfff93a75bbe5e.png' )}}" alt="AWS AI">
-          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
+          <img src="{{ homepage.FeaturedWork.WorkItem[1].image }}" alt="AWS AI">
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem[1].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ asset('assets/1fb3578a4300ebacec07f6e45a04a22a6cc48911.png' )}}" alt="Salesforce">
-          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
+          <img src="{{ homepage.FeaturedWork.WorkItem[2].image }}" alt="Salesforce">
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem[2].caption }}</p>
         </div>
       </div>
 
       <!-- Row 3 -->
       <div class="work-row row-split-reverse">
         <div class="work-card small-card">
-          <img src="{{ asset('assets/89a6cba3b9b810b1e3ec1cd8a5a7b6edd68c98a0.png' )}}" alt="Microsoft">
-          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
+          <img src="{{ homepage.FeaturedWork.WorkItem[3].image }}" alt="Microsoft">
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem[3].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ asset('assets/b7759a5db4093a31d58056bb895b63a93c2010bc.png' )}}" alt="Eurekii">
-          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
+          <img src="{{ homepage.FeaturedWork.WorkItem[4].image }}" alt="Eurekii">
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem[4].caption }}</p>
         </div>
       </div>
 
       <!-- Row 4 -->
       <div class="work-row row-split">
         <div class="work-card medium-card">
-          <img src="{{ asset('assets/b5201399fe09aeb0903eafaa7241347ec9802257.png' )}}" alt="Client Company">
-          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
+          <img src="{{ homepage.FeaturedWork.WorkItem[5].image}}" alt="Client Company">
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem[5].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ asset('assets/6106206d5b9f5419e931b08e2e4b7dbb1c78f0ce.jpeg' )}}" alt="Sow & Reap">
-          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
+          <img src="{{ homepage.FeaturedWork.WorkItem[6].image}}" alt="Sow & Reap">
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem[6].caption }}</p>
         </div>
       </div>
     </div>
@@ -182,11 +182,11 @@ data:
     <div class="testimonials-left">
       <h2 style="white-space: pre-line;">{{ homepage.Testimonials.title }}</h2>
       <div class="scroll-indicator">
-        <img src="{{ asset('assets/I1045_4656_1038_5102.svg' )}}" alt="Left">
+        <img src="{{ homepage.OurBrands.leftScrollIndicator }}" alt="Left">
         <div class="scroll-bar">
           <div class="scroll-progress"></div>
         </div>
-        <img src="{{ asset('assets/I1045_4656_1038_5104.svg' )}}" alt="Right">
+        <img src="{{ homepage.OurBrands.rightScrollIndicator }}" alt="Right">
       </div>
     </div>
 
@@ -196,7 +196,7 @@ data:
         <p class="testimonial-text">{{ testimonial.text }}</p>
         <div class="client-profile">
           <div class="client-avatar">
-            <img src="{{ asset('assets/7d951190d6f51739e7911a7eec8a100624795e77.png' )}}" alt="Client">
+            <img src="{{ testimonial.image }}" alt="Client">
           </div>
           <div class="client-info">
             <span class="client-name">{{ testimonial.name }}</span>
@@ -237,33 +237,6 @@ data:
       <div class="explore-btn"><a href="#">{{ homepage.Resources.ResourceCtaBtn.label }}</a></div>
     </div>
   </section>
-{% endblock %}
-
-{% block extra_js %}
-<script>
-(function () {
-  const outer    = document.querySelector('.brands-sticky-outer');
-  const track    = document.querySelector('.brands-scroll-track');
-  const progress = document.querySelector('.brands-section .scroll-progress');
-  if (!outer || !track) return;
-
-  function update() {
-    const outerTop    = outer.getBoundingClientRect().top;
-    const stickyRange = outer.offsetHeight - window.innerHeight;
-    // p goes 0 → 1 during the sticky phase
-    const p = Math.min(1, Math.max(0, -outerTop / stickyRange));
-
-    const maxShift = track.scrollWidth - track.parentElement.clientWidth;
-    track.style.transform = 'translateX(' + (-p * maxShift) + 'px)';
-
-    if (progress) progress.style.width = (p * 178) + 'px';
-  }
-
-  window.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update, { passive: true });
-  update();
-})();
-</script>
 {% endblock %}
 
 {% block footer %}
