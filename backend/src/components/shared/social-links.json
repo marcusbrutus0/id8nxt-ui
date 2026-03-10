@@ -5,19 +5,8 @@
   },
   "options": {},
   "attributes": {
-    "platform": {
-      "type": "enumeration",
-      "enum": [
-        "LinkedIn",
-        "Twitter",
-        "Instagram",
-        "Facebook"
-      ]
-    },
     "url": {
-      "type": "component",
-      "component": "shared.link",
-      "repeatable": false
+      "type": "text"
     },
     "icon": {
       "type": "media",

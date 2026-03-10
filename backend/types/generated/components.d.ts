@@ -156,6 +156,7 @@ export interface SharedContactInfo extends Struct.ComponentSchema {
 	};
 	attributes: {
 		phone_no: Schema.Attribute.Integer;
+		title: Schema.Attribute.String;
 	};
 }
 
@@ -210,6 +211,7 @@ export interface SharedOfficeAddress extends Struct.ComponentSchema {
 	};
 	attributes: {
 		address: Schema.Attribute.Text;
+		title: Schema.Attribute.String;
 	};
 }
 
@@ -305,8 +307,7 @@ export interface SharedSocialLinks extends Struct.ComponentSchema {
 	};
 	attributes: {
 		icon: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
-		platform: Schema.Attribute.Enumeration<["LinkedIn", "Twitter", "Instagram", "Facebook"]>;
-		url: Schema.Attribute.Component<"shared.link", false>;
+		url: Schema.Attribute.Text;
 	};
 }
 
@@ -342,6 +343,7 @@ export interface SharedWriteToUs extends Struct.ComponentSchema {
 	};
 	attributes: {
 		email: Schema.Attribute.Email;
+		title: Schema.Attribute.String;
 	};
 }
 

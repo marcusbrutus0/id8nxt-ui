@@ -238,7 +238,7 @@ data:
     </div>
 
     <div class="resources-footer">
-      <div class="explore-btn"><a href="#">{{ homepage.Resources.}}</a></div>
+      <div class="explore-btn"><a href="#">{{ homepage.Resources.ResourceCtaBtn.label }}</a></div>
     </div>
   </section>
 {% endblock %}
@@ -246,24 +246,25 @@ data:
 {% block footer %}
   <div class="footer-top">
     <div class="footer-cta">
-      <h2>LET'S MAKE YOUR <span class="highlight">NEXT BIG MOVE</span> REAL!</h2><div class="footer-btn">Get in touch</div>
-      <p>Go-To-Market Strategy, demand generation, AI films, and developer engagement - done right.</p>
+      <h2>LET'S MAKE YOUR <span class="highlight">NEXT BIG MOVE</span> REAL!</h2>
+      <div class="footer-btn">
+      <a href="#">{{ homepage.Footer.CtaLink.label }}</a>
+      </div>
+      <p>{{ homepage.Footer.description }}</p>
     </div>
 
     <div class="footer-links">
       <div class="footer-column">
-        <h4>MENU</h4>
-        <a href="#">COMPANY</a>
-        <a href="#">ID8NXT</a>
-        <a href="#">ID8NXT Films</a>
-        <a href="#">D8DEVHUB</a>
-        <a href="#">PROJECTS</a>
+        <h4>{{ homepage.Footer.Menu.title }}</h4>
+        {% for link in  homepage.Footer.Menu.MenuLink %}
+        <a href="#">{{ homepage.Footer.Menu.MenuLink.label }}</a>
+        {% endfor %}
       </div>
 
       <div class="footer-info">
         <div class="info-group">
-          <h4>OFFICE ADDRESS</h4>
-          <p>ID8NXT LLP, B Wing, Second Floor, Krishanlal Marwah Marg, Saki Vihar Road, Saki Naka, Andheri East Mumbai - 400 072, Maharashtra, India</p>
+          <h4>{{ homepage.Footer.OfficeAddress.title }}</h4>
+          <p>{{ homepage.Footer.OfficeAddress.address }}</p>
         </div>
 
         <div class="subscribe-group">
@@ -274,27 +275,30 @@ data:
           </div>
         </div>
 
+        <div class="contact-group">
+        <div class="email-block">
+          <h4>{{ homepage.Footer.WriteToUs.title }}</h4>
+          <a href="#">{{ homepage.Footer.WriteToUs.email }}</a>
+        </div>
+
+        <div class="phone-block">
+          <h4>{{ homepage.Footer.ContactInfo.title }}</h4>
+          <p>{{ homepage.Footer.ContactInfo.phoneNo }}</p>
+          <p>{{ homepage.Footer.ContactInfo.phoneNo }}</p>
+        </div>
+      </div>
+
         <div class="social-group">
-          <h4>SOCIAL LINKS</h4>
+          <h4>{{ homepage.Footer.Socials.title }}</h4>
           <div class="social-icons">
-            <img src="{{ asset('assets/I1126_7914_1045_3259.svg' )}}" alt="LinkedIn">
-            <img src="{{ asset('assets/I1126_7914_1045_3262.svg' )}}" alt="Twitter">
-            <img src="{{ asset('assets/I1126_7914_1045_3265.svg' )}}" alt="Instagram">
-            <img src="{{ asset('assets/I1126_7914_1045_3268.svg' )}}" alt="Facebook">
+          {% for link in homepage.Footer.Socials.SocialLinks %}
+           <a href="{{ link.url }}"><img src="{{ link.icon }}"></a>
+          {% endfor %}
           </div>
         </div>
       </div>
 
-      <div class="contact-group">
-        <div class="email-block">
-          <h4>Write to Us</h4>
-          <a href="mailto:humans@id8nxt.com">humans@id8nxt.com</a>
-        </div>
-        <div class="phone-block">
-          <h4>Get On A Call</h4>
-          <p>+91 9923275253<br>+91 9890056652</p>
-        </div>
-      </div>
+      
     </div>
   </div>
 
