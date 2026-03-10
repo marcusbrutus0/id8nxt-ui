@@ -5,11 +5,11 @@
   },
   "options": {},
   "attributes": {
-    "Headline": {
+    "headline": {
       "type": "text",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": true
     },

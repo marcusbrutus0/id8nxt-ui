@@ -21,17 +21,17 @@
       "component": "sections.hero",
       "repeatable": false
     },
-    "OurBrandsSection": {
+    "OurBrands": {
       "type": "component",
       "component": "sections.our-brands",
       "repeatable": false
     },
-    "OurServicesSection": {
+    "OurServices": {
       "type": "component",
       "component": "sections.our-services",
       "repeatable": false
     },
-    "IdentitySection": {
+    "OurIdentity": {
       "type": "component",
       "component": "sections.our-identity",
       "repeatable": false

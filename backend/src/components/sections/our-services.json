@@ -5,11 +5,11 @@
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": true
     },
@@ -19,7 +19,7 @@
       "repeatable": true,
       "required": true
     },
-    "FeatImage": {
+    "featImage": {
       "type": "media",
       "multiple": false,
       "required": true,

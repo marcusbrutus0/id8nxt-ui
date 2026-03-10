@@ -8,8 +8,8 @@ export interface LayoutFooter extends Struct.ComponentSchema {
 	attributes: {
 		ContactInfo: Schema.Attribute.Component<"shared.contact-info", true>;
 		CtaLink: Schema.Attribute.Component<"shared.link", false> & Schema.Attribute.Required;
-		Description: Schema.Attribute.Text & Schema.Attribute.Required;
-		Headline: Schema.Attribute.Text & Schema.Attribute.Required;
+		description: Schema.Attribute.Text & Schema.Attribute.Required;
+		headline: Schema.Attribute.Text & Schema.Attribute.Required;
 		Menu: Schema.Attribute.Component<"shared.footer-menu", true> & Schema.Attribute.Required;
 		OfficeAddress: Schema.Attribute.Component<"shared.office-address", false>;
 		Socials: Schema.Attribute.Component<"shared.socials", false>;
@@ -23,8 +23,7 @@ export interface LayoutHeader extends Struct.ComponentSchema {
 		displayName: "Header";
 	};
 	attributes: {
-		headerLogo: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
-			Schema.Attribute.Required;
+		headerLogo: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 		NavLinks: Schema.Attribute.Component<"shared.link", true>;
 	};
 }
@@ -37,7 +36,7 @@ export interface SectionsClientTrust extends Struct.ComponentSchema {
 	attributes: {
 		Button: Schema.Attribute.Component<"shared.link", false>;
 		CompanyLogo: Schema.Attribute.Component<"shared.company-logo", true>;
-		Title: Schema.Attribute.Text & Schema.Attribute.Required;
+		title: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
 }
 
@@ -48,7 +47,7 @@ export interface SectionsFeaturedWork extends Struct.ComponentSchema {
 	};
 	attributes: {
 		ServicesLink: Schema.Attribute.Component<"shared.link", false>;
-		Title: Schema.Attribute.String & Schema.Attribute.Required;
+		title: Schema.Attribute.String & Schema.Attribute.Required;
 		WorkItem: Schema.Attribute.Component<"shared.feat-work-item", true>;
 	};
 }
@@ -59,8 +58,8 @@ export interface SectionsHero extends Struct.ComponentSchema {
 		displayName: "Hero";
 	};
 	attributes: {
-		CompanyName: Schema.Attribute.String;
-		HeroImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
+		companyName: Schema.Attribute.String;
+		heroImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
 	};
 }
@@ -72,7 +71,7 @@ export interface SectionsOurBrands extends Struct.ComponentSchema {
 	};
 	attributes: {
 		BrandCards: Schema.Attribute.Component<"shared.brand-cards", true>;
-		Heading: Schema.Attribute.String;
+		heading: Schema.Attribute.String;
 	};
 }
 
@@ -83,8 +82,8 @@ export interface SectionsOurIdentity extends Struct.ComponentSchema {
 	};
 	attributes: {
 		AboutUsLink: Schema.Attribute.Component<"shared.link", false>;
-		Description: Schema.Attribute.Text;
-		Title: Schema.Attribute.String;
+		description: Schema.Attribute.Text;
+		title: Schema.Attribute.String;
 	};
 }
 
@@ -106,12 +105,12 @@ export interface SectionsOurServices extends Struct.ComponentSchema {
 		displayName: "Our Services";
 	};
 	attributes: {
-		Description: Schema.Attribute.Text & Schema.Attribute.Required;
-		FeatImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
+		description: Schema.Attribute.Text & Schema.Attribute.Required;
+		featImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
 		Services: Schema.Attribute.Component<"shared.our-services", true> & Schema.Attribute.Required;
 		ServicesLink: Schema.Attribute.Component<"shared.link", false>;
-		Title: Schema.Attribute.String & Schema.Attribute.Required;
+		title: Schema.Attribute.String & Schema.Attribute.Required;
 	};
 }
 
@@ -123,7 +122,7 @@ export interface SectionsTestimonials extends Struct.ComponentSchema {
 	attributes: {
 		TestimonialCard: Schema.Attribute.Component<"shared.testimonial-card", true> &
 			Schema.Attribute.Required;
-		Title: Schema.Attribute.Text & Schema.Attribute.Required;
+		title: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
 }
 
@@ -134,8 +133,8 @@ export interface SharedBrandCards extends Struct.ComponentSchema {
 	};
 	attributes: {
 		BrandSolutionsLink: Schema.Attribute.Component<"shared.link", false>;
-		CardDescription: Schema.Attribute.String & Schema.Attribute.Required;
-		CardImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
+		cardDescription: Schema.Attribute.String & Schema.Attribute.Required;
+		cardImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
 	};
 }
@@ -166,9 +165,8 @@ export interface SharedFeatWorkItem extends Struct.ComponentSchema {
 		displayName: "FeatWorkItem";
 	};
 	attributes: {
-		Caption: Schema.Attribute.Text;
-		Image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
-		Size: Schema.Attribute.Enumeration<["Small ", "Medium"]>;
+		caption: Schema.Attribute.Text;
+		image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 	};
 }
 
@@ -222,8 +220,8 @@ export interface SharedOurResource extends Struct.ComponentSchema {
 	};
 	attributes: {
 		description: Schema.Attribute.Text;
-		meta_data: Schema.Attribute.Text;
-		resource_image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
+		metaData: Schema.Attribute.Text;
+		resourceImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
 		title: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
@@ -235,9 +233,9 @@ export interface SharedOurServices extends Struct.ComponentSchema {
 		displayName: "ServicesDescription";
 	};
 	attributes: {
-		Description: Schema.Attribute.Text & Schema.Attribute.Required;
-		Index: Schema.Attribute.String & Schema.Attribute.Required;
-		Title: Schema.Attribute.String & Schema.Attribute.Required;
+		description: Schema.Attribute.Text & Schema.Attribute.Required;
+		index: Schema.Attribute.String & Schema.Attribute.Required;
+		title: Schema.Attribute.String & Schema.Attribute.Required;
 	};
 }
 
@@ -333,7 +331,7 @@ export interface SharedTestimonialCard extends Struct.ComponentSchema {
 		image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
 		name: Schema.Attribute.String & Schema.Attribute.Required;
-		testimonial: Schema.Attribute.Text & Schema.Attribute.Required;
+		text: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
 }
 

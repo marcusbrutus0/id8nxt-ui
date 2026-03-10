@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "CardImage": {
+    "cardImage": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -16,7 +16,7 @@
         "audios"
       ]
     },
-    "CardDescription": {
+    "cardDescription": {
       "type": "string",
       "required": true
     },

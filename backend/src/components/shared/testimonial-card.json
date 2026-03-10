@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "testimonial": {
+    "text": {
       "type": "text",
       "required": true
     },

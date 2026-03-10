@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "resource_image": {
+    "resourceImage": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -24,7 +24,7 @@
       "type": "text",
       "required": false
     },
-    "meta_data": {
+    "metaData": {
       "type": "text"
     }
   },

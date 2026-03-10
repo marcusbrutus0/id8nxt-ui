@@ -209,6 +209,10 @@
 	font-weight: 500;
 }
 
+.break-text {
+	white-space: pre-line;
+}
+
 /* ── Responsive: collapse to vertical stack on smaller screens */
 @media (max-width: 1280px) {
 	.brands-sticky-outer {
@@ -272,7 +276,7 @@
 	flex-direction: column;
 	gap: 50px;
 	align-items: center;
-    position: relative;
+	position: relative;
 }
 
 .services-intro {
@@ -597,8 +601,8 @@
 .testimonials-section {
 	display: flex;
 	padding-left: 236px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	gap: 300px;
 	align-items: center;
 }

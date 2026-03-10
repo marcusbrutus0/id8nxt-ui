@@ -14,18 +14,18 @@ data:
 {% endblock %}
 
 {% block content %}
-  <section id="hero" class="hero-section ">
+  <section id="hero" class="hero-section">
     <div class="hero-background">
-      <img src="{{ homepage.Hero.HeroImage.url }}" alt="Hero Background">
+      <img src="{{ homepage.Hero.heroImage }}" alt="Hero Background">
     </div>
     <div class="hero-content">
-      <h1 class="hero-title">{{ homepage.Hero.CompanyName }}</h1>
+      <h1 class="hero-title">{{ homepage.Hero.companyName }}</h1>
     </div>
   </section>
   <section id="brands" class="brands-section ">
     <div class="brands-header">
       <div class="brands-title-group">
-        <h2>{{ homepage.OurBrandsSection.Heading }}</h2>
+        <h2>{{ homepage.OurBrands.heading }}</h2>
       </div>
       <div class="scroll-indicator">
         <img src="{{ asset('assets/I1045_4550_1038_5102.svg' )}}" alt="Left">
@@ -40,7 +40,7 @@ data:
       <div class="brands-sticky-inner">
         <div class="brands-scroll-track">
           <!-- Brand 1: ID8NXT -->
-          {% for brand in homepage.OurBrandsSection.BrandCards %}
+         {% for brand in homepage.OurBrands.BrandCards %}
             <div class="brand-card">
               <div class="brand-image-wrapper">
                 <div class="brand-image" style="background-image: url('{{ asset('assets/6abb1132749bf7299bd5f3b152d4b3d2e84511b1.png') }}')">
@@ -49,100 +49,36 @@ data:
                 </div>
               </div>
               <div class="brand-content">
-                <p class="brand-description">{{ brand.CardDescription }}</p>
+                <p class="brand-description">{{ brand.cardDescription }}</p>
                 <div class="brand-button">
-                  <span>Explore Brand Solutions & Enterprise</span>
+                  <a href="#">{{ brand.BrandSolutionsLink.label }}</a>
                 </div>
               </div>
             </div>
           {% endfor %}
-
-          <!-- Brand 2: ID8Films -->
-          <div class="brand-card">
-            <div class="brand-image-wrapper">
-              <div class="brand-image" style="background-image: url('{{ asset('assets/59846f7615f67f2177e4ee70c6af4c16e939b55d.png') }}')">
-                <div class="brand-overlay" style="background-color: rgba(0, 0, 0, 0.7);"></div>
-                <img src="{{ asset('assets/1045_4569.svg' )}}" alt="ID8Films Logo" class="brand-logo">
-              </div>
-            </div>
-            <div class="brand-content">
-              <p class="brand-description">We create AI generated videos and cinematic content for brands that need faster cycles without compromising craft. Think: launch films, product stories, and performance edits.</p>
-              <div class="brand-button">
-                <span>Explore ID8Films</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Brand 3: ID8DevHub -->
-          <div class="brand-card">
-            <div class="brand-image-wrapper">
-              <div class="brand-image" style="background-image: url('{{ asset('assets/98706a43a45514e6a58bfc2dbb348257541a7bd5.png') }}')">
-                <div class="brand-overlay" style="background-color: rgba(0, 38, 89, 0.7);"></div>
-                <div class="brand-logo-group">
-                  <img src="{{ asset('assets/1045_4592.svg' )}}" alt="Logo Part 1">
-                  <img src="{{ asset('assets/1045_4596.svg' )}}" alt="Logo Part 2">
-                </div>
-              </div>
-            </div>
-            <div class="brand-content">
-              <p class="brand-description">We design and run dev community programs that turn developers into advocates. From developer forum experiences to an always-on calendar of AI hackathon builds.</p>
-              <div class="brand-button">
-                <span>Explore DevHub</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
   <section id="services" class="services-section ">
     <div class="services-intro">
-      <h2>Our Services</h2>
-      <p>Build with a single service, or layer them into a connected growth system.<br>Everything is designed to reduce cycle time from idea → asset → distribution → learning.</p>
+      <h2>{{ homepage.OurServices.title }}</h2>
+      <p style="white-space: pre-line;">{{ homepage.OurServices.description }}</p>
     </div>
 
     <div class="services-list">
-      <!-- Service 1 -->
+      {% for service in homepage.OurServices.Services %}
       <div class="service-item">
         <div class="service-header">
-          <span class="service-number">01</span>
+          <span class="service-number">{{ service.index}}</span>
           <div class="service-title-block">
-            <h3>Brand Solutions</h3>
-            <p>Digital brand strategy + Go-To-Market strategy, messaging and campaigns, built for demand generation and lead generation.</p>
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
           </div>
         </div>
       </div>
-
-      <!-- Service 2 -->
-      <div class="service-item">
-        <div class="service-header">
-          <span class="service-number">01</span>
-          <div class="service-title-block">
-            <h3>AI-Generated Films</h3>
-          </div>
-        </div>
+      {% endfor %}
       </div>
-
-      <!-- Service 3 -->
-      <div class="service-item">
-        <div class="service-header">
-          <span class="service-number">01</span>
-          <div class="service-title-block">
-            <h3>Developer Communities</h3>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 4 -->
-      <div class="service-item">
-        <div class="service-header">
-          <span class="service-number">01</span>
-          <div class="service-title-block">
-            <h3>Enterprise Solutions</h3>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="service-image">
       <img src="{{ asset('assets/f5128c696af7bf5e0d3c2fc3b9e35ac7e1926a33.png' )}}" alt="Brand Solutions">
@@ -150,7 +86,7 @@ data:
 
     <div class="services-footer">
       <div class="explore-btn">
-        <span>Explore All Services</span>
+        <a href="#">{{ homepage.OurServices.ServicesLink.label }}</a>
       </div>
     </div>
   </section>
@@ -160,10 +96,10 @@ data:
         <img src="{{ asset('assets/I1045_4614_108_1084.svg' )}}" alt="Logo Icon">
       </div>
       <div class="about-text-group">
-        <h3>What we are</h3>
-        <p>We help brands win in markets with digital brand strategy, bold creative, and execution that scales, powered by a full-funnel engine from Go-To-Market Strategy to demand generation, lead generation, and retention-first customer onboarding.</p>
+        <h3>{{ homepage.OurIdentity.title }}</h3>
+        <p style="white-space: pre-line;">{{ homepage.OurIdentity.description }}</p>
         <div class="about-btn">
-          <span>Know about us more</span>
+          <a href="#">{{ homepage.OurIdentity.AboutUsLink.label }}</a>
         </div>
       </div>
     </div>
@@ -171,7 +107,7 @@ data:
   <section id="work" class="work-section ">
     <div class="work-header">
       <img src="{{ asset('assets/1045_4619.svg' )}}" alt="Icon">
-      <h2>Featured Work</h2>
+      <h2>{{ homepage.FeaturedWork.title }}</h2>
       <div class="vertical-line"></div>
     </div>
 
@@ -180,7 +116,7 @@ data:
       <div class="work-row row-middle">
         <div class="work-card large-card">
           <img src="{{ asset('assets/ad70e864fcdf94e2db88c7bebebb2b4354c16651.png' )}}" alt="Flipkart">
-          <p class="work-title">Flipkart</p>
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
         </div>
       </div>
 
@@ -188,11 +124,11 @@ data:
       <div class="work-row row-split">
         <div class="work-card medium-card">
           <img src="{{ asset('assets/c31235709d08fa72d1d6275b61bfff93a75bbe5e.png' )}}" alt="AWS AI">
-          <p class="work-title">AWS AI conclave - Mahishasura film</p>
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
         </div>
         <div class="work-card small-card">
           <img src="{{ asset('assets/1fb3578a4300ebacec07f6e45a04a22a6cc48911.png' )}}" alt="Salesforce">
-          <p class="work-title">Salesforce - AI agents</p>
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
         </div>
       </div>
 
@@ -200,11 +136,11 @@ data:
       <div class="work-row row-split-reverse">
         <div class="work-card small-card">
           <img src="{{ asset('assets/89a6cba3b9b810b1e3ec1cd8a5a7b6edd68c98a0.png' )}}" alt="Microsoft">
-          <p class="work-title">Microsoft - Zero Day</p>
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
         </div>
         <div class="work-card small-card">
           <img src="{{ asset('assets/b7759a5db4093a31d58056bb895b63a93c2010bc.png' )}}" alt="Eurekii">
-          <p class="work-title">Eurekii</p>
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
         </div>
       </div>
 
@@ -212,23 +148,25 @@ data:
       <div class="work-row row-split">
         <div class="work-card medium-card">
           <img src="{{ asset('assets/b5201399fe09aeb0903eafaa7241347ec9802257.png' )}}" alt="Client Company">
-          <p class="work-title">Client Company</p>
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
         </div>
         <div class="work-card small-card">
           <img src="{{ asset('assets/6106206d5b9f5419e931b08e2e4b7dbb1c78f0ce.jpeg' )}}" alt="Sow & Reap">
-          <p class="work-title">Sow & Reap - Chara'</p>
+          <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
         </div>
       </div>
     </div>
 
     <div class="work-footer">
-      <div class="explore-btn">Explore All Services</div>
+      <div class="explore-btn">
+      <a href="#">{{ homepage.FeaturedWork.ServicesLink.label }}</a>
+      </div>
     </div>
   </section>
   <section id="clients" class="clients-section ">
     <div class="clients-content">
       <div class="clients-header">
-        <h2>Trusted by teams who ship at scale.</h2>
+        <h2>{{ homepage.ClientTrust.title }}</h2>
       </div>
       <div class="clients-logos">
         <!-- Using images from JSON for logos -->
@@ -240,13 +178,13 @@ data:
         <div class="client-logo"><img src="{{ asset('assets/64c12bc10a582b38450a9244bbcd32988ead138d.png' )}}" alt="Client"></div>
       </div>
       <div class="clients-btn-wrapper">
-        <div class="explore-btn">Button</div>
+        <div class="explore-btn"><a href="#">{{ homepage.ClientTrust.Button.label }}</a></div>
       </div>
     </div>
   </section>
   <section id="testimonials" class="testimonials-section ">
     <div class="testimonials-left">
-      <h2>What clients<br>say about us</h2>
+      <h2 style="white-space: pre-line;">{{ homepage.Testimonials.title }}</h2>
       <div class="scroll-indicator">
         <img src="{{ asset('assets/I1045_4656_1038_5102.svg' )}}" alt="Left">
         <div class="scroll-bar">
@@ -257,63 +195,38 @@ data:
     </div>
 
     <div class="testimonials-right horizontal-scroll">
-      <!-- Testimonial 1 -->
+      {% for testimonial in homepage.Testimonials.TestimonialCard %}
       <div class="testimonial-card">
-        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="testimonial-text">{{ testimonial.text }}</p>
         <div class="client-profile">
           <div class="client-avatar">
             <img src="{{ asset('assets/7d951190d6f51739e7911a7eec8a100624795e77.png' )}}" alt="Client">
           </div>
           <div class="client-info">
-            <span class="client-name">Lorem ipsum dolor</span>
-            <span class="client-role">Sed ut perspiciatis</span>
+            <span class="client-name">{{ testimonial.name }}</span>
+            <span class="client-role">{{ testimonial.designation }}</span>
           </div>
         </div>
       </div>
-      <!-- Testimonial 2 -->
-      <div class="testimonial-card">
-        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="client-profile">
-          <div class="client-avatar">
-            <img src="{{ asset('assets/7d951190d6f51739e7911a7eec8a100624795e77.png' )}}" alt="Client">
-          </div>
-          <div class="client-info">
-            <span class="client-name">Lorem ipsum dolor</span>
-            <span class="client-role">Sed ut perspiciatis</span>
-          </div>
-        </div>
-      </div>
-      <!-- Testimonial 3 -->
-      <div class="testimonial-card">
-        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="client-profile">
-          <div class="client-avatar">
-            <img src="{{ asset('assets/7d951190d6f51739e7911a7eec8a100624795e77.png' )}}" alt="Client">
-          </div>
-          <div class="client-info">
-            <span class="client-name">Lorem ipsum dolor</span>
-            <span class="client-role">Sed ut perspiciatis</span>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </section>
   <section id="resources" class="resources-section ">
     <div class="resources-header">
-      <h2>Take a look at our resources</h2>
+      <h2>{{ homepage.Resources.title }}</h2>
     </div>
 
     <div class="resources-grid">
-      <!-- Resource 1 -->
+    {% for resource in homepage.Resources.Resource %}
       <div class="resource-card">
         <div class="resource-image">
           <img src="{{ asset('assets/b5201399fe09aeb0903eafaa7241347ec9802257.png' )}}" alt="Resource">
         </div>
         <div class="resource-content">
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur. Dictum viverra tortor senectus proin. Sagittis ut cursus interdum tempor sagittis egestas.</p>
+          <h3>{{ resource.title }}</h3>
+          <p>{{ resource.description }}</p>
           <div class="resource-meta">
-            <span>September 2025 | By Lorem Ipsum | Topic</span>
+            <span>{{ resource.metaData }}</span>
             <div class="resource-stats">
               <div class="stat"><img src="{{ asset('assets/I1045_4670_565_1490.svg' )}}" alt="Views"> 2K</div>
               <div class="stat"><img src="{{ asset('assets/I1045_4670_565_1462.svg' )}}" alt="Comments"> 279</div>
@@ -321,59 +234,11 @@ data:
           </div>
         </div>
       </div>
-
-      <!-- Resource 2 -->
-      <div class="resource-card">
-        <div class="resource-image">
-          <img src="{{ asset('assets/b5201399fe09aeb0903eafaa7241347ec9802257.png' )}}" alt="Resource">
-        </div>
-        <div class="resource-content">
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur. Dictum viverra tortor senectus proin. Sagittis ut cursus interdum tempor sagittis egestas.</p>
-          <div class="resource-meta">
-            <span>September 2025 | By Lorem Ipsum | Topic</span>
-            <div class="resource-stats">
-              <div class="stat"><img src="{{ asset('assets/I1045_4671_565_1490.svg' )}}" alt="Views"> 2K</div>
-              <div class="stat"><img src="{{ asset('assets/I1045_4671_565_1462.svg' )}}" alt="Comments"> 279</div>
-            </div>
-          </div>
-        </div>
-      </div>
-	  <div class="resource-card">
-        <div class="resource-image">
-          <img src="{{ asset('assets/b5201399fe09aeb0903eafaa7241347ec9802257.png' )}}" alt="Resource">
-        </div>
-        <div class="resource-content">
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur. Dictum viverra tortor senectus proin. Sagittis ut cursus interdum tempor sagittis egestas.</p>
-          <div class="resource-meta">
-            <span>September 2025 | By Lorem Ipsum | Topic</span>
-            <div class="resource-stats">
-              <div class="stat"><img src="{{ asset('assets/I1045_4670_565_1490.svg' )}}" alt="Views"> 2K</div>
-              <div class="stat"><img src="{{ asset('assets/I1045_4670_565_1462.svg' )}}" alt="Comments"> 279</div>
-            </div>
-          </div>
-        </div>
-      </div>    <div class="resource-card">
-        <div class="resource-image">
-          <img src="{{ asset('assets/b5201399fe09aeb0903eafaa7241347ec9802257.png' )}}" alt="Resource">
-        </div>
-        <div class="resource-content">
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur. Dictum viverra tortor senectus proin. Sagittis ut cursus interdum tempor sagittis egestas.</p>
-          <div class="resource-meta">
-            <span>September 2025 | By Lorem Ipsum | Topic</span>
-            <div class="resource-stats">
-              <div class="stat"><img src="{{ asset('assets/I1045_4670_565_1490.svg' )}}" alt="Views"> 2K</div>
-              <div class="stat"><img src="{{ asset('assets/I1045_4670_565_1462.svg' )}}" alt="Comments"> 279</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="resources-footer">
-      <div class="explore-btn">View All Resources</div>
+      <div class="explore-btn"><a href="#">{{ homepage.Resources.}}</a></div>
     </div>
   </section>
 {% endblock %}

@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -15,15 +15,8 @@
         "audios"
       ]
     },
-    "Caption": {
+    "caption": {
       "type": "text"
-    },
-    "Size": {
-      "type": "enumeration",
-      "enum": [
-        "Small ",
-        "Medium"
-      ]
     }
   },
   "config": {}
