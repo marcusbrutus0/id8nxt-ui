@@ -1,3 +1,4 @@
 node_modules/
 /website/.eigen_cache/
 /website/static/assets/
+/website/eigen
