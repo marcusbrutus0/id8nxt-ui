@@ -145,7 +145,7 @@ export interface SharedCompanyLogo extends Struct.ComponentSchema {
 		displayName: "CompanyLogo";
 	};
 	attributes: {
-		logo: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
+		image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 	};
 }
 
@@ -155,7 +155,7 @@ export interface SharedContactInfo extends Struct.ComponentSchema {
 		displayName: "ContactInfo";
 	};
 	attributes: {
-		phone_no: Schema.Attribute.Integer;
+		phoneNo: Schema.Attribute.Integer;
 		title: Schema.Attribute.String;
 	};
 }
@@ -223,8 +223,7 @@ export interface SharedOurResource extends Struct.ComponentSchema {
 	attributes: {
 		description: Schema.Attribute.Text;
 		metaData: Schema.Attribute.Text;
-		resourceImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
-			Schema.Attribute.Required;
+		resourceImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 		title: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
 }
@@ -235,7 +234,7 @@ export interface SharedOurServices extends Struct.ComponentSchema {
 		displayName: "ServicesDescription";
 	};
 	attributes: {
-		description: Schema.Attribute.Text & Schema.Attribute.Required;
+		description: Schema.Attribute.Text;
 		index: Schema.Attribute.String & Schema.Attribute.Required;
 		title: Schema.Attribute.String & Schema.Attribute.Required;
 	};
@@ -329,8 +328,7 @@ export interface SharedTestimonialCard extends Struct.ComponentSchema {
 	};
 	attributes: {
 		designation: Schema.Attribute.Text;
-		image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
-			Schema.Attribute.Required;
+		image: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 		name: Schema.Attribute.String & Schema.Attribute.Required;
 		text: Schema.Attribute.Text & Schema.Attribute.Required;
 	};

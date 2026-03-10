@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "logo": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

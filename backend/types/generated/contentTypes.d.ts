@@ -614,7 +614,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
 		OurServices: Schema.Attribute.Component<"sections.our-services", false>;
 		publishedAt: Schema.Attribute.DateTime;
 		Resources: Schema.Attribute.Component<"sections.our-resources", true>;
-		Testiomonials: Schema.Attribute.Component<"sections.testimonials", false>;
+		Testimonials: Schema.Attribute.Component<"sections.testimonials", false>;
 		updatedAt: Schema.Attribute.DateTime;
 		updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
 	};

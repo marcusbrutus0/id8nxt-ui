@@ -46,7 +46,7 @@
       "component": "sections.client-trust",
       "repeatable": true
     },
-    "Testiomonials": {
+    "Testimonials": {
       "type": "component",
       "component": "sections.testimonials",
       "repeatable": false

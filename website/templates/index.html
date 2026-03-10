@@ -99,7 +99,7 @@ data:
         <h3>{{ homepage.OurIdentity.title }}</h3>
         <p style="white-space: pre-line;">{{ homepage.OurIdentity.description }}</p>
         <div class="about-btn">
-          <a href="#">{{ homepage.OurIdentity.AboutUsLink.label }}</a>
+          <a href="{{ homepage.OurIdentity.AboutUsLink.URL }}">{{ homepage.OurIdentity.AboutUsLink.label }}</a>
         </div>
       </div>
     </div>
@@ -169,13 +169,9 @@ data:
         <h2>{{ homepage.ClientTrust.title }}</h2>
       </div>
       <div class="clients-logos">
-        <!-- Using images from JSON for logos -->
-        <div class="client-logo"><img src="{{ asset('assets/59cf8fcf0745f645d63e2a16346a3068520601d4.png' )}}" alt="Client"></div>
-        <div class="client-logo"><img src="{{ asset('assets/cd01ea4cedd0dd9cabab841704504367fe0e2347.png' )}}" alt="Client"></div>
-        <div class="client-logo"><img src="{{ asset('assets/947f05a52a31413052c377a588d2f755b9bb2df2.png' )}}" alt="Client"></div>
-        <div class="client-logo"><img src="{{ asset('assets/d9f197f8448dff6c128c52dba9a75fbe9b2811de.png' )}}" alt="Client"></div>
-        <div class="client-logo"><img src="{{ asset('assets/e3bf0463ef143e72513c3350614f70bea782ece6.png' )}}" alt="Client"></div>
-        <div class="client-logo"><img src="{{ asset('assets/64c12bc10a582b38450a9244bbcd32988ead138d.png' )}}" alt="Client"></div>
+       {% for logo in homepage.ClientTrust.CompanyLogo %} 
+        <div class="client-logo"><img src="{{ logo.image }}" alt="Client"></div>
+       {% endfor %}
       </div>
       <div class="clients-btn-wrapper">
         <div class="explore-btn"><a href="#">{{ homepage.ClientTrust.Button.label }}</a></div>
