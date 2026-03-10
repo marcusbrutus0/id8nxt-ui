@@ -46,6 +46,7 @@ export interface SectionsFeaturedWork extends Struct.ComponentSchema {
 		displayName: "Featured Work";
 	};
 	attributes: {
+		featuredWorklogo: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 		ServicesLink: Schema.Attribute.Component<"shared.link", false>;
 		title: Schema.Attribute.String & Schema.Attribute.Required;
 		WorkItem: Schema.Attribute.Component<"shared.feat-work-item", true>;
@@ -72,6 +73,8 @@ export interface SectionsOurBrands extends Struct.ComponentSchema {
 	attributes: {
 		BrandCards: Schema.Attribute.Component<"shared.brand-cards", true>;
 		heading: Schema.Attribute.String;
+		leftScrollIndicator: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
+		rightScrollIndicator: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 	};
 }
 
@@ -136,6 +139,7 @@ export interface SharedBrandCards extends Struct.ComponentSchema {
 		cardDescription: Schema.Attribute.String & Schema.Attribute.Required;
 		cardImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios"> &
 			Schema.Attribute.Required;
+		cardLogo: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 	};
 }
 

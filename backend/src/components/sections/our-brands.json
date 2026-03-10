@@ -8,6 +8,26 @@
     "heading": {
       "type": "string"
     },
+    "leftScrollIndicator": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "rightScrollIndicator": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "BrandCards": {
       "type": "component",
       "component": "shared.brand-cards",

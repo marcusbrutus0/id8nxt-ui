@@ -28,11 +28,11 @@ data:
         <h2>{{ homepage.OurBrands.heading }}</h2>
       </div>
       <div class="scroll-indicator">
-        <img src="{{ asset('assets/I1045_4550_1038_5102.svg' )}}" alt="Left">
+        <img src="{{ homepage.OurBrands.leftScrollIndicator }}" alt="Left">
         <div class="scroll-bar">
           <div class="scroll-progress"></div>
         </div>
-        <img src="{{ asset('assets/I1045_4550_1038_5104.svg' )}}" alt="Right">
+        <img src="{{ homepage.OurBrands.rightScrollIndicator }}" alt="Right">
       </div>
     </div>
 
@@ -43,9 +43,9 @@ data:
          {% for brand in homepage.OurBrands.BrandCards %}
             <div class="brand-card">
               <div class="brand-image-wrapper">
-                <div class="brand-image" style="background-image: url('{{ asset('assets/6abb1132749bf7299bd5f3b152d4b3d2e84511b1.png') }}')">
+                <div class="brand-image" style="background-image: url('{{ homepage.OurBrands.BrandCards.cardImage }}')">
                   <div class="brand-overlay"></div>
-                  <img src="{{ asset('assets/1045_4554.svg' )}}" alt="ID8NXT Logo" class="brand-logo">
+                  <img src="{{ homepage.OurBrands.BrandCards.cardLogo }}" alt="ID8NXT Logo" class="brand-logo">
                 </div>
               </div>
               <div class="brand-content">
@@ -81,7 +81,7 @@ data:
       </div>
 
     <div class="service-image">
-      <img src="{{ asset('assets/f5128c696af7bf5e0d3c2fc3b9e35ac7e1926a33.png' )}}" alt="Brand Solutions">
+      <img src="{{ homepage.OurServices.featImage }}" alt="Brand Solutions">
     </div>
 
     <div class="services-footer">
@@ -106,7 +106,7 @@ data:
   </section>
   <section id="work" class="work-section ">
     <div class="work-header">
-      <img src="{{ asset('assets/1045_4619.svg' )}}" alt="Icon">
+      <img src="{{ homepage.FeaturedWork.featuredWorklogo }}" alt="Icon">
       <h2>{{ homepage.FeaturedWork.title }}</h2>
       <div class="vertical-line"></div>
     </div>
@@ -115,7 +115,7 @@ data:
       <!-- Row 1 -->
       <div class="work-row row-middle">
         <div class="work-card large-card">
-          <img src="{{ asset('assets/ad70e864fcdf94e2db88c7bebebb2b4354c16651.png' )}}" alt="Flipkart">
+          <img src="{{ asset('assets/ad70e864fcdf94e2db88c7bebebb2b4354c16651.png')}}" alt="Flipkart">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem.caption }}</p>
         </div>
       </div>
@@ -239,6 +239,33 @@ data:
   </section>
 {% endblock %}
 
+{% block extra_js %}
+<script>
+(function () {
+  const outer    = document.querySelector('.brands-sticky-outer');
+  const track    = document.querySelector('.brands-scroll-track');
+  const progress = document.querySelector('.brands-section .scroll-progress');
+  if (!outer || !track) return;
+
+  function update() {
+    const outerTop    = outer.getBoundingClientRect().top;
+    const stickyRange = outer.offsetHeight - window.innerHeight;
+    // p goes 0 → 1 during the sticky phase
+    const p = Math.min(1, Math.max(0, -outerTop / stickyRange));
+
+    const maxShift = track.scrollWidth - track.parentElement.clientWidth;
+    track.style.transform = 'translateX(' + (-p * maxShift) + 'px)';
+
+    if (progress) progress.style.width = (p * 178) + 'px';
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  update();
+})();
+</script>
+{% endblock %}
+
 {% block footer %}
   <div class="footer-top">
     <div class="footer-cta">
@@ -293,8 +320,6 @@ data:
           </div>
         </div>
       </div>
-
-      
     </div>
   </div>
 

@@ -16,6 +16,16 @@
         "audios"
       ]
     },
+    "cardLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "cardDescription": {
       "type": "string",
       "required": true
