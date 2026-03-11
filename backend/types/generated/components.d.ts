@@ -37,7 +37,7 @@ export interface SectionsClientTrust extends Struct.ComponentSchema {
 	attributes: {
 		Button: Schema.Attribute.Component<"shared.link", false>;
 		CompanyLogo: Schema.Attribute.Component<"shared.company-logo", true>;
-		title: Schema.Attribute.Text & Schema.Attribute.Required;
+		title: Schema.Attribute.Text;
 	};
 }
 

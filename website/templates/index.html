@@ -14,44 +14,43 @@ data:
 {% endblock %}
 
 {% block content %}
-  <section id="hero" class="hero-section">
+ <section id="hero" class="hero-section">
     <div class="hero-background">
-      <img src="{{ homepage.Hero.heroImage }}" alt="Hero Background">
+      <img src="{{ homepage.Hero.heroImage.url }}" alt="Hero Background">
     </div>
     <div class="hero-content">
       <h1 class="hero-title">{{ homepage.Hero.companyName }}</h1>
     </div>
-  </section>
-  <section id="brands" class="brands-section ">
+ </section>
+    <section id="brands" class="brands-section ">
     <div class="brands-header">
       <div class="brands-title-group">
         <h2>{{ homepage.OurBrands.heading }}</h2>
       </div>
       <div class="scroll-indicator">
-        <img src="{{ homepage.OurBrands.leftScrollIndicator }}" alt="Left">
+        <img src="{{ homepage.OurBrands.leftScrollIndicator.url }}" alt="Left">
         <div class="scroll-bar">
           <div class="scroll-progress"></div>
         </div>
-        <img src="{{ homepage.OurBrands.rightScrollIndicator }}" alt="Right">
+        <img src="{{ homepage.OurBrands.rightScrollIndicator.url }}" alt="Right">
       </div>
     </div>
-
-    <div class="brands-sticky-outer">
+     <div class="brands-sticky-outer">
       <div class="brands-sticky-inner">
         <div class="brands-scroll-track">
           <!-- Brand 1: ID8NXT -->
          {% for brand in homepage.OurBrands.BrandCards %}
             <div class="brand-card">
               <div class="brand-image-wrapper">
-                <div class="brand-image" style="background-image: url('{{ homepage.OurBrands.BrandCards.cardImage }}')">
+                <div class="brand-image" style="background-image: url('{{ brand.cardImage.url }}')">
                   <div class="brand-overlay"></div>
-                  <img src="{{ homepage.OurBrands.BrandCards.cardLogo }}" alt="ID8NXT Logo" class="brand-logo">
+                  <img src="{{ brand.cardLogo.url }}" alt="ID8NXT Logo" class="brand-logo">
                 </div>
               </div>
               <div class="brand-content">
                 <p class="brand-description">{{ brand.cardDescription }}</p>
                 <div class="brand-button">
-                  <a href="#">{{ brand.BrandSolutionsLink.label }}</a>
+                  <a href="{{ brand.BrandSolutionsLink.URL }}">{{ brand.BrandSolutionsLink.label }}</a>
                 </div>
               </div>
             </div>
@@ -65,8 +64,7 @@ data:
       <h2>{{ homepage.OurServices.title }}</h2>
       <p style="white-space: pre-line;">{{ homepage.OurServices.description }}</p>
     </div>
-
-    <div class="services-list">
+      <div class="services-list">
       {% for service in homepage.OurServices.Services %}
       <div class="service-item">
         <div class="service-header">
@@ -79,9 +77,8 @@ data:
       </div>
       {% endfor %}
       </div>
-
-    <div class="service-image">
-      <img src="{{ homepage.OurServices.featImage }}" alt="Brand Solutions">
+      <div class="service-image">
+      <img src="{{ homepage.OurServices.featImage.url }}" alt="Brand Solutions">
     </div>
 
     <div class="services-footer">
@@ -104,9 +101,9 @@ data:
       </div>
     </div>
   </section>
-  <section id="work" class="work-section ">
+    <section id="work" class="work-section ">
     <div class="work-header">
-      <img src="{{ homepage.FeaturedWork.featuredWorklogo }}" alt="Icon">
+      <img src="{{ homepage.FeaturedWork.featuredWorklogo.url }}" alt="Icon">
       <h2>{{ homepage.FeaturedWork.title }}</h2>
       <div class="vertical-line"></div>
     </div>
@@ -115,7 +112,7 @@ data:
       <!-- Row 1 -->
       <div class="work-row row-middle">
         <div class="work-card large-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[0].image }}" alt="Flipkart">
+          <img src="{{ homepage.FeaturedWork.WorkItem[0].image.url }}" alt="Flipkart">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[0].caption }}</p>
         </div>
       </div>
@@ -123,11 +120,11 @@ data:
       <!-- Row 2 -->
       <div class="work-row row-split">
         <div class="work-card medium-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[1].image }}" alt="AWS AI">
+          <img src="{{ homepage.FeaturedWork.WorkItem[1].image.url }}" alt="AWS AI">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[1].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[2].image }}" alt="Salesforce">
+          <img src="{{ homepage.FeaturedWork.WorkItem[2].image.url }}" alt="Salesforce">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[2].caption }}</p>
         </div>
       </div>
@@ -135,11 +132,11 @@ data:
       <!-- Row 3 -->
       <div class="work-row row-split-reverse">
         <div class="work-card small-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[3].image }}" alt="Microsoft">
+          <img src="{{ homepage.FeaturedWork.WorkItem[3].image.url }}" alt="Microsoft">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[3].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[4].image }}" alt="Eurekii">
+          <img src="{{ homepage.FeaturedWork.WorkItem[4].image.url }}" alt="Eurekii">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[4].caption }}</p>
         </div>
       </div>
@@ -147,11 +144,11 @@ data:
       <!-- Row 4 -->
       <div class="work-row row-split">
         <div class="work-card medium-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[5].image}}" alt="Client Company">
+          <img src="{{ homepage.FeaturedWork.WorkItem[5].image.url }}" alt="Client Company">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[5].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[6].image}}" alt="Sow & Reap">
+          <img src="{{ homepage.FeaturedWork.WorkItem[6].image.url }}" alt="Sow & Reap">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[6].caption }}</p>
         </div>
       </div>
@@ -166,15 +163,15 @@ data:
   <section id="clients" class="clients-section ">
     <div class="clients-content">
       <div class="clients-header">
-        <h2>{{ homepage.ClientTrust.title }}</h2>
+        <h2>{{ homepage.ClientTrust[0].title }}</h2>
       </div>
       <div class="clients-logos">
-       {% for logo in homepage.ClientTrust.CompanyLogo %} 
-        <div class="client-logo"><img src="{{ logo.image }}" alt="Client"></div>
-       {% endfor %}
+        {% for logo in homepage.ClientTrust[0].CompanyLogo %}
+        <div class="client-logo"><img src="{{ logo.image.url }}" alt="Client"></div>
+        {% endfor %}
       </div>
-      <div class="clients-btn-wrapper">
-        <div class="explore-btn"><a href="#">{{ homepage.ClientTrust.Button.label }}</a></div>
+       <div class="clients-btn-wrapper">
+        <div class="explore-btn"><a href="#">{{ homepage.ClientTrust[0].Button.label }}</a></div>
       </div>
     </div>
   </section>
@@ -182,21 +179,21 @@ data:
     <div class="testimonials-left">
       <h2 style="white-space: pre-line;">{{ homepage.Testimonials.title }}</h2>
       <div class="scroll-indicator">
-        <img src="{{ homepage.OurBrands.leftScrollIndicator }}" alt="Left">
+        <img src="{{ homepage.OurBrands.leftScrollIndicator.url }}" alt="Left">
         <div class="scroll-bar">
           <div class="scroll-progress"></div>
         </div>
-        <img src="{{ homepage.OurBrands.rightScrollIndicator }}" alt="Right">
+        <img src="{{ homepage.OurBrands.rightScrollIndicator.url }}" alt="Right">
       </div>
     </div>
-
+    
     <div class="testimonials-right horizontal-scroll">
       {% for testimonial in homepage.Testimonials.TestimonialCard %}
       <div class="testimonial-card">
         <p class="testimonial-text">{{ testimonial.text }}</p>
         <div class="client-profile">
           <div class="client-avatar">
-            <img src="{{ testimonial.image }}" alt="Client">
+            <img src="{{ testimonial.image.url }}" alt="Client">
           </div>
           <div class="client-info">
             <span class="client-name">{{ testimonial.name }}</span>
@@ -207,16 +204,17 @@ data:
       {% endfor %}
     </div>
   </section>
+
   <section id="resources" class="resources-section ">
     <div class="resources-header">
-      <h2>{{ homepage.Resources.title }}</h2>
+      <h2>{{ homepage.Resources[0].title }}</h2>
     </div>
-
+    
     <div class="resources-grid">
-    {% for resource in homepage.Resources.Resource %}
+    {% for resource in homepage.Resources[0].Resource %}
       <div class="resource-card">
         <div class="resource-image">
-          <img src="{{ resource.resourceImage }}" alt="Resource">
+          <img src="{{ resource.resourceImage.url }}" alt="Resource">
         </div>
         <div class="resource-content">
           <h3>{{ resource.title }}</h3>
@@ -224,17 +222,16 @@ data:
           <div class="resource-meta">
             <span>{{ resource.metaData }}</span>
             <div class="resource-stats">
-              <div class="stat"><img src="{{ resource.metaViewsImg }}" alt="Views"> 2K</div>
-              <div class="stat"><img src="{{ resource.metaCommentsImg }}" alt="Comments"> 279</div>
+              <div class="stat"><img src="{{ resource.metaViewsImg.url }}" alt="Views"> 2K</div>
+              <div class="stat"><img src="{{ resource.metaCommentsImg.url }}" alt="Comments"> 279</div>
             </div>
           </div>
         </div>
       </div>
       {% endfor %}
     </div>
-
     <div class="resources-footer">
-      <div class="explore-btn"><a href="#">{{ homepage.Resources.ResourceCtaBtn.label }}</a></div>
+      <div class="explore-btn"><a href="#">{{ homepage.Resources[0].ResourceCtaBtn.label }}</a></div>
     </div>
   </section>
 {% endblock %}
@@ -248,21 +245,18 @@ data:
       </div>
       <p>{{ homepage.Footer.description }}</p>
     </div>
-
     <div class="footer-links">
       <div class="footer-column">
-        <h4>{{ homepage.Footer.Menu.title }}</h4>
-        {% for link in  homepage.Footer.Menu.MenuLink %}
-        <a href="#">{{ homepage.Footer.Menu.MenuLink.label }}</a>
+        <h4>{{ homepage.Footer.Menu[0].title }}</h4>
+        {% for link in homepage.Footer.Menu[0].MenuLink %}
+        <a href="{{ link.URL }}">{{ link.label }}</a>
         {% endfor %}
       </div>
-
       <div class="footer-info">
         <div class="info-group">
           <h4>{{ homepage.Footer.OfficeAddress.title }}</h4>
           <p>{{ homepage.Footer.OfficeAddress.address }}</p>
         </div>
-
         <div class="subscribe-group">
           <h4>Subscribe to Our Newsletter</h4>
           <div class="subscribe-form">
@@ -270,34 +264,31 @@ data:
             <button>Subscribe</button>
           </div>
         </div>
-
+        <div class="social-group">
+          <h4>{{ homepage.Footer.Socials.title }}</h4>
+          <div class="social-icons">
+          {% for link in homepage.Footer.Socials.SocialLinks %}
+           <a href="{{ link.url }}"><img src="{{ link.icon.url }}"></a>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
         <div class="contact-group">
         <div class="email-block">
           <h4>{{ homepage.Footer.WriteToUs.title }}</h4>
           <a href="#">{{ homepage.Footer.WriteToUs.email }}</a>
         </div>
-
         <div class="phone-block">
-          <h4>{{ homepage.Footer.ContactInfo.title }}</h4>
-          <p>{{ homepage.Footer.ContactInfo.phoneNo }}</p>
-          <p>{{ homepage.Footer.ContactInfo.phoneNo }}</p>
+          <h4>{{ homepage.Footer.ContactInfo[0].title }}</h4>
+          <p>{{ homepage.Footer.ContactInfo[0].phoneNo }}</p>
         </div>
       </div>
-
-        <div class="social-group">
-          <h4>{{ homepage.Footer.Socials.title }}</h4>
-          <div class="social-icons">
-          {% for link in homepage.Footer.Socials.SocialLinks %}
-           <a href="{{ link.url }}"><img src="{{ link.icon }}"></a>
-          {% endfor %}
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
-
-  <img src="{{ homepage.Footer.footerBgImg }}" alt="" class="footer-blur" aria-hidden="true">
-  <div clxsass="footer-bottom">
+  <img src="{{ homepage.Footer.footerBgImg.url }}" alt="" class="footer-blur" aria-hidden="true">
+  <div class="footer-bottom">
     <div class="footer-logo-large">ID8NXT</div>
     <div class="footer-logo-blur-overlay"></div>
   </div>

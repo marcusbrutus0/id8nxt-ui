@@ -1,0 +1,1871 @@
+{
+	"ClientTrust": [
+		{
+			"Button": {
+				"URL": "#",
+				"id": 244,
+				"label": "Button"
+			},
+			"CompanyLogo": [
+				{
+					"id": 55,
+					"image": {
+						"alternativeText": "White stylized lowercase 'f' logo for Facebook on a plain black background.",
+						"caption": "The iconic white 'f' logo on a black background represents the social media platform, Facebook.",
+						"createdAt": "2026-03-10T14:15:08.228Z",
+						"documentId": "ccaov5hybkhfbe79y6x8j4z4",
+						"ext": ".png",
+						"focalPoint": null,
+						"formats": {
+							"large": {
+								"ext": ".png",
+								"hash": "large_flipkart_Logo_1c8ef979f5",
+								"height": 517,
+								"mime": "image/png",
+								"name": "large_flipkartLogo",
+								"path": null,
+								"size": 19.23,
+								"sizeInBytes": 19228,
+								"url": "http://localhost:1337/uploads/large_flipkart_Logo_1c8ef979f5.png",
+								"width": 1000
+							},
+							"medium": {
+								"ext": ".png",
+								"hash": "medium_flipkart_Logo_1c8ef979f5",
+								"height": 388,
+								"mime": "image/png",
+								"name": "medium_flipkartLogo",
+								"path": null,
+								"size": 13.42,
+								"sizeInBytes": 13415,
+								"url": "http://localhost:1337/uploads/medium_flipkart_Logo_1c8ef979f5.png",
+								"width": 750
+							},
+							"small": {
+								"ext": ".png",
+								"hash": "small_flipkart_Logo_1c8ef979f5",
+								"height": 259,
+								"mime": "image/png",
+								"name": "small_flipkartLogo",
+								"path": null,
+								"size": 8.22,
+								"sizeInBytes": 8220,
+								"url": "http://localhost:1337/uploads/small_flipkart_Logo_1c8ef979f5.png",
+								"width": 500
+							},
+							"thumbnail": {
+								"ext": ".png",
+								"hash": "thumbnail_flipkart_Logo_1c8ef979f5",
+								"height": 127,
+								"mime": "image/png",
+								"name": "thumbnail_flipkartLogo",
+								"path": null,
+								"size": 3.6,
+								"sizeInBytes": 3597,
+								"url": "http://localhost:1337/uploads/thumbnail_flipkart_Logo_1c8ef979f5.png",
+								"width": 245
+							}
+						},
+						"hash": "flipkart_Logo_1c8ef979f5",
+						"height": 857,
+						"id": 25,
+						"mime": "image/png",
+						"name": "flipkartLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:15:08.228Z",
+						"size": 7.3,
+						"updatedAt": "2026-03-10T14:15:13.045Z",
+						"url": "http://localhost:1337/uploads/flipkart_Logo_1c8ef979f5.png",
+						"width": 1657
+					}
+				},
+				{
+					"id": 56,
+					"image": {
+						"alternativeText": "Unable to determine image content.",
+						"caption": "No caption available.",
+						"createdAt": "2026-03-10T14:15:48.834Z",
+						"documentId": "j5503afhskmwt28gtskjr65m",
+						"ext": ".png",
+						"focalPoint": null,
+						"formats": {
+							"large": {
+								"ext": ".png",
+								"hash": "large_cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d",
+								"height": 517,
+								"mime": "image/png",
+								"name": "large_cd01ea4cedd0dd9cabab841704504367fe0e2347.png",
+								"path": null,
+								"size": 19.99,
+								"sizeInBytes": 19985,
+								"url": "http://localhost:1337/uploads/large_cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d.png",
+								"width": 1000
+							},
+							"medium": {
+								"ext": ".png",
+								"hash": "medium_cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d",
+								"height": 388,
+								"mime": "image/png",
+								"name": "medium_cd01ea4cedd0dd9cabab841704504367fe0e2347.png",
+								"path": null,
+								"size": 14.21,
+								"sizeInBytes": 14210,
+								"url": "http://localhost:1337/uploads/medium_cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d.png",
+								"width": 750
+							},
+							"small": {
+								"ext": ".png",
+								"hash": "small_cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d",
+								"height": 259,
+								"mime": "image/png",
+								"name": "small_cd01ea4cedd0dd9cabab841704504367fe0e2347.png",
+								"path": null,
+								"size": 8.76,
+								"sizeInBytes": 8761,
+								"url": "http://localhost:1337/uploads/small_cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d.png",
+								"width": 500
+							},
+							"thumbnail": {
+								"ext": ".png",
+								"hash": "thumbnail_cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d",
+								"height": 127,
+								"mime": "image/png",
+								"name": "thumbnail_cd01ea4cedd0dd9cabab841704504367fe0e2347.png",
+								"path": null,
+								"size": 3.86,
+								"sizeInBytes": 3862,
+								"url": "http://localhost:1337/uploads/thumbnail_cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d.png",
+								"width": 245
+							}
+						},
+						"hash": "cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d",
+						"height": 857,
+						"id": 26,
+						"mime": "image/png",
+						"name": "googleLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:15:48.834Z",
+						"size": 8.24,
+						"updatedAt": "2026-03-10T14:17:43.455Z",
+						"url": "http://localhost:1337/uploads/cd01ea4cedd0dd9cabab841704504367fe0e2347_1b4f447e7d.png",
+						"width": 1657
+					}
+				},
+				{
+					"id": 57,
+					"image": {
+						"alternativeText": "Unable to determine image content.",
+						"caption": "No caption available.",
+						"createdAt": "2026-03-10T14:16:11.251Z",
+						"documentId": "gysa348v2bnnnhmt64yidcyg",
+						"ext": ".png",
+						"focalPoint": null,
+						"formats": {
+							"large": {
+								"ext": ".png",
+								"hash": "large_947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b",
+								"height": 517,
+								"mime": "image/png",
+								"name": "large_947f05a52a31413052c377a588d2f755b9bb2df2.png",
+								"path": null,
+								"size": 26.16,
+								"sizeInBytes": 26158,
+								"url": "http://localhost:1337/uploads/large_947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b.png",
+								"width": 1000
+							},
+							"medium": {
+								"ext": ".png",
+								"hash": "medium_947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b",
+								"height": 388,
+								"mime": "image/png",
+								"name": "medium_947f05a52a31413052c377a588d2f755b9bb2df2.png",
+								"path": null,
+								"size": 18.57,
+								"sizeInBytes": 18566,
+								"url": "http://localhost:1337/uploads/medium_947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b.png",
+								"width": 750
+							},
+							"small": {
+								"ext": ".png",
+								"hash": "small_947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b",
+								"height": 259,
+								"mime": "image/png",
+								"name": "small_947f05a52a31413052c377a588d2f755b9bb2df2.png",
+								"path": null,
+								"size": 11.53,
+								"sizeInBytes": 11526,
+								"url": "http://localhost:1337/uploads/small_947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b.png",
+								"width": 500
+							},
+							"thumbnail": {
+								"ext": ".png",
+								"hash": "thumbnail_947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b",
+								"height": 127,
+								"mime": "image/png",
+								"name": "thumbnail_947f05a52a31413052c377a588d2f755b9bb2df2.png",
+								"path": null,
+								"size": 4.79,
+								"sizeInBytes": 4789,
+								"url": "http://localhost:1337/uploads/thumbnail_947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b.png",
+								"width": 245
+							}
+						},
+						"hash": "947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b",
+						"height": 857,
+						"id": 27,
+						"mime": "image/png",
+						"name": "asianpaintsLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:16:11.251Z",
+						"size": 10.2,
+						"updatedAt": "2026-03-10T14:17:36.183Z",
+						"url": "http://localhost:1337/uploads/947f05a52a31413052c377a588d2f755b9bb2df2_6cc8fd5f0b.png",
+						"width": 1657
+					}
+				},
+				{
+					"id": 58,
+					"image": {
+						"alternativeText": "Unable to determine image content.Trusted by teams who ship at scale.",
+						"caption": "No caption available.",
+						"createdAt": "2026-03-10T14:16:41.374Z",
+						"documentId": "mun2tn0unen62nfn16n2w97y",
+						"ext": ".png",
+						"focalPoint": null,
+						"formats": {
+							"large": {
+								"ext": ".png",
+								"hash": "large_d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163",
+								"height": 517,
+								"mime": "image/png",
+								"name": "large_d9f197f8448dff6c128c52dba9a75fbe9b2811de.png",
+								"path": null,
+								"size": 17.16,
+								"sizeInBytes": 17158,
+								"url": "http://localhost:1337/uploads/large_d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163.png",
+								"width": 1000
+							},
+							"medium": {
+								"ext": ".png",
+								"hash": "medium_d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163",
+								"height": 388,
+								"mime": "image/png",
+								"name": "medium_d9f197f8448dff6c128c52dba9a75fbe9b2811de.png",
+								"path": null,
+								"size": 12.04,
+								"sizeInBytes": 12036,
+								"url": "http://localhost:1337/uploads/medium_d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163.png",
+								"width": 750
+							},
+							"small": {
+								"ext": ".png",
+								"hash": "small_d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163",
+								"height": 259,
+								"mime": "image/png",
+								"name": "small_d9f197f8448dff6c128c52dba9a75fbe9b2811de.png",
+								"path": null,
+								"size": 7.59,
+								"sizeInBytes": 7586,
+								"url": "http://localhost:1337/uploads/small_d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163.png",
+								"width": 500
+							},
+							"thumbnail": {
+								"ext": ".png",
+								"hash": "thumbnail_d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163",
+								"height": 127,
+								"mime": "image/png",
+								"name": "thumbnail_d9f197f8448dff6c128c52dba9a75fbe9b2811de.png",
+								"path": null,
+								"size": 3.41,
+								"sizeInBytes": 3410,
+								"url": "http://localhost:1337/uploads/thumbnail_d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163.png",
+								"width": 245
+							}
+						},
+						"hash": "d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163",
+						"height": 857,
+						"id": 28,
+						"mime": "image/png",
+						"name": "metaLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:16:41.374Z",
+						"size": 7.88,
+						"updatedAt": "2026-03-10T14:17:27.604Z",
+						"url": "http://localhost:1337/uploads/d9f197f8448dff6c128c52dba9a75fbe9b2811de_222b53d163.png",
+						"width": 1657
+					}
+				},
+				{
+					"id": 59,
+					"image": {
+						"alternativeText": "Unable to determine image content.",
+						"caption": "No caption available.",
+						"createdAt": "2026-03-10T14:17:02.910Z",
+						"documentId": "s2rqdixru1zpi0ivxbv27njx",
+						"ext": ".png",
+						"focalPoint": null,
+						"formats": {
+							"large": {
+								"ext": ".png",
+								"hash": "large_e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb",
+								"height": 517,
+								"mime": "image/png",
+								"name": "large_e3bf0463ef143e72513c3350614f70bea782ece6.png",
+								"path": null,
+								"size": 29.02,
+								"sizeInBytes": 29017,
+								"url": "http://localhost:1337/uploads/large_e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb.png",
+								"width": 1000
+							},
+							"medium": {
+								"ext": ".png",
+								"hash": "medium_e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb",
+								"height": 388,
+								"mime": "image/png",
+								"name": "medium_e3bf0463ef143e72513c3350614f70bea782ece6.png",
+								"path": null,
+								"size": 21.15,
+								"sizeInBytes": 21147,
+								"url": "http://localhost:1337/uploads/medium_e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb.png",
+								"width": 750
+							},
+							"small": {
+								"ext": ".png",
+								"hash": "small_e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb",
+								"height": 259,
+								"mime": "image/png",
+								"name": "small_e3bf0463ef143e72513c3350614f70bea782ece6.png",
+								"path": null,
+								"size": 13.36,
+								"sizeInBytes": 13360,
+								"url": "http://localhost:1337/uploads/small_e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb.png",
+								"width": 500
+							},
+							"thumbnail": {
+								"ext": ".png",
+								"hash": "thumbnail_e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb",
+								"height": 127,
+								"mime": "image/png",
+								"name": "thumbnail_e3bf0463ef143e72513c3350614f70bea782ece6.png",
+								"path": null,
+								"size": 5.96,
+								"sizeInBytes": 5959,
+								"url": "http://localhost:1337/uploads/thumbnail_e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb.png",
+								"width": 245
+							}
+						},
+						"hash": "e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb",
+						"height": 857,
+						"id": 29,
+						"mime": "image/png",
+						"name": "relianceLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:17:02.910Z",
+						"size": 11.79,
+						"updatedAt": "2026-03-10T14:17:20.040Z",
+						"url": "http://localhost:1337/uploads/e3bf0463ef143e72513c3350614f70bea782ece6_b7c8507cbb.png",
+						"width": 1657
+					}
+				},
+				{
+					"id": 60,
+					"image": {
+						"alternativeText": "Unable to determine image content.",
+						"caption": "No caption available.",
+						"createdAt": "2026-03-10T14:18:13.024Z",
+						"documentId": "s5rl86x7g8eohd5ygp8e8y15",
+						"ext": ".png",
+						"focalPoint": null,
+						"formats": {
+							"large": {
+								"ext": ".png",
+								"hash": "large_Azure_Logo_ca9e741858",
+								"height": 517,
+								"mime": "image/png",
+								"name": "large_AzureLogo",
+								"path": null,
+								"size": 13.21,
+								"sizeInBytes": 13210,
+								"url": "http://localhost:1337/uploads/large_Azure_Logo_ca9e741858.png",
+								"width": 1000
+							},
+							"medium": {
+								"ext": ".png",
+								"hash": "medium_Azure_Logo_ca9e741858",
+								"height": 388,
+								"mime": "image/png",
+								"name": "medium_AzureLogo",
+								"path": null,
+								"size": 9.42,
+								"sizeInBytes": 9418,
+								"url": "http://localhost:1337/uploads/medium_Azure_Logo_ca9e741858.png",
+								"width": 750
+							},
+							"small": {
+								"ext": ".png",
+								"hash": "small_Azure_Logo_ca9e741858",
+								"height": 259,
+								"mime": "image/png",
+								"name": "small_AzureLogo",
+								"path": null,
+								"size": 5.67,
+								"sizeInBytes": 5671,
+								"url": "http://localhost:1337/uploads/small_Azure_Logo_ca9e741858.png",
+								"width": 500
+							},
+							"thumbnail": {
+								"ext": ".png",
+								"hash": "thumbnail_Azure_Logo_ca9e741858",
+								"height": 127,
+								"mime": "image/png",
+								"name": "thumbnail_AzureLogo",
+								"path": null,
+								"size": 2.53,
+								"sizeInBytes": 2527,
+								"url": "http://localhost:1337/uploads/thumbnail_Azure_Logo_ca9e741858.png",
+								"width": 245
+							}
+						},
+						"hash": "Azure_Logo_ca9e741858",
+						"height": 857,
+						"id": 30,
+						"mime": "image/png",
+						"name": "AzureLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:18:13.024Z",
+						"size": 5.76,
+						"updatedAt": "2026-03-10T14:18:16.727Z",
+						"url": "http://localhost:1337/uploads/Azure_Logo_ca9e741858.png",
+						"width": 1657
+					}
+				}
+			],
+			"id": 10,
+			"title": "Trusted by teams who ship at scale."
+		}
+	],
+	"FeaturedWork": {
+		"ServicesLink": {
+			"URL": "#",
+			"id": 243,
+			"label": "Explore All Services"
+		},
+		"WorkItem": [
+			{
+				"caption": "Flipkart",
+				"id": 71,
+				"image": {
+					"alternativeText": "A woman in yellow dances joyfully among a large crowd of men, under colorful banners.",
+					"caption": "A woman in a vibrant yellow outfit dances joyfully amidst a large, festive crowd of men under blue and yellow streamers, celebrating a community event.",
+					"createdAt": "2026-03-10T13:55:09.007Z",
+					"documentId": "w3uaxfoelc3rgswqugfeh55w",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".png",
+							"hash": "large_feat_Img1_658a982754",
+							"height": 560,
+							"mime": "image/png",
+							"name": "large_featImg1",
+							"path": null,
+							"size": 1353.35,
+							"sizeInBytes": 1353346,
+							"url": "http://localhost:1337/uploads/large_feat_Img1_658a982754.png",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".png",
+							"hash": "medium_feat_Img1_658a982754",
+							"height": 420,
+							"mime": "image/png",
+							"name": "medium_featImg1",
+							"path": null,
+							"size": 779.74,
+							"sizeInBytes": 779744,
+							"url": "http://localhost:1337/uploads/medium_feat_Img1_658a982754.png",
+							"width": 750
+						},
+						"small": {
+							"ext": ".png",
+							"hash": "small_feat_Img1_658a982754",
+							"height": 280,
+							"mime": "image/png",
+							"name": "small_featImg1",
+							"path": null,
+							"size": 357.5,
+							"sizeInBytes": 357501,
+							"url": "http://localhost:1337/uploads/small_feat_Img1_658a982754.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_feat_Img1_658a982754",
+							"height": 137,
+							"mime": "image/png",
+							"name": "thumbnail_featImg1",
+							"path": null,
+							"size": 90.85,
+							"sizeInBytes": 90846,
+							"url": "http://localhost:1337/uploads/thumbnail_feat_Img1_658a982754.png",
+							"width": 245
+						}
+					},
+					"hash": "feat_Img1_658a982754",
+					"height": 816,
+					"id": 18,
+					"mime": "image/png",
+					"name": "featImg1",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T13:55:09.008Z",
+					"size": 668.77,
+					"updatedAt": "2026-03-10T13:55:18.257Z",
+					"url": "/assets/feat_Img1_658a982754-89bcbd37b639.png",
+					"width": 1456
+				}
+			},
+			{
+				"caption": "AWS AI conclave - Mahishasura film",
+				"id": 72,
+				"image": {
+					"alternativeText": "A small figure stands before a massive lion in a sunlit, ruined archway.",
+					"caption": "A brave figure faces a majestic lion in the dramatic ruins of an ancient structure, bathed in ethereal light.",
+					"createdAt": "2026-03-10T13:56:22.089Z",
+					"documentId": "kwbe46p3t682kr9bdn5tzu79",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".png",
+							"hash": "large_feat_Img2_8a6e0df6f0",
+							"height": 560,
+							"mime": "image/png",
+							"name": "large_featImg2",
+							"path": null,
+							"size": 958.42,
+							"sizeInBytes": 958421,
+							"url": "http://localhost:1337/uploads/large_feat_Img2_8a6e0df6f0.png",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".png",
+							"hash": "medium_feat_Img2_8a6e0df6f0",
+							"height": 420,
+							"mime": "image/png",
+							"name": "medium_featImg2",
+							"path": null,
+							"size": 548.58,
+							"sizeInBytes": 548578,
+							"url": "http://localhost:1337/uploads/medium_feat_Img2_8a6e0df6f0.png",
+							"width": 750
+						},
+						"small": {
+							"ext": ".png",
+							"hash": "small_feat_Img2_8a6e0df6f0",
+							"height": 280,
+							"mime": "image/png",
+							"name": "small_featImg2",
+							"path": null,
+							"size": 257.15,
+							"sizeInBytes": 257152,
+							"url": "http://localhost:1337/uploads/small_feat_Img2_8a6e0df6f0.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_feat_Img2_8a6e0df6f0",
+							"height": 137,
+							"mime": "image/png",
+							"name": "thumbnail_featImg2",
+							"path": null,
+							"size": 68.43,
+							"sizeInBytes": 68430,
+							"url": "http://localhost:1337/uploads/thumbnail_feat_Img2_8a6e0df6f0.png",
+							"width": 245
+						}
+					},
+					"hash": "feat_Img2_8a6e0df6f0",
+					"height": 1632,
+					"id": 19,
+					"mime": "image/png",
+					"name": "featImg2",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T13:56:22.089Z",
+					"size": 1858.28,
+					"updatedAt": "2026-03-10T13:56:26.775Z",
+					"url": "/assets/feat_Img2_8a6e0df6f0-c3a31e81529c.png",
+					"width": 2912
+				}
+			},
+			{
+				"caption": "Salesforce - AI agents",
+				"id": 73,
+				"image": {
+					"alternativeText": "Salesforce Agentforce banner displaying two robots, diverse faces, and a mobile application interface.",
+					"caption": "The Salesforce Agentforce platform is showcased with AI robots interacting with diverse users, highlighting roles accessible through its mobile application.",
+					"createdAt": "2026-03-10T13:56:51.036Z",
+					"documentId": "u17brhfbol5cpnte6yvxu4gu",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".png",
+							"hash": "large_feat_Img3_27fcc8bee3",
+							"height": 563,
+							"mime": "image/png",
+							"name": "large_featImg3",
+							"path": null,
+							"size": 994.2,
+							"sizeInBytes": 994196,
+							"url": "http://localhost:1337/uploads/large_feat_Img3_27fcc8bee3.png",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".png",
+							"hash": "medium_feat_Img3_27fcc8bee3",
+							"height": 422,
+							"mime": "image/png",
+							"name": "medium_featImg3",
+							"path": null,
+							"size": 601.02,
+							"sizeInBytes": 601018,
+							"url": "http://localhost:1337/uploads/medium_feat_Img3_27fcc8bee3.png",
+							"width": 750
+						},
+						"small": {
+							"ext": ".png",
+							"hash": "small_feat_Img3_27fcc8bee3",
+							"height": 281,
+							"mime": "image/png",
+							"name": "small_featImg3",
+							"path": null,
+							"size": 273.45,
+							"sizeInBytes": 273445,
+							"url": "http://localhost:1337/uploads/small_feat_Img3_27fcc8bee3.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_feat_Img3_27fcc8bee3",
+							"height": 138,
+							"mime": "image/png",
+							"name": "thumbnail_featImg3",
+							"path": null,
+							"size": 77.27,
+							"sizeInBytes": 77271,
+							"url": "http://localhost:1337/uploads/thumbnail_feat_Img3_27fcc8bee3.png",
+							"width": 245
+						}
+					},
+					"hash": "feat_Img3_27fcc8bee3",
+					"height": 576,
+					"id": 20,
+					"mime": "image/png",
+					"name": "featImg3",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T13:56:51.036Z",
+					"size": 175.3,
+					"updatedAt": "2026-03-10T13:56:57.029Z",
+					"url": "/assets/feat_Img3_27fcc8bee3-c36824fb8e74.png",
+					"width": 1024
+				}
+			},
+			{
+				"caption": "Microsoft - Zero Day",
+				"id": 74,
+				"image": {
+					"alternativeText": "Man on rooftop watches drones with green lights over a futuristic city.",
+					"caption": "A lone figure stands on a rooftop, observing two advanced drones with green beams scanning a futuristic city at dusk.",
+					"createdAt": "2026-03-10T13:57:46.824Z",
+					"documentId": "kmfgobnujoyek6r4xbnph19l",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".png",
+							"hash": "large_feat_Img4_688de65eda",
+							"height": 563,
+							"mime": "image/png",
+							"name": "large_featImg4",
+							"path": null,
+							"size": 1110.32,
+							"sizeInBytes": 1110316,
+							"url": "http://localhost:1337/uploads/large_feat_Img4_688de65eda.png",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".png",
+							"hash": "medium_feat_Img4_688de65eda",
+							"height": 422,
+							"mime": "image/png",
+							"name": "medium_featImg4",
+							"path": null,
+							"size": 632.87,
+							"sizeInBytes": 632866,
+							"url": "http://localhost:1337/uploads/medium_feat_Img4_688de65eda.png",
+							"width": 750
+						},
+						"small": {
+							"ext": ".png",
+							"hash": "small_feat_Img4_688de65eda",
+							"height": 281,
+							"mime": "image/png",
+							"name": "small_featImg4",
+							"path": null,
+							"size": 290.8,
+							"sizeInBytes": 290797,
+							"url": "http://localhost:1337/uploads/small_feat_Img4_688de65eda.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_feat_Img4_688de65eda",
+							"height": 138,
+							"mime": "image/png",
+							"name": "thumbnail_featImg4",
+							"path": null,
+							"size": 79.58,
+							"sizeInBytes": 79577,
+							"url": "http://localhost:1337/uploads/thumbnail_feat_Img4_688de65eda.png",
+							"width": 245
+						}
+					},
+					"hash": "feat_Img4_688de65eda",
+					"height": 1080,
+					"id": 21,
+					"mime": "image/png",
+					"name": "featImg4",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T13:57:46.824Z",
+					"size": 747.78,
+					"updatedAt": "2026-03-10T13:57:54.783Z",
+					"url": "/assets/feat_Img4_688de65eda-823c5d7fbdc4.png",
+					"width": 1920
+				}
+			},
+			{
+				"caption": "Eurekii",
+				"id": 75,
+				"image": {
+					"alternativeText": "Smiling teacher reads a picture book to attentive young children in a classroom.",
+					"caption": "A joyful teacher reads an illustrated storybook to captivated young students, fostering early literacy and a love for reading in the classroom.",
+					"createdAt": "2026-03-10T13:59:13.611Z",
+					"documentId": "cm84y65p8piqtpegq2hhdf7j",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".png",
+							"hash": "large_feat_Img5_afaa49ff20",
+							"height": 667,
+							"mime": "image/png",
+							"name": "large_featImg5",
+							"path": null,
+							"size": 1382.22,
+							"sizeInBytes": 1382218,
+							"url": "http://localhost:1337/uploads/large_feat_Img5_afaa49ff20.png",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".png",
+							"hash": "medium_feat_Img5_afaa49ff20",
+							"height": 500,
+							"mime": "image/png",
+							"name": "medium_featImg5",
+							"path": null,
+							"size": 794.11,
+							"sizeInBytes": 794113,
+							"url": "http://localhost:1337/uploads/medium_feat_Img5_afaa49ff20.png",
+							"width": 750
+						},
+						"small": {
+							"ext": ".png",
+							"hash": "small_feat_Img5_afaa49ff20",
+							"height": 333,
+							"mime": "image/png",
+							"name": "small_featImg5",
+							"path": null,
+							"size": 372.46,
+							"sizeInBytes": 372457,
+							"url": "http://localhost:1337/uploads/small_feat_Img5_afaa49ff20.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_feat_Img5_afaa49ff20",
+							"height": 156,
+							"mime": "image/png",
+							"name": "thumbnail_featImg5",
+							"path": null,
+							"size": 92.08,
+							"sizeInBytes": 92084,
+							"url": "http://localhost:1337/uploads/thumbnail_feat_Img5_afaa49ff20.png",
+							"width": 234
+						}
+					},
+					"hash": "feat_Img5_afaa49ff20",
+					"height": 2731,
+					"id": 22,
+					"mime": "image/png",
+					"name": "featImg5",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T13:59:13.612Z",
+					"size": 3865.34,
+					"updatedAt": "2026-03-10T13:59:20.390Z",
+					"url": "/assets/feat_Img5_afaa49ff20-c3a3a15ab8cf.png",
+					"width": 4096
+				}
+			},
+			{
+				"caption": "Client Company",
+				"id": 76,
+				"image": {
+					"alternativeText": "A black drum kit and cymbals dramatically lit by red stage lights on a dark background.",
+					"caption": "A black drum kit and cymbals are dramatically lit by red stage lights, creating an intense atmosphere for a powerful musical performance.",
+					"createdAt": "2026-03-10T14:00:05.047Z",
+					"documentId": "uz6aj4mkr1l74nn1izyw6aeb",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".png",
+							"hash": "large_feat_Img6_c2196fbc29",
+							"height": 560,
+							"mime": "image/png",
+							"name": "large_featImg6",
+							"path": null,
+							"size": 537.4,
+							"sizeInBytes": 537398,
+							"url": "http://localhost:1337/uploads/large_feat_Img6_c2196fbc29.png",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".png",
+							"hash": "medium_feat_Img6_c2196fbc29",
+							"height": 420,
+							"mime": "image/png",
+							"name": "medium_featImg6",
+							"path": null,
+							"size": 315.54,
+							"sizeInBytes": 315540,
+							"url": "http://localhost:1337/uploads/medium_feat_Img6_c2196fbc29.png",
+							"width": 750
+						},
+						"small": {
+							"ext": ".png",
+							"hash": "small_feat_Img6_c2196fbc29",
+							"height": 280,
+							"mime": "image/png",
+							"name": "small_featImg6",
+							"path": null,
+							"size": 150.02,
+							"sizeInBytes": 150024,
+							"url": "http://localhost:1337/uploads/small_feat_Img6_c2196fbc29.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_feat_Img6_c2196fbc29",
+							"height": 137,
+							"mime": "image/png",
+							"name": "thumbnail_featImg6",
+							"path": null,
+							"size": 43.1,
+							"sizeInBytes": 43097,
+							"url": "http://localhost:1337/uploads/thumbnail_feat_Img6_c2196fbc29.png",
+							"width": 245
+						}
+					},
+					"hash": "feat_Img6_c2196fbc29",
+					"height": 816,
+					"id": 23,
+					"mime": "image/png",
+					"name": "featImg6",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T14:00:05.048Z",
+					"size": 356.13,
+					"updatedAt": "2026-03-10T14:00:18.039Z",
+					"url": "/assets/feat_Img6_c2196fbc29-7759eeac48d4.png",
+					"width": 1456
+				}
+			},
+			{
+				"caption": "Sow & Reap - Chara'",
+				"id": 77,
+				"image": {
+					"alternativeText": "Close-up of dark reddish-brown wood chips or bark mulch piled together.",
+					"caption": "A large pile of dark, reddish-brown wood chips provides natural ground cover and retains moisture in gardens.",
+					"createdAt": "2026-03-10T14:01:17.167Z",
+					"documentId": "lxaa7xy7kwg9tpjyotap41nf",
+					"ext": ".jpeg",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".jpeg",
+							"hash": "large_feat_Img7_0795b32be9",
+							"height": 667,
+							"mime": "image/jpeg",
+							"name": "large_featImg7",
+							"path": null,
+							"size": 161.78,
+							"sizeInBytes": 161776,
+							"url": "http://localhost:1337/uploads/large_feat_Img7_0795b32be9.jpeg",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".jpeg",
+							"hash": "medium_feat_Img7_0795b32be9",
+							"height": 500,
+							"mime": "image/jpeg",
+							"name": "medium_featImg7",
+							"path": null,
+							"size": 88.35,
+							"sizeInBytes": 88349,
+							"url": "http://localhost:1337/uploads/medium_feat_Img7_0795b32be9.jpeg",
+							"width": 750
+						},
+						"small": {
+							"ext": ".jpeg",
+							"hash": "small_feat_Img7_0795b32be9",
+							"height": 333,
+							"mime": "image/jpeg",
+							"name": "small_featImg7",
+							"path": null,
+							"size": 40.76,
+							"sizeInBytes": 40763,
+							"url": "http://localhost:1337/uploads/small_feat_Img7_0795b32be9.jpeg",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".jpeg",
+							"hash": "thumbnail_feat_Img7_0795b32be9",
+							"height": 156,
+							"mime": "image/jpeg",
+							"name": "thumbnail_featImg7",
+							"path": null,
+							"size": 10.59,
+							"sizeInBytes": 10585,
+							"url": "http://localhost:1337/uploads/thumbnail_feat_Img7_0795b32be9.jpeg",
+							"width": 234
+						}
+					},
+					"hash": "feat_Img7_0795b32be9",
+					"height": 2731,
+					"id": 24,
+					"mime": "image/jpeg",
+					"name": "featImg7",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T14:01:17.167Z",
+					"size": 2503.39,
+					"updatedAt": "2026-03-10T14:01:21.424Z",
+					"url": "/assets/feat_Img7_0795b32be9-ad092e42fc39.jpeg",
+					"width": 4096
+				}
+			}
+		],
+		"featuredWorklogo": {
+			"alternativeText": "Unable to determine image content.",
+			"caption": "No caption available.",
+			"createdAt": "2026-03-10T19:51:58.674Z",
+			"documentId": "xirry252f59y0i0us2puse8y",
+			"ext": ".svg",
+			"focalPoint": null,
+			"formats": null,
+			"hash": "featured_work_logo_66772bf2f5",
+			"height": 58,
+			"id": 41,
+			"mime": "image/svg+xml",
+			"name": "featured-work-logo.svg",
+			"previewUrl": null,
+			"provider": "local",
+			"provider_metadata": null,
+			"publishedAt": "2026-03-10T19:51:58.675Z",
+			"size": 0.31,
+			"updatedAt": "2026-03-10T19:52:04.927Z",
+			"url": "/assets/featured_work_logo_66772bf2f5-7ac320f476d6.svg",
+			"width": 48
+		},
+		"id": 11,
+		"title": "Featured Work"
+	},
+	"Footer": {
+		"ContactInfo": [
+			{
+				"id": 13,
+				"phoneNo": 9923275253,
+				"title": "Get On A Call"
+			},
+			{
+				"id": 14,
+				"phoneNo": null,
+				"title": null
+			}
+		],
+		"CtaLink": {
+			"URL": "#",
+			"id": 246,
+			"label": "Get in touch "
+		},
+		"Menu": [
+			{
+				"MenuLink": [
+					{
+						"URL": "#",
+						"id": 247,
+						"label": "Company"
+					},
+					{
+						"URL": null,
+						"id": 248,
+						"label": "ID8NXT"
+					},
+					{
+						"URL": null,
+						"id": 249,
+						"label": "ID8NXT Films"
+					},
+					{
+						"URL": null,
+						"id": 250,
+						"label": "ID8DEVHUB"
+					},
+					{
+						"URL": null,
+						"id": 251,
+						"label": "PROJECTS"
+					}
+				],
+				"id": 8,
+				"title": "Menu"
+			}
+		],
+		"OfficeAddress": {
+			"address": "ID8NXT LLP, B Wing, Second Floor, Krishanlal Marwah Marg,Saki Vihar Road, Saki Naka, Andheri East Mumbai - 400 072, Maharashtra, India",
+			"id": 7,
+			"title": "OFFICE ADDRESS"
+		},
+		"Socials": {
+			"SocialLinks": [
+				{
+					"icon": {
+						"alternativeText": "White LinkedIn 'in' logo on a black square background with a red outline.",
+						"caption": "Connect with professionals and expand your network by visiting our official LinkedIn page.",
+						"createdAt": "2026-03-10T14:38:34.739Z",
+						"documentId": "uli0wgz55e97subwcvz2jcj4",
+						"ext": ".svg",
+						"focalPoint": null,
+						"formats": null,
+						"hash": "linked_In_Logo_527ce9ade7",
+						"height": 38,
+						"id": 31,
+						"mime": "image/svg+xml",
+						"name": "linkedInLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:38:34.739Z",
+						"size": 0.78,
+						"updatedAt": "2026-03-10T14:38:41.514Z",
+						"url": "http://localhost:1337/uploads/linked_In_Logo_527ce9ade7.svg",
+						"width": 38
+					},
+					"id": 25,
+					"url": "#"
+				},
+				{
+					"icon": {
+						"alternativeText": "Close icon, a white X against a dark background with a red border.",
+						"caption": "A white X icon on a black and red background signifies a close or dismiss action within an application.",
+						"createdAt": "2026-03-10T14:39:14.913Z",
+						"documentId": "b1u4cc49zsh8zomuoq5nsl27",
+						"ext": ".svg",
+						"focalPoint": null,
+						"formats": null,
+						"hash": "twitter_Logo_de52d0019e",
+						"height": 38,
+						"id": 32,
+						"mime": "image/svg+xml",
+						"name": "twitterLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:39:14.913Z",
+						"size": 0.45,
+						"updatedAt": "2026-03-10T14:39:20.957Z",
+						"url": "http://localhost:1337/uploads/twitter_Logo_de52d0019e.svg",
+						"width": 38
+					},
+					"id": 26,
+					"url": "#"
+				},
+				{
+					"icon": {
+						"alternativeText": "White Instagram logo icon on a black background with a red outline.",
+						"caption": "Connect with us on Instagram! Stay updated with our latest posts, stories, and exclusive content.",
+						"createdAt": "2026-03-10T14:40:35.976Z",
+						"documentId": "fuus9ff130rqailn47i8nhn8",
+						"ext": ".svg",
+						"focalPoint": null,
+						"formats": null,
+						"hash": "instagram_Logo_f1d94b2680",
+						"height": 38,
+						"id": 33,
+						"mime": "image/svg+xml",
+						"name": "instagramLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:40:35.977Z",
+						"size": 3.19,
+						"updatedAt": "2026-03-10T14:40:40.012Z",
+						"url": "http://localhost:1337/uploads/instagram_Logo_f1d94b2680.svg",
+						"width": 38
+					},
+					"id": 27,
+					"url": "#"
+				},
+				{
+					"icon": {
+						"alternativeText": "White lowercase 'f' Facebook logo on a black square background.",
+						"caption": "Connect with us on Facebook for the latest updates, news, and engaging content from our community.",
+						"createdAt": "2026-03-10T14:40:56.821Z",
+						"documentId": "mmi5emw3iw1ajn0as4ky1wyd",
+						"ext": ".svg",
+						"focalPoint": null,
+						"formats": null,
+						"hash": "fb_Logo_f41f0c8b83",
+						"height": 38,
+						"id": 34,
+						"mime": "image/svg+xml",
+						"name": "fbLogo",
+						"previewUrl": null,
+						"provider": "local",
+						"provider_metadata": null,
+						"publishedAt": "2026-03-10T14:40:56.821Z",
+						"size": 0.47,
+						"updatedAt": "2026-03-10T14:41:03.499Z",
+						"url": "http://localhost:1337/uploads/fb_Logo_f41f0c8b83.svg",
+						"width": 38
+					},
+					"id": 28,
+					"url": "#"
+				}
+			],
+			"id": 7,
+			"title": "Social Links "
+		},
+		"WriteToUs": {
+			"email": "humans@id8nxt.com",
+			"id": 7,
+			"title": "Write to Us"
+		},
+		"description": "Go-To-Market Strategy, demand generation, AI films, and developer engagement - done right.",
+		"footerBgImg": {
+			"alternativeText": "Abstract design with a black top, a red gradient bottom, and a curved band of colorful lines.",
+			"caption": "A vibrant abstract background featuring a rich red gradient, topped by a striking curved band of red and purple lines, contrasted against a black upper area.",
+			"createdAt": "2026-03-10T20:36:34.117Z",
+			"documentId": "j9037pxpl6vnd7m8hylrinw7",
+			"ext": ".svg",
+			"focalPoint": null,
+			"formats": null,
+			"hash": "footer_blur_b3cd3abbf0",
+			"height": 970,
+			"id": 42,
+			"mime": "image/svg+xml",
+			"name": "footer-blur.svg",
+			"previewUrl": null,
+			"provider": "local",
+			"provider_metadata": null,
+			"publishedAt": "2026-03-10T20:36:34.117Z",
+			"size": 0.98,
+			"updatedAt": "2026-03-10T20:36:44.104Z",
+			"url": "http://localhost:1337/uploads/footer_blur_b3cd3abbf0.svg",
+			"width": 1920
+		},
+		"headline": "footer",
+		"id": 7
+	},
+	"Header": {
+		"NavLinks": [
+			{
+				"URL": "#",
+				"id": 233,
+				"label": "SOLUTIONS"
+			},
+			{
+				"URL": "#",
+				"id": 234,
+				"label": "WORK"
+			},
+			{
+				"URL": "#",
+				"id": 235,
+				"label": "ABOUT "
+			},
+			{
+				"URL": "#",
+				"id": 236,
+				"label": "RESOURCES"
+			},
+			{
+				"URL": "#",
+				"id": 237,
+				"label": "BOOK A CALL"
+			}
+		],
+		"headerLogo": {
+			"alternativeText": "White ID8NXT logo with a red L-shaped border on a dark grey background.",
+			"caption": "The ID8NXT logo features white text on a dark grey background, framed by a red L-shaped border, conveying a modern and bold identity.",
+			"createdAt": "2026-02-21T06:02:16.989Z",
+			"documentId": "sm4opz6voyeotf203dzmld93",
+			"ext": ".png",
+			"focalPoint": null,
+			"formats": null,
+			"hash": "Group_3_e538a2ff29",
+			"height": 64,
+			"id": 13,
+			"mime": "image/png",
+			"name": "CompanyLogo",
+			"previewUrl": null,
+			"provider": "local",
+			"provider_metadata": null,
+			"publishedAt": "2026-02-21T06:02:16.990Z",
+			"size": 0.87,
+			"updatedAt": "2026-03-10T10:08:04.563Z",
+			"url": "http://localhost:1337/uploads/Group_3_e538a2ff29.png",
+			"width": 133
+		},
+		"id": 22
+	},
+	"Hero": {
+		"companyName": "ID8NXT",
+		"heroImage": {
+			"alternativeText": "Green liquid soap bottle with wooden pump on vibrant moss in a misty forest.",
+			"caption": "The green Mellow Wash bottle, featuring a wooden pump, rests harmoniously on vibrant moss within a serene forest environment.",
+			"createdAt": "2026-02-21T06:00:52.034Z",
+			"documentId": "f3uamk492z5ud8afmxgdi1vf",
+			"ext": ".png",
+			"focalPoint": null,
+			"formats": {
+				"large": {
+					"ext": ".png",
+					"hash": "large_1_a3ac59ff17",
+					"height": 577,
+					"mime": "image/png",
+					"name": "large_1.png",
+					"path": null,
+					"size": 1360.8,
+					"sizeInBytes": 1360804,
+					"url": "http://localhost:1337/uploads/large_1_a3ac59ff17.png",
+					"width": 1000
+				},
+				"medium": {
+					"ext": ".png",
+					"hash": "medium_1_a3ac59ff17",
+					"height": 433,
+					"mime": "image/png",
+					"name": "medium_1.png",
+					"path": null,
+					"size": 778.9,
+					"sizeInBytes": 778903,
+					"url": "http://localhost:1337/uploads/medium_1_a3ac59ff17.png",
+					"width": 750
+				},
+				"small": {
+					"ext": ".png",
+					"hash": "small_1_a3ac59ff17",
+					"height": 289,
+					"mime": "image/png",
+					"name": "small_1.png",
+					"path": null,
+					"size": 358.63,
+					"sizeInBytes": 358629,
+					"url": "http://localhost:1337/uploads/small_1_a3ac59ff17.png",
+					"width": 500
+				},
+				"thumbnail": {
+					"ext": ".png",
+					"hash": "thumbnail_1_a3ac59ff17",
+					"height": 141,
+					"mime": "image/png",
+					"name": "thumbnail_1.png",
+					"path": null,
+					"size": 92.71,
+					"sizeInBytes": 92708,
+					"url": "http://localhost:1337/uploads/thumbnail_1_a3ac59ff17.png",
+					"width": 245
+				}
+			},
+			"hash": "1_a3ac59ff17",
+			"height": 1108,
+			"id": 12,
+			"mime": "image/png",
+			"name": "BackgroundImage",
+			"previewUrl": null,
+			"provider": "local",
+			"provider_metadata": null,
+			"publishedAt": "2026-02-21T06:00:52.034Z",
+			"size": 1005.09,
+			"updatedAt": "2026-02-21T06:01:33.945Z",
+			"url": "/assets/1_a3ac59ff17-361d6b2e329c.png",
+			"width": 1920
+		},
+		"id": 24
+	},
+	"OurBrands": {
+		"BrandCards": [
+			{
+				"BrandSolutionsLink": {
+					"URL": "#",
+					"id": 238,
+					"label": "Explore Brand Solutions & Enterprise"
+				},
+				"cardDescription": "From Go-To-Market Strategy to always-on demand generation and lead generation, we build brand systems that perform.",
+				"cardImage": {
+					"alternativeText": "Modern stationery: cards, boxes, and a folder in red, orange, black, and white.",
+					"caption": "This collection of modern branded stationery, including business cards and boxes, showcases a sophisticated corporate identity with a geometric logo and a bold color palette.",
+					"createdAt": "2026-03-10T07:20:35.180Z",
+					"documentId": "yue7h0ayjpymmhfyry365r8j",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"small": {
+							"ext": ".png",
+							"hash": "small_Mirosaw_Szyk_brand_identity_board_for_a_3_D_printing_company_nam_b2a17d1f_63b0_4d4a_953f_387ff688db9e_1_d60ea0cdf3",
+							"height": 499,
+							"mime": "image/png",
+							"name": "small_Mirosaw_Szyk_brand_identity_board_for_a_3D_printing_company_nam_b2a17d1f-63b0-4d4a-953f-387ff688db9e 1.png",
+							"path": null,
+							"size": 150.54,
+							"sizeInBytes": 150544,
+							"url": "http://localhost:1337/uploads/small_Mirosaw_Szyk_brand_identity_board_for_a_3_D_printing_company_nam_b2a17d1f_63b0_4d4a_953f_387ff688db9e_1_d60ea0cdf3.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_Mirosaw_Szyk_brand_identity_board_for_a_3_D_printing_company_nam_b2a17d1f_63b0_4d4a_953f_387ff688db9e_1_d60ea0cdf3",
+							"height": 156,
+							"mime": "image/png",
+							"name": "thumbnail_Mirosaw_Szyk_brand_identity_board_for_a_3D_printing_company_nam_b2a17d1f-63b0-4d4a-953f-387ff688db9e 1.png",
+							"path": null,
+							"size": 16.65,
+							"sizeInBytes": 16645,
+							"url": "http://localhost:1337/uploads/thumbnail_Mirosaw_Szyk_brand_identity_board_for_a_3_D_printing_company_nam_b2a17d1f_63b0_4d4a_953f_387ff688db9e_1_d60ea0cdf3.png",
+							"width": 156
+						}
+					},
+					"hash": "Mirosaw_Szyk_brand_identity_board_for_a_3_D_printing_company_nam_b2a17d1f_63b0_4d4a_953f_387ff688db9e_1_d60ea0cdf3",
+					"height": 702,
+					"id": 14,
+					"mime": "image/png",
+					"name": "BrandLogo1",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T07:20:35.180Z",
+					"size": 53.71,
+					"updatedAt": "2026-03-10T10:24:31.470Z",
+					"url": "/assets/Mirosaw_Szyk_brand_identity_board_for_a_3_D_printing_company_nam_b2a17d1f_63b0_4d4a_953f_387ff688db9e_1_d60ea0cdf3-94e700f50ace.png",
+					"width": 703
+				},
+				"cardLogo": {
+					"alternativeText": "The ID8NXT logo features white text within a partial white square bracket on a black background.",
+					"caption": "The ID8NXT logo features white text on a black background, framed by a distinctive partial white bracket.",
+					"createdAt": "2026-03-10T19:42:22.884Z",
+					"documentId": "nkmwypolb4p7ewa8x796weoz",
+					"ext": ".svg",
+					"focalPoint": null,
+					"formats": null,
+					"hash": "id8nxt_brand_logo_9fbda82cbc",
+					"height": 125,
+					"id": 38,
+					"mime": "image/svg+xml",
+					"name": "id8nxt-brand-logo.svg",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T19:42:22.884Z",
+					"size": 4.05,
+					"updatedAt": "2026-03-10T19:42:31.370Z",
+					"url": "/assets/id8nxt_brand_logo_9fbda82cbc-a0230872c718.svg",
+					"width": 257
+				},
+				"id": 57
+			},
+			{
+				"BrandSolutionsLink": {
+					"URL": "#",
+					"id": 239,
+					"label": "Explore ID8Films"
+				},
+				"cardDescription": "We create AI generated videos and cinematic content for brands that need faster cycles without compromising craft. Think: launch films, product stories, and performance edits, built like a modern video production company with an innovation edge. ",
+				"cardImage": {
+					"alternativeText": "A serious young woman with curly hair stands in front of a protesting crowd.",
+					"caption": "A determined young woman stands prominently amidst a large crowd, seemingly leading a protest or demonstration.",
+					"createdAt": "2026-03-10T10:43:10.921Z",
+					"documentId": "qr7hg28xz2ynq1pcfi76qls1",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".png",
+							"hash": "large_Brand_Logo2_f0bc31fd61",
+							"height": 560,
+							"mime": "image/png",
+							"name": "large_BrandLogo2",
+							"path": null,
+							"size": 1232.91,
+							"sizeInBytes": 1232911,
+							"url": "http://localhost:1337/uploads/large_Brand_Logo2_f0bc31fd61.png",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".png",
+							"hash": "medium_Brand_Logo2_f0bc31fd61",
+							"height": 420,
+							"mime": "image/png",
+							"name": "medium_BrandLogo2",
+							"path": null,
+							"size": 723.22,
+							"sizeInBytes": 723218,
+							"url": "http://localhost:1337/uploads/medium_Brand_Logo2_f0bc31fd61.png",
+							"width": 750
+						},
+						"small": {
+							"ext": ".png",
+							"hash": "small_Brand_Logo2_f0bc31fd61",
+							"height": 280,
+							"mime": "image/png",
+							"name": "small_BrandLogo2",
+							"path": null,
+							"size": 338.46,
+							"sizeInBytes": 338457,
+							"url": "http://localhost:1337/uploads/small_Brand_Logo2_f0bc31fd61.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_Brand_Logo2_f0bc31fd61",
+							"height": 137,
+							"mime": "image/png",
+							"name": "thumbnail_BrandLogo2",
+							"path": null,
+							"size": 88.86,
+							"sizeInBytes": 88863,
+							"url": "http://localhost:1337/uploads/thumbnail_Brand_Logo2_f0bc31fd61.png",
+							"width": 245
+						}
+					},
+					"hash": "Brand_Logo2_f0bc31fd61",
+					"height": 816,
+					"id": 15,
+					"mime": "image/png",
+					"name": "BrandLogo2",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T10:43:10.921Z",
+					"size": 542.42,
+					"updatedAt": "2026-03-10T10:43:15.941Z",
+					"url": "/assets/Brand_Logo2_f0bc31fd61-5ae2070017ec.png",
+					"width": 1456
+				},
+				"cardLogo": {
+					"alternativeText": "ID8FILMS logo in white text, enclosed by stylized camera focus brackets on a black background.",
+					"caption": "The ID8FILMS logo prominently displays the company name in bold white, framed by unique camera focus brackets.",
+					"createdAt": "2026-03-10T19:42:58.480Z",
+					"documentId": "gf4aazmryjnn6dfaysv2dxag",
+					"ext": ".svg",
+					"focalPoint": null,
+					"formats": null,
+					"hash": "id8fillms_1a583369c0",
+					"height": 125,
+					"id": 39,
+					"mime": "image/svg+xml",
+					"name": "id8fillms.svg",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T19:42:58.480Z",
+					"size": 4,
+					"updatedAt": "2026-03-10T19:43:02.750Z",
+					"url": "/assets/id8fillms_1a583369c0-9a92972438c8.svg",
+					"width": 248
+				},
+				"id": 58
+			},
+			{
+				"BrandSolutionsLink": {
+					"URL": "#",
+					"id": 240,
+					"label": "Explore DevHub"
+				},
+				"cardDescription": "We design and run dev community programs that turn developers into advocates. From developer forum / devforum experiences to an always-on calendar of AI hackathon builds and upcoming hackathons, we help products earn real usage.",
+				"cardImage": {
+					"alternativeText": "Large group of attendees posing for a photo at the Tech Con India 2024 event.",
+					"caption": "Tech Con India 2024 attendees gather for a vibrant group photo, celebrating a successful event focused on innovation and networking.",
+					"createdAt": "2026-03-10T10:47:16.384Z",
+					"documentId": "apo3zhf8576ef5qz5y1xg8zo",
+					"ext": ".png",
+					"focalPoint": null,
+					"formats": {
+						"large": {
+							"ext": ".png",
+							"hash": "large_Brand_Logo3_b72adc34f0",
+							"height": 1000,
+							"mime": "image/png",
+							"name": "large_BrandLogo3",
+							"path": null,
+							"size": 2221.76,
+							"sizeInBytes": 2221755,
+							"url": "http://localhost:1337/uploads/large_Brand_Logo3_b72adc34f0.png",
+							"width": 1000
+						},
+						"medium": {
+							"ext": ".png",
+							"hash": "medium_Brand_Logo3_b72adc34f0",
+							"height": 750,
+							"mime": "image/png",
+							"name": "medium_BrandLogo3",
+							"path": null,
+							"size": 1330.13,
+							"sizeInBytes": 1330130,
+							"url": "http://localhost:1337/uploads/medium_Brand_Logo3_b72adc34f0.png",
+							"width": 750
+						},
+						"small": {
+							"ext": ".png",
+							"hash": "small_Brand_Logo3_b72adc34f0",
+							"height": 500,
+							"mime": "image/png",
+							"name": "small_BrandLogo3",
+							"path": null,
+							"size": 617.62,
+							"sizeInBytes": 617616,
+							"url": "http://localhost:1337/uploads/small_Brand_Logo3_b72adc34f0.png",
+							"width": 500
+						},
+						"thumbnail": {
+							"ext": ".png",
+							"hash": "thumbnail_Brand_Logo3_b72adc34f0",
+							"height": 156,
+							"mime": "image/png",
+							"name": "thumbnail_BrandLogo3",
+							"path": null,
+							"size": 66.68,
+							"sizeInBytes": 66678,
+							"url": "http://localhost:1337/uploads/thumbnail_Brand_Logo3_b72adc34f0.png",
+							"width": 156
+						}
+					},
+					"hash": "Brand_Logo3_b72adc34f0",
+					"height": 1024,
+					"id": 16,
+					"mime": "image/png",
+					"name": "BrandLogo3",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T10:47:16.385Z",
+					"size": 534.52,
+					"updatedAt": "2026-03-10T10:47:21.858Z",
+					"url": "/assets/Brand_Logo3_b72adc34f0-dcf95a1a20b2.png",
+					"width": 1024
+				},
+				"cardLogo": {
+					"alternativeText": "White pixelated text 'DEHHUB' enclosed in curly braces on a black background.",
+					"caption": "The DEHHUB logo displays white pixelated text enclosed by curly braces on a black background.",
+					"createdAt": "2026-03-10T19:43:30.221Z",
+					"documentId": "ih1hiqj4p087wteszgs7dheh",
+					"ext": ".svg",
+					"focalPoint": null,
+					"formats": null,
+					"hash": "id8devhub_logo_9f96f17998",
+					"height": 67,
+					"id": 40,
+					"mime": "image/svg+xml",
+					"name": "id8devhub-logo.svg",
+					"previewUrl": null,
+					"provider": "local",
+					"provider_metadata": null,
+					"publishedAt": "2026-03-10T19:43:30.222Z",
+					"size": 7.66,
+					"updatedAt": "2026-03-10T19:43:39.820Z",
+					"url": "/assets/id8devhub_logo_9f96f17998-62997069b387.svg",
+					"width": 246
+				},
+				"id": 59
+			}
+		],
+		"heading": "Our Brands",
+		"id": 23,
+		"leftScrollIndicator": {
+			"alternativeText": "Unable to determine image content.",
+			"caption": "No caption available.",
+			"createdAt": "2026-03-10T19:22:53.374Z",
+			"documentId": "p1wsgbvm44tg7qvg3v07azvk",
+			"ext": ".svg",
+			"focalPoint": null,
+			"formats": null,
+			"hash": "I1235_7884_1038_5102_1c047d3c24",
+			"height": 17,
+			"id": 35,
+			"mime": "image/svg+xml",
+			"name": "left-scroll-indicator.svg",
+			"previewUrl": null,
+			"provider": "local",
+			"provider_metadata": null,
+			"publishedAt": "2026-03-10T19:22:53.375Z",
+			"size": 0.21,
+			"updatedAt": "2026-03-10T19:33:52.350Z",
+			"url": "/assets/I1235_7884_1038_5102_1c047d3c24-29c25b1907e4.svg",
+			"width": 9
+		},
+		"rightScrollIndicator": {
+			"alternativeText": "Unable to determine image content.",
+			"caption": "",
+			"createdAt": "2026-03-10T19:33:16.083Z",
+			"documentId": "qxxm78yejvx63azby9axm0hm",
+			"ext": ".svg",
+			"focalPoint": null,
+			"formats": null,
+			"hash": "I1235_7884_1038_5104_86e64efe55",
+			"height": 17,
+			"id": 37,
+			"mime": "image/svg+xml",
+			"name": "right-scroll-indicator.svg",
+			"previewUrl": null,
+			"provider": "local",
+			"provider_metadata": null,
+			"publishedAt": "2026-03-10T19:33:16.083Z",
+			"size": 0.15,
+			"updatedAt": "2026-03-10T19:33:45.258Z",
+			"url": "/assets/I1235_7884_1038_5104_86e64efe55-662fc997d739.svg",
+			"width": 9
+		}
+	},
+	"OurIdentity": {
+		"AboutUsLink": {
+			"URL": "#",
+			"id": 242,
+			"label": "Know about us more "
+		},
+		"description": "We help brands win in markets with digital brand strategy, bold creative, and execution that scales, powered by a full-funnel engine from Go-To-Market Strategy to demand generation, lead generation, and retention-first customer onboarding.",
+		"id": 12,
+		"title": "What we are"
+	},
+	"OurServices": {
+		"Services": [
+			{
+				"description": "Digital brand strategy + Go-To-Market strategy, messaging and campaigns, built for demand generation and lead generation.",
+				"id": 49,
+				"index": "01 ",
+				"title": "Brand Solutions "
+			},
+			{
+				"description": null,
+				"id": 50,
+				"index": "02",
+				"title": "AI-Generated Films"
+			},
+			{
+				"description": null,
+				"id": 51,
+				"index": "03",
+				"title": "Developer Communities "
+			},
+			{
+				"description": null,
+				"id": 52,
+				"index": "04",
+				"title": "Enterprise Solutions "
+			}
+		],
+		"ServicesLink": {
+			"URL": "#",
+			"id": 241,
+			"label": "Explore All Services "
+		},
+		"description": "Build with a single service, or layer them into a connected growth system.\u{2028}Everything is designed to reduce cycle time from idea → asset → distribution → learning.",
+		"featImage": {
+			"alternativeText": "Rectangular \"ART & TVA\" perfume bottle rests inside its open light blue presentation box.",
+			"caption": "An elegant \"ART & TVA\" perfume bottle, featuring a minimalist design, is elegantly displayed in its open light blue box.",
+			"createdAt": "2026-03-10T13:48:38.453Z",
+			"documentId": "cy4om58r8mf2ybbm6wsujb90",
+			"ext": ".png",
+			"focalPoint": null,
+			"formats": {
+				"large": {
+					"ext": ".png",
+					"hash": "large_Our_Services_Img_8b57c7d250",
+					"height": 763,
+					"mime": "image/png",
+					"name": "large_OurServicesImg",
+					"path": null,
+					"size": 552.13,
+					"sizeInBytes": 552131,
+					"url": "http://localhost:1337/uploads/large_Our_Services_Img_8b57c7d250.png",
+					"width": 1000
+				},
+				"medium": {
+					"ext": ".png",
+					"hash": "medium_Our_Services_Img_8b57c7d250",
+					"height": 572,
+					"mime": "image/png",
+					"name": "medium_OurServicesImg",
+					"path": null,
+					"size": 305.05,
+					"sizeInBytes": 305046,
+					"url": "http://localhost:1337/uploads/medium_Our_Services_Img_8b57c7d250.png",
+					"width": 750
+				},
+				"small": {
+					"ext": ".png",
+					"hash": "small_Our_Services_Img_8b57c7d250",
+					"height": 381,
+					"mime": "image/png",
+					"name": "small_OurServicesImg",
+					"path": null,
+					"size": 139.51,
+					"sizeInBytes": 139511,
+					"url": "http://localhost:1337/uploads/small_Our_Services_Img_8b57c7d250.png",
+					"width": 500
+				},
+				"thumbnail": {
+					"ext": ".png",
+					"hash": "thumbnail_Our_Services_Img_8b57c7d250",
+					"height": 156,
+					"mime": "image/png",
+					"name": "thumbnail_OurServicesImg",
+					"path": null,
+					"size": 31.99,
+					"sizeInBytes": 31990,
+					"url": "http://localhost:1337/uploads/thumbnail_Our_Services_Img_8b57c7d250.png",
+					"width": 205
+				}
+			},
+			"hash": "Our_Services_Img_8b57c7d250",
+			"height": 1464,
+			"id": 17,
+			"mime": "image/png",
+			"name": "OurServicesImg",
+			"previewUrl": null,
+			"provider": "local",
+			"provider_metadata": null,
+			"publishedAt": "2026-03-10T13:48:38.453Z",
+			"size": 465.71,
+			"updatedAt": "2026-03-10T13:48:46.393Z",
+			"url": "/assets/Our_Services_Img_8b57c7d250-d945d24af0e5.png",
+			"width": 1920
+		},
+		"id": 14,
+		"title": "Our Services"
+	},
+	"Resources": [
+		{
+			"Resource": [
+				{
+					"description": "asdasdasda",
+					"id": 29,
+					"metaCommentsImg": null,
+					"metaData": "asdasdasdadas",
+					"metaViewsImg": null,
+					"resourceImage": null,
+					"title": "asdasdasd"
+				},
+				{
+					"description": "asdasdasdasdasd",
+					"id": 30,
+					"metaCommentsImg": null,
+					"metaData": "asdasdadasdasd",
+					"metaViewsImg": null,
+					"resourceImage": null,
+					"title": "asdasdasd"
+				},
+				{
+					"description": "asdasdasdasdasdasd",
+					"id": 31,
+					"metaCommentsImg": null,
+					"metaData": "asdasdasdadasdadasd",
+					"metaViewsImg": null,
+					"resourceImage": null,
+					"title": "adasdasdasdasda"
+				},
+				{
+					"description": "adasdasdasdasdasdasd",
+					"id": 32,
+					"metaCommentsImg": null,
+					"metaData": "adasdasdasdasdasdd",
+					"metaViewsImg": null,
+					"resourceImage": null,
+					"title": "asdadasdasdasd"
+				}
+			],
+			"ResourceCtaBtn": {
+				"URL": "#",
+				"id": 245,
+				"label": "View All Resources"
+			},
+			"id": 8,
+			"title": "Take a look at our resources"
+		}
+	],
+	"Testimonials": {
+		"TestimonialCard": [
+			{
+				"designation": "asdasdadasdasd",
+				"id": 27,
+				"image": null,
+				"name": "asdasdasdasdasd",
+				"text": "asdadasdasdasdasdasd"
+			},
+			{
+				"designation": "adasdasdasdasdas",
+				"id": 28,
+				"image": null,
+				"name": "adasdasdasdasd",
+				"text": "asdasdasdasdasdasd"
+			},
+			{
+				"designation": "asdasdasdasdasdas",
+				"id": 29,
+				"image": null,
+				"name": "asdasdasdasdasdasdasd",
+				"text": "dasdasdasdasdasdasd"
+			}
+		],
+		"id": 10,
+		"title": "What clients say about us"
+	},
+	"createdAt": "2026-03-10T07:13:51.647Z",
+	"documentId": "yt0gziqxh4tz7mxb8sqqy7wk",
+	"id": 24,
+	"publishedAt": "2026-03-11T14:08:56.322Z",
+	"updatedAt": "2026-03-11T14:08:56.147Z"
+}
