@@ -216,7 +216,7 @@ data:
     {% for resource in homepage.Resources.Resource %}
       <div class="resource-card">
         <div class="resource-image">
-          <img src="{{ asset('assets/b5201399fe09aeb0903eafaa7241347ec9802257.png' )}}" alt="Resource">
+          <img src="{{ resource.resourceImage }}" alt="Resource">
         </div>
         <div class="resource-content">
           <h3>{{ resource.title }}</h3>
@@ -224,8 +224,8 @@ data:
           <div class="resource-meta">
             <span>{{ resource.metaData }}</span>
             <div class="resource-stats">
-              <div class="stat"><img src="{{ asset('assets/I1045_4670_565_1490.svg' )}}" alt="Views"> 2K</div>
-              <div class="stat"><img src="{{ asset('assets/I1045_4670_565_1462.svg' )}}" alt="Comments"> 279</div>
+              <div class="stat"><img src="{{ resource.metaViewsImg }}" alt="Views"> 2K</div>
+              <div class="stat"><img src="{{ resource.metaCommentsImg }}" alt="Comments"> 279</div>
             </div>
           </div>
         </div>
@@ -296,7 +296,7 @@ data:
     </div>
   </div>
 
-  <img src="{{ asset('assets/footer-blur.svg' )}}" alt="" class="footer-blur" aria-hidden="true">
+  <img src="{{ homepage.Footer.footerBgImg }}" alt="" class="footer-blur" aria-hidden="true">
   <div clxsass="footer-bottom">
     <div class="footer-logo-large">ID8NXT</div>
     <div class="footer-logo-blur-overlay"></div>

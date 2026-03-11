@@ -5,6 +5,16 @@
   },
   "options": {},
   "attributes": {
+    "footerBgImg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "headline": {
       "type": "text",
       "required": true

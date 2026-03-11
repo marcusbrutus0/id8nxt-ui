@@ -9,6 +9,7 @@ export interface LayoutFooter extends Struct.ComponentSchema {
 		ContactInfo: Schema.Attribute.Component<"shared.contact-info", true>;
 		CtaLink: Schema.Attribute.Component<"shared.link", false> & Schema.Attribute.Required;
 		description: Schema.Attribute.Text & Schema.Attribute.Required;
+		footerBgImg: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 		headline: Schema.Attribute.Text & Schema.Attribute.Required;
 		Menu: Schema.Attribute.Component<"shared.footer-menu", true> & Schema.Attribute.Required;
 		OfficeAddress: Schema.Attribute.Component<"shared.office-address", false>;
@@ -226,7 +227,9 @@ export interface SharedOurResource extends Struct.ComponentSchema {
 	};
 	attributes: {
 		description: Schema.Attribute.Text;
+		metaCommentsImg: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 		metaData: Schema.Attribute.Text;
+		metaViewsImg: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 		resourceImage: Schema.Attribute.Media<"images" | "files" | "videos" | "audios">;
 		title: Schema.Attribute.Text & Schema.Attribute.Required;
 	};
