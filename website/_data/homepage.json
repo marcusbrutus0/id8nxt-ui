@@ -3,7 +3,7 @@
 		{
 			"Button": {
 				"URL": "#",
-				"label": "Button"
+				"label": "Explore"
 			},
 			"CompanyLogo": [
 				{
@@ -278,36 +278,36 @@
 		{
 			"Resource": [
 				{
-					"description": "asdasdasda",
-					"metaData": "asdasdasdadas",
+					"description": "Lorem ipsum dolor sit amet consectetur. Dictum viverra tortor senectus proin. Sagittis ut cursus interdum tempor sagittis egestas. Egestas suscipit nulla scelerisque nulla purus phasellus convallis consectetur. ",
+					"metaData": "September 2025 | By Lorem Ipsum | Topic",
 					"resourceImage": {
 						"url": "/assets/homepage/featworkimg-6.png"
 					},
-					"title": "asdasdasd"
+					"title": "Lorem ipsum dolor sit amet consectetur."
 				},
 				{
-					"description": "asdasdasdasdasd",
-					"metaData": "asdasdadasdasd",
+					"description": "Lorem ipsum dolor sit amet consectetur. Dictum viverra tortor senectus proin. Sagittis ut cursus interdum tempor sagittis egestas. Egestas suscipit nulla scelerisque nulla purus phasellus convallis consectetur. ",
+					"metaData": "September 2025 | By Lorem Ipsum | Topic",
 					"resourceImage": {
 						"url": "/assets/homepage/featworkimg-6.png"
 					},
-					"title": "asdasdasd"
+					"title": "Lorem ipsum dolor sit amet consectetur."
 				},
 				{
-					"description": "asdasdasdasdasdasd",
-					"metaData": "asdasdasdadasdadasd",
+					"description": "Lorem ipsum dolor sit amet consectetur. Dictum viverra tortor senectus proin. Sagittis ut cursus interdum tempor sagittis egestas. Egestas suscipit nulla scelerisque nulla purus phasellus convallis consectetur. ",
+					"metaData": "September 2025 | By Lorem Ipsum | Topic",
 					"resourceImage": {
 						"url": "/assets/homepage/featworkimg-6.png"
 					},
-					"title": "adasdasdasdasda"
+					"title": "Lorem ipsum dolor sit amet consectetur."
 				},
 				{
-					"description": "asdasdasdasdasdasd",
-					"metaData": "asdasdasdadasdadasd",
+					"description": "Lorem ipsum dolor sit amet consectetur. Dictum viverra tortor senectus proin. Sagittis ut cursus interdum tempor sagittis egestas. Egestas suscipit nulla scelerisque nulla purus phasellus convallis consectetur. ",
+					"metaData": "September 2025 | By Lorem Ipsum | Topic",
 					"resourceImage": {
 						"url": "/assets/homepage/featworkimg-6.png"
 					},
-					"title": "asdadasdasdasd"
+					"title": "Lorem ipsum dolor sit amet consectetur."
 				}
 			],
 			"ResourceCtaBtn": {
@@ -320,28 +320,28 @@
 	"Testimonials": {
 		"TestimonialCard": [
 			{
-				"designation": "asdasdadasdasd",
+				"designation": "Lorem ipsum dolor",
 				"image": {
 					"url": "/assets/homepage/testimonial-client-avatar.png"
 				},
-				"name": "asdasdasdasdasd",
-				"text": "asdadasdasdasdasdasd"
+				"name": "Lorem ipsum dolor",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 			},
 			{
-				"designation": "adasdasdasdasdas",
+				"designation": "Lorem ipsum dolor",
 				"image": {
 					"url": "/assets/homepage/testimonial-client-avatar.png"
 				},
-				"name": "adasdasdasdasd",
-				"text": "asdasdasdasdasdasd"
+				"name": "Lorem ipsum dolor",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 			},
 			{
-				"designation": "asdasdasdasdasdas",
+				"designation": "Lorem ipsum dolor",
 				"image": {
 					"url": "/assets/homepage/testimonial-client-avatar.png"
 				},
-				"name": "asdasdasdasdasdasdasd",
-				"text": "dasdasdasdasdasdasd"
+				"name": "Lorem ipsum dolor",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 			}
 		],
 		"title": "What clients say about us"

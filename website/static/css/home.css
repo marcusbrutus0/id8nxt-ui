@@ -53,7 +53,6 @@
 	timeline-scope: --brands-scroll;
 }
 
-
 .brands-header {
 	display: flex;
 	justify-content: space-between;
@@ -93,7 +92,9 @@
 }
 
 @keyframes brands-progress {
-	to { width: 178px; }
+	to {
+		width: 178px;
+	}
 }
 
 /* ── Sticky track outer: defines the view-timeline for the horizontal pan.
@@ -129,8 +130,12 @@
 }
 
 @keyframes brands-slide {
-	from { transform: translateX(0); }
-	to   { transform: translateX(calc(-100% + 100vw - 200px)); }
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-100% + 100vw - 200px));
+	}
 }
 
 .brand-card {
@@ -164,7 +169,16 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.brand-card:nth-child(1) .brand-overlay {
 	background-color: rgba(220, 31, 62, 0.7);
+}
+.brand-card:nth-child(2) .brand-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.brand-card:nth-child(3) .brand-overlay {
+	background-color: rgba(1, 46, 113, 0.7);
 }
 
 .brand-logo,
@@ -267,7 +281,7 @@
 	flex-direction: column;
 	gap: 50px;
 	align-items: center;
-    position: relative;
+	position: relative;
 }
 
 .services-intro {
@@ -276,7 +290,8 @@
 }
 
 .services-intro h2 {
-	font-size: 40px;
+	font-size: 32px;
+	font-weight: 400;
 	margin-bottom: 33px;
 }
 
@@ -382,14 +397,33 @@
 }
 
 /* ─── About ──────────────────────────────────────── */
+.about-scroll-outer {
+	height: 220vh;
+	position: relative;
+}
+
+.about-sticky-inner {
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+
 .about-section {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
 	background-color: #dc1f3e;
 	color: #ffffff;
-	padding: 150px 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 800px;
+	transform-origin: bottom center;
+	transform: scaleY(0.05);
+	border-radius: 24px 24px 0 0;
+	will-change: transform;
 }
 
 .about-content {
@@ -399,6 +433,10 @@
 	text-align: center;
 	gap: 93px;
 	max-width: 1345px;
+	padding: 0 100px;
+	opacity: 0;
+	transform: translateY(24px);
+	will-change: opacity, transform;
 }
 
 .about-logo img {
@@ -429,8 +467,25 @@
 }
 
 @media (max-width: 768px) {
+	.about-scroll-outer {
+		height: auto;
+	}
+	.about-sticky-inner {
+		position: static;
+		height: auto;
+		overflow: visible;
+	}
 	.about-section {
+		position: static;
+		transform: none !important;
+		border-radius: 0 !important;
+		height: auto;
 		padding: 80px 20px;
+	}
+	.about-content {
+		padding: 0;
+		opacity: 1 !important;
+		transform: none !important;
 	}
 	.about-text-group p {
 		font-size: 24px;
@@ -512,6 +567,11 @@
 	width: 621px;
 }
 
+.small-card img {
+	height: 349px;
+	object-fit: cover;
+}
+
 .work-title {
 	font-size: 16px;
 	font-weight: 500;
@@ -550,13 +610,29 @@
 }
 
 .clients-logos {
+	overflow: hidden;
+	width: 100%;
+}
+
+.clients-logos-track {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
+	width: max-content;
+	animation: clients-marquee 20s linear infinite;
+}
+
+@keyframes clients-marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
 }
 
 .client-logo {
-	flex: 0 0 calc(25% - 15px);
+	flex-shrink: 0;
+	width: calc((100vw - 280px) / 4);
+	margin-right: 20px;
 	height: 214px;
 	background-color: #f2f3f6;
 	display: flex;
@@ -576,14 +652,14 @@
 
 @media (max-width: 1024px) {
 	.client-logo {
-		flex: 0 0 calc(50% - 10px);
+		width: calc((100vw - 120px) / 2);
 		height: 160px;
 	}
 }
 
 @media (max-width: 600px) {
 	.client-logo {
-		flex: 0 0 100%;
+		width: calc(100vw - 80px);
 		height: 120px;
 	}
 }
@@ -592,8 +668,8 @@
 .testimonials-section {
 	display: flex;
 	padding-left: 236px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	gap: 300px;
 	align-items: center;
 }

@@ -84,20 +84,24 @@ data:
       </div>
     </div>
   </section>
-  <section id="about" class="about-section ">
-    <div class="about-content">
-      <div class="about-logo">
-        <img src="{{ asset('assets/I1045_4614_108_1084.svg' )}}" alt="Logo Icon">
-      </div>
-      <div class="about-text-group">
-        <h3>{{ homepage.OurIdentity.title }}</h3>
-        <p style="white-space: pre-line;">{{ homepage.OurIdentity.description }}</p>
-        <div class="about-btn">
-          <a href="{{ homepage.OurIdentity.AboutUsLink.URL }}">{{ homepage.OurIdentity.AboutUsLink.label }}</a>
+  <div class="about-scroll-outer">
+    <div class="about-sticky-inner">
+      <section id="about" class="about-section">
+        <div class="about-content">
+          <div class="about-logo">
+            <img src="{{ asset('assets/I1045_4614_108_1084.svg' )}}" alt="Logo Icon">
+          </div>
+          <div class="about-text-group">
+            <h3>{{ homepage.OurIdentity.title }}</h3>
+            <p style="white-space: pre-line;">{{ homepage.OurIdentity.description }}</p>
+            <div class="about-btn">
+              <a href="{{ homepage.OurIdentity.AboutUsLink.URL }}">{{ homepage.OurIdentity.AboutUsLink.label }}</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
+  </div>
     <section id="work" class="work-section ">
     <div class="work-header">
       <img src="{{ asset('assets/homepage/featured-work-logo.svg') }}" alt="Icon">
@@ -163,9 +167,14 @@ data:
         <h2>{{ homepage.ClientTrust[0].title }}</h2>
       </div>
       <div class="clients-logos">
-        {% for logo in homepage.ClientTrust[0].CompanyLogo %}
-        <div class="client-logo"><img src="{{ logo.image.url }}" alt="Client"></div>
-        {% endfor %}
+        <div class="clients-logos-track">
+          {% for logo in homepage.ClientTrust[0].CompanyLogo %}
+          <div class="client-logo"><img src="{{ logo.image.url }}" alt="Client"></div>
+          {% endfor %}
+          {% for logo in homepage.ClientTrust[0].CompanyLogo %}
+          <div class="client-logo"><img src="{{ logo.image.url }}" alt="Client"></div>
+          {% endfor %}
+        </div>
       </div>
        <div class="clients-btn-wrapper">
         <div class="explore-btn"><a href="{{ homepage.ClientTrust[0].Button.URL}}">{{ homepage.ClientTrust[0].Button.label }}</a></div>
@@ -234,21 +243,21 @@ data:
 
 {% block footer %}
   <div class="footer-top">
-    <div class="footer-cta">
+    <div class="footer-cta footer-reveal">
       <h2>LET'S MAKE YOUR <span class="highlight">NEXT BIG MOVE</span> REAL!</h2>
       <div class="footer-btn">
       <a href="{{ homepage.Footer.CtaLink.URL }}">{{ homepage.Footer.CtaLink.label }}</a>
       </div>
-      <p>{{ homepage.Footer.description }}</p>  
+      <p>{{ homepage.Footer.description }}</p>
     </div>
     <div class="footer-links">
-      <div class="footer-column">
+      <div class="footer-column footer-reveal" style="--reveal-delay: 0.1s">
         <h4>{{ homepage.Footer.Menu[0].title }}</h4>
         {% for link in homepage.Footer.Menu[0].MenuLink %}
         <a href="{{ link.URL }}">{{ link.label }}</a>
         {% endfor %}
       </div>
-      <div class="footer-info">
+      <div class="footer-info footer-reveal" style="--reveal-delay: 0.25s">
         <div class="info-group">
           <h4>{{ homepage.Footer.OfficeAddress.title }}</h4>
           <p>{{ homepage.Footer.OfficeAddress.address }}</p>
@@ -269,7 +278,7 @@ data:
           </div>
         </div>
       </div>
-        <div class="contact-group">
+        <div class="contact-group footer-reveal" style="--reveal-delay: 0.4s">
         <div class="email-block">
           <h4>{{ homepage.Footer.WriteToUs.title }}</h4>
           <a href="#">{{ homepage.Footer.WriteToUs.email }}</a>
@@ -280,7 +289,7 @@ data:
           <p>{{ homepage.Footer.ContactInfo[0].phoneNo2 }}</p>
         </div>
       </div>
-        
+
       </div>
     </div>
   </div>
@@ -289,4 +298,67 @@ data:
     <div class="footer-logo-large">ID8NXT</div>
     <div class="footer-logo-blur-overlay"></div>
   </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  // ── Footer reveal ──────────────────────────────────
+  const revealEls = document.querySelectorAll('.footer-reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // ── About section scroll animation ────────────────
+  (function () {
+    function init() {
+      const outer   = document.querySelector('.about-scroll-outer');
+      const section = document.querySelector('.about-section');
+      const content = document.querySelector('.about-content');
+      if (!outer || !section || !content) return;
+
+      // Guarantee initial state regardless of CSS cascade
+      section.style.transform    = 'scaleY(0.05)';
+      section.style.borderRadius = '24px 24px 0 0';
+      content.style.opacity      = '0';
+      content.style.transform    = 'translateY(24px)';
+
+      function easeInOut(t) {
+        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+      }
+
+      function update() {
+        const rect      = outer.getBoundingClientRect();
+        const maxScroll = outer.offsetHeight - window.innerHeight;
+        if (maxScroll <= 0) return;
+
+        const raw = Math.max(0, Math.min(1, -rect.top / maxScroll));
+
+        // Phase 1 (0 → 65%): grow from bottom, border-radius shrinks to 0
+        const expandP = easeInOut(Math.min(1, raw / 0.65));
+        section.style.transform    = `scaleY(${0.05 + 0.95 * expandP})`;
+        section.style.borderRadius = `${Math.round(24 * (1 - Math.min(1, raw / 0.50)))}px ${Math.round(24 * (1 - Math.min(1, raw / 0.50)))}px 0 0`;
+
+        // Phase 2 (70% → 90%): text fades + slides in
+        const textP = Math.max(0, Math.min(1, (raw - 0.70) / 0.20));
+        content.style.opacity   = textP;
+        content.style.transform = `translateY(${Math.round(24 * (1 - textP))}px)`;
+      }
+
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
 {% endblock %}

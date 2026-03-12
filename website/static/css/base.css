@@ -315,10 +315,10 @@ button {
 	overflow: hidden;
 }
 .footer-logo-large {
-	font-size: 520px;
+	font-size: 580px;
 	font-weight: 600;
-	opacity: 0.25;
-	background: linear-gradient(180deg, #888888 0%, #444444 100%);
+	opacity: 0.2;
+	background: linear-gradient(180deg, #ffffff 0%, #444444 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-top: 20px;
@@ -330,7 +330,7 @@ button {
 	left: 0;
 	width: 100%;
 	height: 80%;
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(20px);
 	mask-image: linear-gradient(to bottom, transparent 0%, black 60%);
 	-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 60%);
@@ -357,4 +357,19 @@ button {
 	.footer-links {
 		flex-wrap: wrap;
 	}
+}
+
+/* ─── Footer reveal animation ─────────────────────── */
+.footer-reveal {
+	opacity: 0;
+	transform: translateY(40px);
+	transition:
+		opacity 0.7s ease,
+		transform 0.7s ease;
+	transition-delay: var(--reveal-delay, 0s);
+}
+
+.footer-reveal.is-visible {
+	opacity: 1;
+	transform: translateY(0);
 }
