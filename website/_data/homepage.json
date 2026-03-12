@@ -1,0 +1,349 @@
+{
+	"ClientTrust": [
+		{
+			"Button": {
+				"URL": "#",
+				"label": "Button"
+			},
+			"CompanyLogo": [
+				{
+					"image": {
+						"url": "/assets/homepage/flipkart-logo.png"
+					}
+				},
+				{
+					"image": {
+						"url": "/assets/homepage/google-logo.png"
+					}
+				},
+				{
+					"image": {
+						"url": "/assets/homepage/asianpaints-logo.png"
+					}
+				},
+				{
+					"image": {
+						"url": "/assets/homepage/meta-logo.png"
+					}
+				},
+				{
+					"image": {
+						"url": "/assets/homepage/reliance-logo.png"
+					}
+				},
+				{
+					"image": {
+						"url": "/assets/homepage/azure-logo.png"
+					}
+				},
+				{
+					"image": {
+						"url": "/assets/homepage/bpl-logo.png"
+					}
+				},
+				{
+					"image": {
+						"url": "/assets/homepage/aws-logo.png"
+					}
+				}
+			],
+			"title": "Trusted by teams who ship at scale."
+		}
+	],
+	"FeaturedWork": {
+		"ServicesLink": {
+			"URL": "#",
+			"label": "Explore All Services"
+		},
+		"WorkItem": [
+			{
+				"caption": "Flipkart"
+			},
+			{
+				"caption": "AWS AI conclave - Mahishasura film"
+			},
+			{
+				"caption": "Salesforce - AI agents"
+			},
+			{
+				"caption": "Microsoft - Zero Day"
+			},
+			{
+				"caption": "Eurekii"
+			},
+			{
+				"caption": "Client Company"
+			},
+			{
+				"caption": "Sow & Reap - Chara'"
+			}
+		],
+		"title": "Featured Work"
+	},
+	"Footer": {
+		"ContactInfo": [
+			{
+				"phoneNo1": 9923275253,
+				"phoneNo2": 9890056652,
+				"title": "Get On A Call"
+			}
+		],
+		"CtaLink": {
+			"URL": "#",
+			"label": "Get in touch "
+		},
+		"Menu": [
+			{
+				"MenuLink": [
+					{
+						"URL": "#",
+						"label": "Company"
+					},
+					{
+						"URL": "#",
+						"label": "ID8NXT"
+					},
+					{
+						"URL": "#",
+						"label": "ID8NXT Films"
+					},
+					{
+						"URL": "#",
+						"label": "ID8DEVHUB"
+					},
+					{
+						"URL": "#",
+						"label": "PROJECTS"
+					}
+				],
+				"title": "Menu"
+			}
+		],
+		"OfficeAddress": {
+			"address": "ID8NXT LLP, B Wing, Second Floor, Krishanlal Marwah Marg,Saki Vihar Road, Saki Naka, Andheri East Mumbai - 400 072, Maharashtra, India",
+			"title": "OFFICE ADDRESS"
+		},
+		"Socials": {
+			"SocialLinks": [
+				{
+					"icon": {
+						"url": "/assets/linkedIn-logo.svg"
+					},
+					"url": "#"
+				},
+				{
+					"icon": {
+						"url": "/assets/twitter-logo.svg"
+					},
+					"url": "#"
+				},
+				{
+					"icon": {
+						"url": "/assets/instagram-logo.svg"
+					},
+					"url": "#"
+				},
+				{
+					"icon": {
+						"url": "/assets/facebook-logo.svg"
+					},
+					"url": "#"
+				}
+			],
+			"title": "Social Links"
+		},
+		"WriteToUs": {
+			"email": "humans@id8nxt.com",
+			"id": 9,
+			"title": "Write to Us"
+		},
+		"description": "Go-To-Market Strategy, demand generation, AI films, and developer engagement - done right.",
+		"footerBgImg": {
+			"url": "/assets/footer-blur.svg"
+		}
+	},
+	"Header": {
+		"NavLinks": [
+			{
+				"URL": "#",
+				"label": "SOLUTIONS"
+			},
+			{
+				"URL": "#",
+				"label": "WORK"
+			},
+			{
+				"URL": "#",
+				"label": "ABOUT"
+			},
+			{
+				"URL": "#",
+				"label": "RESOURCES"
+			},
+			{
+				"URL": "#",
+				"label": "BOOK A CALL"
+			}
+		],
+		"headerLogo": {
+			"url": "/assets/company-logo-black.svg"
+		}
+	},
+	"Hero": {
+		"companyName": "ID8NXT"
+	},
+	"OurBrands": {
+		"BrandCards": [
+			{
+				"BrandSolutionsLink": {
+					"URL": "#",
+					"label": "Explore Brand Solutions & Enterprise"
+				},
+				"cardDescription": "From Go-To-Market Strategy to always-on demand generation and lead generation, we build brand systems that perform.",
+				"cardImage": {
+					"url": "/assets/homepage/id8nxt-brand-img.png"
+				},
+				"cardLogo": {
+					"url": "/assets/homepage/id8nxt-brand-logo.svg"
+				}
+			},
+			{
+				"BrandSolutionsLink": {
+					"URL": "#",
+					"label": "Explore ID8Films"
+				},
+				"cardDescription": "We create AI generated videos and cinematic content for brands that need faster cycles without compromising craft. Think: launch films, product stories, and performance edits, built like a modern video production company with an innovation edge. ",
+				"cardImage": {
+					"url": "/assets/homepage/id8films-brand-img.png"
+				},
+				"cardLogo": {
+					"url": "/assets/homepage/id8films-brand-logo.svg"
+				},
+				"id": 64
+			},
+			{
+				"BrandSolutionsLink": {
+					"URL": "#",
+					"label": "Explore DevHub"
+				},
+				"cardDescription": "We design and run dev community programs that turn developers into advocates. From developer forum / devforum experiences to an always-on calendar of AI hackathon builds and upcoming hackathons, we help products earn real usage.",
+				"cardImage": {
+					"url": "/assets/homepage/id8devhub-brand-img.png"
+				},
+				"cardLogo": {
+					"url": "/assets/homepage/id8devhub-brand-logo.png"
+				}
+			}
+		],
+		"heading": "Our Brands"
+	},
+	"OurIdentity": {
+		"AboutUsLink": {
+			"URL": "#",
+			"label": "Know about us more "
+		},
+		"description": "We help brands win in markets with digital brand strategy, bold creative, and execution that scales, powered by a full-funnel engine from Go-To-Market Strategy to demand generation, lead generation, and retention-first customer onboarding.",
+		"title": "What we are"
+	},
+	"OurServices": {
+		"Services": [
+			{
+				"index": "01 ",
+				"title": "Brand Solutions "
+			},
+			{
+				"index": "02",
+				"title": "AI-Generated Films"
+			},
+			{
+				"index": "03",
+				"title": "Developer Communities "
+			},
+			{
+				"index": "04",
+				"title": "Enterprise Solutions "
+			}
+		],
+		"ServicesLink": {
+			"URL": "#",
+			"label": "Explore All Services "
+		},
+		"description": "Build with a single service, or layer them into a connected growth system.Everything is designed to reduce cycle time from idea → asset → distribution → learning.",
+		"featImage": {
+			"url": "/assets/homepage/services-feat-img.png"
+		},
+		"title": "Our Services"
+	},
+	"Resources": [
+		{
+			"Resource": [
+				{
+					"description": "asdasdasda",
+					"metaData": "asdasdasdadas",
+					"resourceImage": {
+						"url": "/assets/homepage/featworkimg-6.png"
+					},
+					"title": "asdasdasd"
+				},
+				{
+					"description": "asdasdasdasdasd",
+					"metaData": "asdasdadasdasd",
+					"resourceImage": {
+						"url": "/assets/homepage/featworkimg-6.png"
+					},
+					"title": "asdasdasd"
+				},
+				{
+					"description": "asdasdasdasdasdasd",
+					"metaData": "asdasdasdadasdadasd",
+					"resourceImage": {
+						"url": "/assets/homepage/featworkimg-6.png"
+					},
+					"title": "adasdasdasdasda"
+				},
+				{
+					"description": "asdasdasdasdasdasd",
+					"metaData": "asdasdasdadasdadasd",
+					"resourceImage": {
+						"url": "/assets/homepage/featworkimg-6.png"
+					},
+					"title": "asdadasdasdasd"
+				}
+			],
+			"ResourceCtaBtn": {
+				"URL": "#",
+				"label": "View All Resources"
+			},
+			"title": "Take a look at our resources"
+		}
+	],
+	"Testimonials": {
+		"TestimonialCard": [
+			{
+				"designation": "asdasdadasdasd",
+				"image": {
+					"url": "/assets/homepage/testimonial-client-avatar.png"
+				},
+				"name": "asdasdasdasdasd",
+				"text": "asdadasdasdasdasdasd"
+			},
+			{
+				"designation": "adasdasdasdasdas",
+				"image": {
+					"url": "/assets/homepage/testimonial-client-avatar.png"
+				},
+				"name": "adasdasdasdasd",
+				"text": "asdasdasdasdasdasd"
+			},
+			{
+				"designation": "asdasdasdasdasdas",
+				"image": {
+					"url": "/assets/homepage/testimonial-client-avatar.png"
+				},
+				"name": "asdasdasdasdasdasdasd",
+				"text": "dasdasdasdasdasdasd"
+			}
+		],
+		"title": "What clients say about us"
+	}
+}

@@ -317,8 +317,8 @@ button {
 .footer-logo-large {
 	font-size: 520px;
 	font-weight: 600;
-	opacity: 0.2;
-	background: linear-gradient(180deg, rgb(240, 237, 237) 0%, rgba(255, 0, 0, 0) 100%);
+	opacity: 0.7;
+	background: linear-gradient(180deg, rgb(176, 173, 173) 0%, rgba(255, 0, 0, 0) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-top: 20px;

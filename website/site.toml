@@ -7,10 +7,4 @@ fragments = true
 fragment_dir = "_fragments"
 content_block = "content"
 
-[sources.strapi]
-url = "http://localhost:1337/"
-headers = { Authorization = "Bearer 4f4b440d24caabe889020dd3bff7d14b0cf9e3605c836fb759928ac76f7b5323b3b103af5925ca11cbbfc44dc1e2dc529edb9d309868b2a0bb638fc228134f1425a32fc95d11a503596d5f3b307307b7300340cbf58a9e4f110df8e5a1eeff7c2a627b2b42631e00f2d849d3dae8efd95a33bc0457f7edf535e0d143288cfd05" }
 
-[plugins.strapi]
-sources = ["strapi"]
-media_base_url = "http://localhost:1337"

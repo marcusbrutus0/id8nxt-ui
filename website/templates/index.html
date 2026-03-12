@@ -1,9 +1,7 @@
 ---
 data:
   homepage:
-    source: strapi
-    path: /api/home-page?pLevel=5
-    root: data
+    file: "homepage.json"
 ---
 {% extends "_base.html" %}
 
@@ -16,23 +14,23 @@ data:
 {% block content %}
  <section id="hero" class="hero-section">
     <div class="hero-background">
-      <img src="{{ homepage.Hero.heroImage.url }}" alt="Hero Background">
+      <img src="{{ asset('assets/homepage/hero-bg.png') }}" alt="Hero Background">
     </div>
     <div class="hero-content">
       <h1 class="hero-title">{{ homepage.Hero.companyName }}</h1>
     </div>
  </section>
-    <section id="brands" class="brands-section ">
+ <section id="brands" class="brands-section ">
     <div class="brands-header">
       <div class="brands-title-group">
         <h2>{{ homepage.OurBrands.heading }}</h2>
       </div>
       <div class="scroll-indicator">
-        <img src="{{ homepage.OurBrands.leftScrollIndicator.url }}" alt="Left">
+        <img src="{{ asset('assets/homepage/left-scroll-indicator.svg') }}" alt="Left">
         <div class="scroll-bar">
           <div class="scroll-progress"></div>
         </div>
-        <img src="{{ homepage.OurBrands.rightScrollIndicator.url }}" alt="Right">
+        <img src="{{ asset('assets/homepage/right-scroll-indicator.svg') }}" alt="Right">
       </div>
     </div>
      <div class="brands-sticky-outer">
@@ -71,7 +69,6 @@ data:
           <span class="service-number">{{ service.index}}</span>
           <div class="service-title-block">
             <h3>{{ service.title }}</h3>
-            <p>{{ service.description }}</p>
           </div>
         </div>
       </div>
@@ -83,7 +80,7 @@ data:
 
     <div class="services-footer">
       <div class="explore-btn">
-        <a href="#">{{ homepage.OurServices.ServicesLink.label }}</a>
+        <a href="{{ homepage.OurServices.ServicesLink.URL }}">{{ homepage.OurServices.ServicesLink.label }}</a>
       </div>
     </div>
   </section>
@@ -103,7 +100,7 @@ data:
   </section>
     <section id="work" class="work-section ">
     <div class="work-header">
-      <img src="{{ homepage.FeaturedWork.featuredWorklogo.url }}" alt="Icon">
+      <img src="{{ asset('assets/homepage/featured-work-logo.svg') }}" alt="Icon">
       <h2>{{ homepage.FeaturedWork.title }}</h2>
       <div class="vertical-line"></div>
     </div>
@@ -112,7 +109,7 @@ data:
       <!-- Row 1 -->
       <div class="work-row row-middle">
         <div class="work-card large-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[0].image.url }}" alt="Flipkart">
+          <img src="{{ asset('assets/homepage/featworkimg-1.png') }}" alt="Flipkart">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[0].caption }}</p>
         </div>
       </div>
@@ -120,11 +117,11 @@ data:
       <!-- Row 2 -->
       <div class="work-row row-split">
         <div class="work-card medium-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[1].image.url }}" alt="AWS AI">
+          <img src="{{ asset('assets/homepage/featworkimg-2.png') }}" alt="AWS AI">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[1].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[2].image.url }}" alt="Salesforce">
+          <img src="{{ asset('assets/homepage/featworkimg-3.png') }}" alt="Salesforce">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[2].caption }}</p>
         </div>
       </div>
@@ -132,11 +129,11 @@ data:
       <!-- Row 3 -->
       <div class="work-row row-split-reverse">
         <div class="work-card small-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[3].image.url }}" alt="Microsoft">
+          <img src="{{ asset('assets/homepage/featworkimg-4.png') }}" alt="Microsoft">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[3].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[4].image.url }}" alt="Eurekii">
+          <img src="{{ asset('assets/homepage/featworkimg-5.png') }}" alt="Eurekii">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[4].caption }}</p>
         </div>
       </div>
@@ -144,11 +141,11 @@ data:
       <!-- Row 4 -->
       <div class="work-row row-split">
         <div class="work-card medium-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[5].image.url }}" alt="Client Company">
+          <img src="{{ asset('assets/homepage/featworkimg-6.png') }}" alt="Client Company">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[5].caption }}</p>
         </div>
         <div class="work-card small-card">
-          <img src="{{ homepage.FeaturedWork.WorkItem[6].image.url }}" alt="Sow & Reap">
+          <img src="{{ asset('assets/homepage/featworkimg-7.jpeg') }}" alt="Sow & Reap">
           <p class="work-title">{{ homepage.FeaturedWork.WorkItem[6].caption }}</p>
         </div>
       </div>
@@ -156,7 +153,7 @@ data:
 
     <div class="work-footer">
       <div class="explore-btn">
-      <a href="#">{{ homepage.FeaturedWork.ServicesLink.label }}</a>
+      <a href="{{ homepage.FeaturedWork.ServicesLink.URL }}">{{ homepage.FeaturedWork.ServicesLink.label }}</a>
       </div>
     </div>
   </section>
@@ -171,7 +168,7 @@ data:
         {% endfor %}
       </div>
        <div class="clients-btn-wrapper">
-        <div class="explore-btn"><a href="#">{{ homepage.ClientTrust[0].Button.label }}</a></div>
+        <div class="explore-btn"><a href="{{ homepage.ClientTrust[0].Button.URL}}">{{ homepage.ClientTrust[0].Button.label }}</a></div>
       </div>
     </div>
   </section>
@@ -179,14 +176,14 @@ data:
     <div class="testimonials-left">
       <h2 style="white-space: pre-line;">{{ homepage.Testimonials.title }}</h2>
       <div class="scroll-indicator">
-        <img src="{{ homepage.OurBrands.leftScrollIndicator.url }}" alt="Left">
+        <img src="{{ asset('assets/homepage/left-scroll-indicator.svg') }}" alt="Left">
         <div class="scroll-bar">
           <div class="scroll-progress"></div>
         </div>
-        <img src="{{ homepage.OurBrands.rightScrollIndicator.url }}" alt="Right">
+        <img src="{{ asset('assets/homepage/right-scroll-indicator.svg') }}" alt="Right">
       </div>
     </div>
-    
+
     <div class="testimonials-right horizontal-scroll">
       {% for testimonial in homepage.Testimonials.TestimonialCard %}
       <div class="testimonial-card">
@@ -204,7 +201,6 @@ data:
       {% endfor %}
     </div>
   </section>
-
   <section id="resources" class="resources-section ">
     <div class="resources-header">
       <h2>{{ homepage.Resources[0].title }}</h2>
@@ -222,8 +218,8 @@ data:
           <div class="resource-meta">
             <span>{{ resource.metaData }}</span>
             <div class="resource-stats">
-              <div class="stat"><img src="{{ resource.metaViewsImg.url }}" alt="Views"> 2K</div>
-              <div class="stat"><img src="{{ resource.metaCommentsImg.url }}" alt="Comments"> 279</div>
+              <div class="stat"><img src="{{ asset('assets/homepage/meta-views.svg') }}" alt="Views"> 2K</div>
+              <div class="stat"><img src="{{ asset('assets/homepage/meta-comments.svg') }}" alt="Comments"> 279</div>
             </div>
           </div>
         </div>
@@ -231,7 +227,7 @@ data:
       {% endfor %}
     </div>
     <div class="resources-footer">
-      <div class="explore-btn"><a href="#">{{ homepage.Resources[0].ResourceCtaBtn.label }}</a></div>
+      <div class="explore-btn"><a href="{{ homepage.Resources[0].ResourceCtaBtn.URL }}">{{ homepage.Resources[0].ResourceCtaBtn.label }}</a></div>
     </div>
   </section>
 {% endblock %}
@@ -241,9 +237,9 @@ data:
     <div class="footer-cta">
       <h2>LET'S MAKE YOUR <span class="highlight">NEXT BIG MOVE</span> REAL!</h2>
       <div class="footer-btn">
-      <a href="#">{{ homepage.Footer.CtaLink.label }}</a>
+      <a href="{{ homepage.Footer.CtaLink.URL }}">{{ homepage.Footer.CtaLink.label }}</a>
       </div>
-      <p>{{ homepage.Footer.description }}</p>
+      <p>{{ homepage.Footer.description }}</p>  
     </div>
     <div class="footer-links">
       <div class="footer-column">
@@ -280,7 +276,8 @@ data:
         </div>
         <div class="phone-block">
           <h4>{{ homepage.Footer.ContactInfo[0].title }}</h4>
-          <p>{{ homepage.Footer.ContactInfo[0].phoneNo }}</p>
+          <p>{{ homepage.Footer.ContactInfo[0].phoneNo1 }}</p>
+          <p>{{ homepage.Footer.ContactInfo[0].phoneNo2 }}</p>
         </div>
       </div>
         
